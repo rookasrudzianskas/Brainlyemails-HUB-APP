@@ -1,6 +1,13 @@
 import React, {useEffect, useState} from 'react';
+import useScrollPosition from "@react-hook/window-scroll";
+import {useRecoilState} from "recoil";
+import {appScrollPosition} from "../../../../contentManagement/atoms/webAppScrollPosition/webAppScrollPosition";
 
 const StaticPicture = () => {
+    const scrollY = useScrollPosition(60 /*fps*/);
+    const [scrollPosition, setScrollPosition] = useRecoilState(appScrollPosition);
+    setScrollPosition(scrollY);
+    console.log(scrollY);
 
     return (
         <div className="flex justify-center overflow-y-hide">
