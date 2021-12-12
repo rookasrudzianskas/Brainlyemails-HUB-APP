@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Code4Times = ({codes}) => {
-    // console.log(code)
+    // console.log(codes)
     return (
         <div className="mx-2">
             <div className={`${codes?.bgColor} flex items-center justify-center px-6 py-2 rounded-full hover:cursor-pointer transition duration-150 ease-in-out`}>
