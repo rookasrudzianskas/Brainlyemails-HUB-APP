@@ -12,7 +12,7 @@ const HomeScreen = () => {
 
 
     return (
-        <div className="text-white">
+        <div className="text-white bg-black">
             <Header />
             <FrontStart />
             <Comment />
