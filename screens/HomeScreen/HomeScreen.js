@@ -12,7 +12,7 @@ const HomeScreen = () => {
 
 
     return (
-        <div className="text-white bg-black">
+        <div className="text-white bg-black scrollbar-hide">
             <Header />
             <FrontStart />
             <Comment />

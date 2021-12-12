@@ -2,40 +2,6 @@ import React, {useEffect, useState} from 'react';
 
 const StaticPicture = () => {
 
-    // const {
-    //     scrolling,
-    //     time,
-    //     speed,
-    //     direction,
-    //     position,
-    //     relativeDistance,
-    //     totalDistance
-    // } = useScrollData();
-    //
-    // useEffect(() =>  {
-    //     console.log(`Scrolling ${scrolling} at ${time}`);
-    //     console.log(speed);
-    //     console.log(direction);
-    //     console.log(position);
-    //     console.log(relativeDistance);
-    //     console.log(totalDistance);
-    //     transitionNavBar();
-    // }, [position]);
-    // const [show, handleShow] = useState(false);
-    //
-    // const transitionNavBar = () => {
-    //     if(time > 250) {
-    //         handleShow(true);
-    //     }
-    // };
-
-    // console.log('The state is', show);
-
-
-
-    // show the scroll y position
-    // console.log('This is window 🔥', window.scrollY);
-
     return (
         <div className="flex justify-center overflow-y-hide">
             {/*{show && (*/}
@@ -59,3 +25,5 @@ const StaticPicture = () => {
 };
 
 export default StaticPicture;
+
+// was the point of dead - 2681
