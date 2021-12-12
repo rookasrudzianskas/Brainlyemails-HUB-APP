@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import HomeScreen from "../screens/HomeScreen";
 import {useEffect, useLayoutEffect, useReducer, useRef, useState} from "react";
-// import useScrollPosition from '@react-hook/window-scroll'
+import useScrollPosition from '@react-hook/window-scroll'
 
 
 
 export default function Home() {
-
+    const scrollY = useScrollPosition(60 /*fps*/)
+    console.log(scrollY)
   return (
       <div className="bg-black h-screen scrollbar-hide">
         <Head>
