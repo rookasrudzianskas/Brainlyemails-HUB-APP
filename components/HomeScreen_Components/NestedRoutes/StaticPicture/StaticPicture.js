@@ -11,8 +11,10 @@ const StaticPicture = () => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
-        if(scrollY > 2550) {
+        if(scrollY > 2320) {
             setShow(true);
+        } else if (scrollY < 2000) {
+            setShow(false);
         }
     }
 
@@ -24,7 +26,7 @@ const StaticPicture = () => {
     return (
         <div className="flex justify-center overflow-y-hide">
             {show && (
-                <div className="absolute">
+                <div className="absolute fade-in-down">
                     <div className="fixed bottom-0 left-[28rem] px-80 py-64 bg-red-500">
                         <p>This is epic</p>
                     </div>
