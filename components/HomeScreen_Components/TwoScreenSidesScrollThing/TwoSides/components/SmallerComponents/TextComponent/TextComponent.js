@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TextComponent = () => {
+const TextComponent = ({text}) => {
     return (
         <div className="flex items-center justify-center">
             <div className="max-w-xl">
                 <p className="text-7xl font-bold text-white">
-                    It’s so simple it’s kind of silly. Just make a form...
+                    {text}
                 </p>
             </div>
         </div>
