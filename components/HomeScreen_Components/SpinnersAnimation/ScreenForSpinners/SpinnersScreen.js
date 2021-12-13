@@ -17,6 +17,8 @@ const SpinnersScreen = () => {
             <PlayerOfSpinner position={"relative"} height={135} width={135} frontBack={"top-[3rem]"} otherSide={"left-[75rem]"} />
             <PlayerOfSpinner position={"relative"} height={135} width={135} frontBack={"-top-[1rem]"} otherSide={"left-[55rem]"} />
             <PlayerOfSpinner position={"relative"} height={135} width={135} frontBack={"top-[6rem]"} otherSide={"left-[36rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[15rem]"} otherSide={"left-[50rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[1rem]"} otherSide={"left-[90rem]"} />
         </div>
     );
 };
