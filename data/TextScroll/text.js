@@ -1,4 +1,4 @@
-export const TEXT=[
+export const TEXT = [
     {
         text: 'It’s so simple it’s kind of silly. Just make a form...'
     },
@@ -17,4 +17,4 @@ export const TEXT=[
     {
         text: 'HTML Forms. Who knew?'
     },
-]
+];
