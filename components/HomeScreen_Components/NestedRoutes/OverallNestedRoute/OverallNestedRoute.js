@@ -31,7 +31,7 @@ const OverallNestedRoute = () => {
         <div>
             <main>
             <ScrollViewWithDetails />
-                {/*{show || scrollY <= 4310 && (*/}
+                {/*{show && (*/}
                 {/*    <FadeIn*/}
                 {/*        duration={1000}*/}
                 {/*    >*/}
@@ -39,7 +39,7 @@ const OverallNestedRoute = () => {
                 {/*    </FadeIn>*/}
                 {/*)}*/}
 
-                {scrollY >= 4317 && (
+                {scrollY >= 2307 && (
                     <FadeIn
                         duration={200}
                     >
