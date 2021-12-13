@@ -48,3 +48,4 @@ const StaticPicture = () => {
 export default StaticPicture;
 
 // was the point of dead - 2681
+// at this point this should become an inline element
