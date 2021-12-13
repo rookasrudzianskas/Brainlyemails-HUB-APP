@@ -10,9 +10,9 @@ const FirstSide = () => {
 
             </div>
             <div className="flex flex-col items-center justify-center  space-y-[30rem]">
-                {TEXT.map((text, index) => {
-                    return <TextComponent key={index} text={text}/>
-                })}
+                {TEXT.map((text, index) => (
+                    <TextComponent key={index} text={text}/>
+                ))}
             </div>
 
             <div className="mb-96">
