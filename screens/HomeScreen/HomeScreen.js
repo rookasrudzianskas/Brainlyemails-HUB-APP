@@ -6,6 +6,7 @@ import HorizontalScrollableList from "../../components/HomeScreen_Components/Hor
 import LoadingExplanationText from "../../components/HomeScreen_Components/LoadingExplanationText";
 import BrainlyemailsCheatCode from "../../components/HomeScreen_Components/BrainlyemailsCheatCode";
 import OverallNestedRoute from "../../components/HomeScreen_Components/NestedRoutes/OverallNestedRoute";
+import BrainlyemailsNestedRoutes from "../../components/HomeScreen_Components/BrainlyemailsNestedRoutes";
 
 const HomeScreen = () => {
 
@@ -20,53 +21,7 @@ const HomeScreen = () => {
             <LoadingExplanationText />
             <BrainlyemailsCheatCode />
             <OverallNestedRoute />
-            <div className="text-white">
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-            </div>
+            <BrainlyemailsNestedRoutes />
         </div>
     );
 };
