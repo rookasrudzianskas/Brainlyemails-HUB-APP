@@ -11,6 +11,8 @@ import NotesAboutIt from "../../components/HomeScreen_Components/WhyBrainlyemail
 import WithBrainlyemailsAndWithout
     from "../../components/HomeScreen_Components/WithBrainlyemailsAndWithout/WithBrainlyemailsAndWithout";
 import SpinnersScreen from "../../components/HomeScreen_Components/SpinnersAnimation/ScreenForSpinners";
+import OverallNestedRoute2 from "../../components/HomeScreen_Components/NestedRoutes#2/OverallNestedRoute";
+import EmailAsFastAsInstant from "../../components/HomeScreen_Components/EmailAsFastAsInstant";
 
 const HomeScreen = () => {
 
@@ -29,6 +31,8 @@ const HomeScreen = () => {
             <NotesAboutIt />
             <WithBrainlyemailsAndWithout />
             <SpinnersScreen />
+            <EmailAsFastAsInstant />
+            <OverallNestedRoute2 />
         </div>
     );
 };

@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/SpinnersAnimation/components/ContinousComponent/ContinousComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/EmailAsFastAsInstant/EmailAsFastAsInstant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/EmailAsFastAsInstant/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/InlineBlockPicture/InlineBlockPicture#2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/InlineBlockPicture/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/OverallNestedRoute/OverallNestedRoute#2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/OverallNestedRoute/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/ScrollViewWithDetails/ScrollViewWithDetails#2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/ScrollViewWithDetails/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/StaticPicture/StaticPicture.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#2/StaticPicture/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/SpinnersAnimation/ScreenForSpinners/SpinnersScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/SpinnersAnimation/ScreenForSpinners/SpinnersScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/HomeScreen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen/HomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +38,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20211212_0000" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -51,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="13849000" />
+      <workItem from="1639336533504" duration="15036000" />
     </task>
     <servers />
   </component>
