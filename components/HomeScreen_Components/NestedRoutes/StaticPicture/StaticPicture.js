@@ -11,7 +11,7 @@ const StaticPicture = () => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
-        if(scrollY > 2320) {
+        if(scrollY > 2307) {
             setShow(true);
         } else if (scrollY < 2000) {
             setShow(false);

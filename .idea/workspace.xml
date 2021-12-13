@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/additional/utils/HomeScreen/handleShow_Function/handleShow_util.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CodeSnippets/Code4Times/Code4Times.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/CodeSnippets/Code4Times/Code4Times.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes/ScrollViewWithDetails/ScrollViewWithDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes/ScrollViewWithDetails/ScrollViewWithDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes/StaticPicture/StaticPicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes/StaticPicture/StaticPicture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="3570000" />
+      <workItem from="1639336533504" duration="4341000" />
     </task>
     <servers />
   </component>

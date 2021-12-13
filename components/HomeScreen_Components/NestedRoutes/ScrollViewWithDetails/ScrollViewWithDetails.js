@@ -38,7 +38,8 @@ const ScrollViewWithDetails = () => {
             <div className="mt-56 flex flex-col items-center">
                 <p className="text-7xl animate-bounce cursor-pointer">👇</p>
                 <div className="flex flew-row mt-2">
-                    {CODE.map((codes, index) => <Code4Times key={index} codes={codes}/>)}
+                    {/*{CODE.map((codes, index) => <Code4Times key={index} codes={codes}/>)}*/}
+                    <Code4Times />
                 </div>
             </div>
 
