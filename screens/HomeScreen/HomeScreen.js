@@ -15,6 +15,7 @@ import OverallNestedRoute2 from "../../components/HomeScreen_Components/NestedRo
 import EmailAsFastAsInstant from "../../components/HomeScreen_Components/EmailAsFastAsInstant";
 import DataLoadingExplanationText from "../../components/HomeScreen_Components/DataLoadingExplanationText";
 import DataUpdatesText from "../../components/HomeScreen_Components/DataUpdatesText";
+import TwoSides from "../../components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/screens/TwoSides";
 
 const HomeScreen = () => {
 
@@ -37,6 +38,7 @@ const HomeScreen = () => {
             <OverallNestedRoute2 />
             <DataLoadingExplanationText />
             <DataUpdatesText />
+            <TwoSides />
         </div>
     );
 };
