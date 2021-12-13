@@ -14,6 +14,7 @@ import SpinnersScreen from "../../components/HomeScreen_Components/SpinnersAnima
 import OverallNestedRoute2 from "../../components/HomeScreen_Components/NestedRoutes#2/OverallNestedRoute";
 import EmailAsFastAsInstant from "../../components/HomeScreen_Components/EmailAsFastAsInstant";
 import DataLoadingExplanationText from "../../components/HomeScreen_Components/DataLoadingExplanationText";
+import DataUpdatesText from "../../components/HomeScreen_Components/DataUpdatesText";
 
 const HomeScreen = () => {
 
@@ -35,6 +36,7 @@ const HomeScreen = () => {
             <EmailAsFastAsInstant />
             <OverallNestedRoute2 />
             <DataLoadingExplanationText />
+            <DataUpdatesText />
         </div>
     );
 };
