@@ -7,6 +7,7 @@ import LoadingExplanationText from "../../components/HomeScreen_Components/Loadi
 import BrainlyemailsCheatCode from "../../components/HomeScreen_Components/BrainlyemailsCheatCode";
 import OverallNestedRoute from "../../components/HomeScreen_Components/NestedRoutes/OverallNestedRoute";
 import BrainlyemailsNestedRoutes from "../../components/HomeScreen_Components/BrainlyemailsNestedRoutes";
+import NotesAboutIt from "../../components/HomeScreen_Components/WhyBrainlyemailsIsLegit/NotesAboutIt";
 
 const HomeScreen = () => {
 
@@ -22,6 +23,7 @@ const HomeScreen = () => {
             <BrainlyemailsCheatCode />
             <OverallNestedRoute />
             <BrainlyemailsNestedRoutes />
+            <NotesAboutIt />
         </div>
     );
 };
