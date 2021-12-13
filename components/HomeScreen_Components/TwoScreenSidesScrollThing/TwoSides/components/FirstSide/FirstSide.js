@@ -1,5 +1,6 @@
 import React from 'react';
 import TextComponent from "../SmallerComponents/TextComponent";
+import {TEXT} from "../../../../../../data/TextScroll/text";
 
 const FirstSide = () => {
     return (
@@ -9,12 +10,9 @@ const FirstSide = () => {
 
             </div>
             <div className="flex flex-col items-center justify-center  space-y-[30rem]">
-                <TextComponent text={'It’s so simple it’s kind of silly. Just make a form...'} />
-                <TextComponent text={'...and an action on the server. The whole thing works with no JavaScript!'}/>
-                <TextComponent text={'Brainlyemails runs the action server side, revalidates data client side, and even handles race conditions from resubmissions.'} />
-                <TextComponent text={'Get fancy with transition hooks and make some pending UI. Remix handles all the state, you simply ask for it.'} />
-                <TextComponent text={'Or get jiggy with some optimistic UI. Brainlyemails provides the data being sent to the server so you can skip the busy spinners for mutations, too.'} />
-                <TextComponent text={'HTML Forms. Who knew?'} />
+                {TEXT.map((text, index) => {
+                    return <TextComponent key={index} text={text}/>
+                })}
             </div>
 
             <div className="mb-96">
