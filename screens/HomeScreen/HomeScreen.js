@@ -16,6 +16,7 @@ import EmailAsFastAsInstant from "../../components/HomeScreen_Components/EmailAs
 import DataLoadingExplanationText from "../../components/HomeScreen_Components/DataLoadingExplanationText";
 import DataUpdatesText from "../../components/HomeScreen_Components/DataUpdatesText";
 import TwoSides from "../../components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/screens/TwoSides";
+import ShakingScreen from "../../components/HomeScreen_Components/ShakingScreen";
 
 const HomeScreen = () => {
 
@@ -39,6 +40,7 @@ const HomeScreen = () => {
             <DataLoadingExplanationText />
             <DataUpdatesText />
             <TwoSides />
+            <ShakingScreen />
         </div>
     );
 };
