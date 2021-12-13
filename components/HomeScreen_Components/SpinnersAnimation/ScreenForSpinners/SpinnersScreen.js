@@ -19,6 +19,11 @@ const SpinnersScreen = () => {
             <PlayerOfSpinner position={"relative"} height={135} width={135} frontBack={"top-[6rem]"} otherSide={"left-[36rem]"} />
             <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[15rem]"} otherSide={"left-[50rem]"} />
             <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[1rem]"} otherSide={"left-[90rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[28rem]"} otherSide={"left-[3rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[44rem]"} otherSide={"left-[35rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[40rem]"} otherSide={"left-[65rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[50rem]"} otherSide={"left-[87rem]"} />
+            <PlayerOfSpinner position={"relative"} height={90} width={90} frontBack={"top-[30rem]"} otherSide={"left-[98rem]"} />
         </div>
     );
 };
