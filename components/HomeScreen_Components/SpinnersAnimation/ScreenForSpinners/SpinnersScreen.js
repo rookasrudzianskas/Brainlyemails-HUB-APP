@@ -1,16 +1,11 @@
 import React from 'react';
-import { Player } from "@lottiefiles/react-lottie-player";
-import IOS_LOADING from '../../../../Animations/LottieFiles/IOS_LOADING.json';
+import PlayerOfSpinner from "../components/PlayerOfSpinner";
 
 const SpinnersScreen = () => {
     return (
-        <div className="w-screen h-screen bg-red-500">
-            <Player
-                autoplay
-                loop
-                src={IOS_LOADING}
-                style={{height: 400, width: 400}}
-            />
+        <div className="snap-y snap-mandatory w-screen h-screen bg-red-500">
+            <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-28"} otherSide={"right-20"} />
+            <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-24"} otherSide={"left-[94rem]"} />
         </div>
     );
 };
