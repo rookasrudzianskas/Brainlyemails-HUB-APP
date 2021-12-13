@@ -5,7 +5,7 @@ import {CODE} from "../../../../data/CodeCards/code";
 const ScrollViewWithDetails = () => {
 
     useEffect(() =>  {
-        console.log(window)
+        // console.log(window)
     }, []);
 
 
@@ -43,21 +43,8 @@ const ScrollViewWithDetails = () => {
                 </div>
             </div>
 
-           <div className="mb-56">
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
-               <h1>Rokas</h1>
+           <div className="mb-24">
+
 
            </div>
 

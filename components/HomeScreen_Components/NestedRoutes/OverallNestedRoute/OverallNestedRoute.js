@@ -5,6 +5,7 @@ import useScrollPosition from "@react-hook/window-scroll";
 import {useRecoilState} from "recoil";
 import {appScrollPosition} from "../../../../contentManagement/atoms/webAppScrollPosition/webAppScrollPosition";
 import FadeIn from "react-fade-in";
+import InlineBlockPicture from "../InlineBlockPicture";
 
 const OverallNestedRoute = () => {
     const scrollY = useScrollPosition(60 /*fps*/);
@@ -14,9 +15,9 @@ const OverallNestedRoute = () => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
-        if(scrollY > 2307) {
+        if(scrollY > 2307 || scrollY < 4310) {
             setShow(true);
-        } else if (scrollY < 2000) {
+        } else if (scrollY < 2000 || scrollY <= 4310) {
             setShow(false);
         }
     }
@@ -30,11 +31,19 @@ const OverallNestedRoute = () => {
         <div>
             <main>
             <ScrollViewWithDetails />
-                {show && (
+                {/*{show || scrollY <= 4310 && (*/}
+                {/*    <FadeIn*/}
+                {/*        duration={1000}*/}
+                {/*    >*/}
+                {/*      <StaticPicture />*/}
+                {/*    </FadeIn>*/}
+                {/*)}*/}
+
+                {scrollY >= 4317 && (
                     <FadeIn
-                        duration={1000}
+                        duration={200}
                     >
-                      <StaticPicture />
+                        <InlineBlockPicture />
                     </FadeIn>
                 )}
             </main>

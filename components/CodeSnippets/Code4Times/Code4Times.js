@@ -3,7 +3,7 @@ import {CODE} from "../../../data/CodeCards/code";
 
 const Code4Times = () => {
     // console.log(codes)
-    console.log(CODE[0].text);
+    // console.log(CODE[0].text);
     const firstText = CODE[0].text;
     const secondText = CODE[1].text;
     const thirdText = CODE[2].text;
