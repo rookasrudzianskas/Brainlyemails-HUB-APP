@@ -10,6 +10,7 @@ import BrainlyemailsNestedRoutes from "../../components/HomeScreen_Components/Br
 import NotesAboutIt from "../../components/HomeScreen_Components/WhyBrainlyemailsIsLegit/NotesAboutIt";
 import WithBrainlyemailsAndWithout
     from "../../components/HomeScreen_Components/WithBrainlyemailsAndWithout/WithBrainlyemailsAndWithout";
+import SpinnersScreen from "../../components/HomeScreen_Components/SpinnersAnimation/ScreenForSpinners";
 
 const HomeScreen = () => {
 
@@ -27,6 +28,7 @@ const HomeScreen = () => {
             <BrainlyemailsNestedRoutes />
             <NotesAboutIt />
             <WithBrainlyemailsAndWithout />
+            <SpinnersScreen />
         </div>
     );
 };
