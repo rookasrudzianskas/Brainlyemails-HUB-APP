@@ -13,6 +13,7 @@ import WithBrainlyemailsAndWithout
 import SpinnersScreen from "../../components/HomeScreen_Components/SpinnersAnimation/ScreenForSpinners";
 import OverallNestedRoute2 from "../../components/HomeScreen_Components/NestedRoutes#2/OverallNestedRoute";
 import EmailAsFastAsInstant from "../../components/HomeScreen_Components/EmailAsFastAsInstant";
+import DataLoadingExplanationText from "../../components/HomeScreen_Components/DataLoadingExplanationText";
 
 const HomeScreen = () => {
 
@@ -33,6 +34,7 @@ const HomeScreen = () => {
             <SpinnersScreen />
             <EmailAsFastAsInstant />
             <OverallNestedRoute2 />
+            <DataLoadingExplanationText />
         </div>
     );
 };

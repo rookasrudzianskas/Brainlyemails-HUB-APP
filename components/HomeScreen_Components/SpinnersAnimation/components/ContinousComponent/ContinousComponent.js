@@ -4,12 +4,12 @@ import PlayerOfSpinner from "../PlayerOfSpinner";
 
 const ContinousComponent = () => {
     return (
-        <div>
+        <div className="  overflow-hidden">
             <FadeIn>
                 <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-28"} otherSide={"right-20"} />
             </FadeIn>
             <FadeIn>
-                <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-24"} otherSide={"left-[94rem]"} />
+                <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-24"} otherSide={"left-[92rem]"} />
             </FadeIn>
             <FadeIn>
                 <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"-top-[3rem]"} otherSide={"left-[12rem]"} />
@@ -21,7 +21,7 @@ const ContinousComponent = () => {
                 <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-[48rem]"} otherSide={"left-[70rem]"} />
             </FadeIn>
             <FadeIn>
-                <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-[45rem]"} otherSide={"left-[95rem]"} />
+                <PlayerOfSpinner position={"relative"} height={200} width={200} frontBack={"top-[45rem]"} otherSide={"left-[92rem]"} />
             </FadeIn>
             <FadeIn>
                 <PlayerOfSpinner position={"relative"} height={135} width={135} frontBack={"top-[37rem]"} otherSide={"left-32"} />
