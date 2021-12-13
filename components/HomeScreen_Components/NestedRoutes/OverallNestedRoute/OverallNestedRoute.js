@@ -15,9 +15,9 @@ const OverallNestedRoute = () => {
     const [show, setShow] = useState(false);
 
     const handleShow = () => {
-        if(scrollY > 2307 || scrollY < 4310) {
+        if(scrollY > 2307) {
             setShow(true);
-        } else if (scrollY < 2000 || scrollY <= 4310) {
+        } else if (scrollY < 2000) {
             setShow(false);
         }
     }
@@ -52,3 +52,5 @@ const OverallNestedRoute = () => {
 };
 
 export default OverallNestedRoute;
+
+// 4310
