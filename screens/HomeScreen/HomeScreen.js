@@ -67,7 +67,8 @@ const HomeScreen = () => {
             {show && (
                 <ShakingScreen />
             )}
-            <NotesEmpty />
+            <NotesEmpty color={'bg-black'} />
+            <NotesEmpty color={'bg-blue-500'} />
             <ErrorScreen />
             {/*<ShakingScreen />*/}
         </div>

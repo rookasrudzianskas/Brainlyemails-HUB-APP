@@ -2,9 +2,9 @@ import React from 'react';
 import FadeIn from "react-fade-in";
 import Code4Times from "../../../CodeSnippets/Code4Times";
 
-const NotesEmpty = () => {
+const NotesEmpty = ({color}) => {
     return (
-        <div className="bg-blue-500">
+        <div className={color}>
             <div className="flex justify-center flex-col items-center max-h-xl overflow-y-scroll">
                 <FadeIn>
                     <div className=" max-w-4xl p-10 pl-16 mt-32">
