@@ -21,11 +21,25 @@ import FirstScreen from "../../components/HomeScreen_Components/TwoScrollableScr
 import SecondScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen";
 import useScrollPosition from "@react-hook/window-scroll";
 import NotesEmpty from "../../components/HomeScreen_Components/WhyBrainlyemailsIsLegit/NotesEmpty";
+import ErrorScreen from "../../components/HomeScreen_Components/ErrorScreen/ErrorScreenComponent";
 
 const HomeScreen = () => {
 
     const scrollY = useScrollPosition(60 /*fps*/)
     console.log(scrollY)
+    const [show, setShow] = useState(false);
+
+    useEffect(() =>  {
+        const handleShow = () => {
+            if(scrollY >= 10350 && scrollY <= 10850) {
+                setShow(true);
+            } else (
+                setShow(false)
+            )
+        }
+
+        handleShow();
+    }, [scrollY]);
 
 
 
@@ -50,10 +64,11 @@ const HomeScreen = () => {
             <DataUpdatesText />
             <TwoSides />
             {/*<NotesEmpty />*/}
-            {scrollY >= 10350 && (
+            {show && (
                 <ShakingScreen />
             )}
             <NotesEmpty />
+            <ErrorScreen />
             {/*<ShakingScreen />*/}
         </div>
     );
