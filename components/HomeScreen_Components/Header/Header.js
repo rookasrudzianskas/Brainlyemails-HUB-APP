@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className="flex flex-row items-center">
+        <div className="flex flex-row items-center px-10">
             <div className="flex flex-1">
                 <img src="https://www.brainlyemails.com/images/img_14.png"  className="object-contain h-36 w-56" alt=""/>
             </div>
@@ -17,3 +17,4 @@ const Header = () => {
 };
 
 export default Header;
+
