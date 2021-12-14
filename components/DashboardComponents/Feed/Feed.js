@@ -3,8 +3,9 @@ import Header from "../Header";
 
 const Feed = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-3xl xl:grid-cols-3 xl:max-w-6xl mx-auto">
+        <div className="grid grid-cols-1  md:max-w-3xl  xl:max-w-6xl mx-auto">
             <Header />
+            <div className="border-b border-[0.1px] border-gray-900" />
         </div>
     );
 };
