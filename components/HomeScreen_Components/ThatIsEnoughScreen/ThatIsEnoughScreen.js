@@ -8,7 +8,9 @@ const ThatIsEnoughScreen = () => {
                    <div className="flex flex-col">
                        <div>
                            <div className="max-w-6xl cursor-pointer">
-                               <h1 className="text-8xl font-bold text-white">That's probably enough for now. What are you waiting for?</h1>
+                               <h1 className="text-8xl font-bold text-white">That's probably enough for now. <span className=" text-transparent bg-clip-text bg-gradient-to-br from-green-300 to-green-400 cursor-pointer ">
+                                    What are you waiting for?
+                               </span></h1>
                            </div>
 
                        </div>
