@@ -1,4 +1,7 @@
 import React from 'react';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const ThatIsEnoughScreen = () => {
     return (
@@ -17,11 +20,19 @@ const ThatIsEnoughScreen = () => {
 
 
                 <div className="flex flex-row bg-black items-center  px-10">
-                        <div className="flex flex-1">
+                        <div className="flex flex-1 hover:cursor-pointer">
                             <img src="https://www.brainlyemails.com/images/img_14.png"  className="object-contain h-32 w-44" alt=""/>
                         </div>
-                        <div>
-                            <h1>Icons</h1>
+                        <div className="flex flex-row space-x-[1.2rem]">
+                            <div className="bg-white inline-block h-10 w-10 rounded-full ring-2 ring-white flex items-center justify-center hover:cursor-pointer">
+                                    <GitHubIcon className="text-black" />
+                            </div>
+                            <div className="bg-white inline-block h-10 w-10 rounded-full ring-2 ring-white flex items-center justify-center hover:cursor-pointer">
+                                <TwitterIcon className="text-black" />
+                            </div>
+                            <div className="bg-white inline-block h-10 w-10 rounded-full ring-2 ring-white flex items-center justify-center hover:cursor-pointer">
+                                <YouTubeIcon className="text-black" />
+                            </div>
                         </div>
                 </div>
 
