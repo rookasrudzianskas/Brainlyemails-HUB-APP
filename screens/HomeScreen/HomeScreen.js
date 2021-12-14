@@ -18,6 +18,7 @@ import DataUpdatesText from "../../components/HomeScreen_Components/DataUpdatesT
 import TwoSides from "../../components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/screens/TwoSides";
 import ShakingScreen from "../../components/HomeScreen_Components/ShakingScreen";
 import FirstScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/FirstScreen";
+import SecondScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen";
 
 const HomeScreen = () => {
 
@@ -38,7 +39,8 @@ const HomeScreen = () => {
             <WithBrainlyemailsAndWithout />
             <SpinnersScreen />
             <EmailAsFastAsInstant />
-            <OverallNestedRoute2 />
+            <SecondScreen />
+            {/*<OverallNestedRoute2 />*/}
             <DataLoadingExplanationText />
             <DataUpdatesText />
             <TwoSides />

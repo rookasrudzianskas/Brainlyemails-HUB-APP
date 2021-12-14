@@ -1,0 +1,14 @@
+import React from 'react';
+import Bottom from "./components/Bottom";
+import Top from "./components/Top";
+
+const SecondScreen = () => {
+    return (
+        <div className="w-screen h-screen bg-red-500 flex flex-col">
+            <Top />
+            <Bottom />
+        </div>
+    );
+};
+
+export default SecondScreen;

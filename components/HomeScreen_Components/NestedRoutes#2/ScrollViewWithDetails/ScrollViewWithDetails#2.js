@@ -11,7 +11,7 @@ const ScrollViewWithDetails2 = () => {
 
 
     return (
-        <div className="flex justify-center flex-col items-center max-h-xl overflow-y-scroll">
+        <div className="flex justify-center flex-col items-center max-h-xl overflow-y-scroll space-y-[10rem]">
             <FadeIn>
                 <div className=" max-w-4xl p-10 pl-16">
                     <span className="text-7xl font-bold">
