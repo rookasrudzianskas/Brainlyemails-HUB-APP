@@ -17,6 +17,7 @@ import DataLoadingExplanationText from "../../components/HomeScreen_Components/D
 import DataUpdatesText from "../../components/HomeScreen_Components/DataUpdatesText";
 import TwoSides from "../../components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/screens/TwoSides";
 import ShakingScreen from "../../components/HomeScreen_Components/ShakingScreen";
+import FirstScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/FirstScreen";
 
 const HomeScreen = () => {
 
@@ -30,7 +31,8 @@ const HomeScreen = () => {
             <HorizontalScrollableList />
             <LoadingExplanationText />
             <BrainlyemailsCheatCode />
-            <OverallNestedRoute />
+            <FirstScreen />
+            {/*<OverallNestedRoute />*/}
             <BrainlyemailsNestedRoutes />
             <NotesAboutIt />
             <WithBrainlyemailsAndWithout />
