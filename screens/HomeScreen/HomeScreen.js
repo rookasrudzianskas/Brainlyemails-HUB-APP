@@ -19,8 +19,12 @@ import TwoSides from "../../components/HomeScreen_Components/TwoScreenSidesScrol
 import ShakingScreen from "../../components/HomeScreen_Components/ShakingScreen";
 import FirstScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/FirstScreen";
 import SecondScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen";
+import useScrollPosition from "@react-hook/window-scroll";
 
 const HomeScreen = () => {
+
+    const scrollY = useScrollPosition(60 /*fps*/)
+    console.log(scrollY)
 
 
 
@@ -44,7 +48,11 @@ const HomeScreen = () => {
             <DataLoadingExplanationText />
             <DataUpdatesText />
             <TwoSides />
-            <ShakingScreen />
+            {/*<NotesAboutIt />*/}
+            {scrollY >= 10000 && (
+                <ShakingScreen />
+            )}
+            {/*<ShakingScreen />*/}
         </div>
     );
 };
