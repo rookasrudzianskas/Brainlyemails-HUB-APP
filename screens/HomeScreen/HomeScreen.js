@@ -22,6 +22,8 @@ import SecondScreen from "../../components/HomeScreen_Components/TwoScrollableSc
 import useScrollPosition from "@react-hook/window-scroll";
 import NotesEmpty from "../../components/HomeScreen_Components/WhyBrainlyemailsIsLegit/NotesEmpty";
 import ErrorScreen from "../../components/HomeScreen_Components/ErrorScreen/ErrorScreenComponent";
+import ThirdScreen
+    from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen";
 
 const HomeScreen = () => {
 
@@ -59,7 +61,7 @@ const HomeScreen = () => {
             <SpinnersScreen />
             <EmailAsFastAsInstant />
             <SecondScreen />
-            {/*<OverallNestedRoute2 />*/}
+            {/*<OverallNestedRoute3 />*/}
             <DataLoadingExplanationText />
             <DataUpdatesText />
             <TwoSides />
@@ -70,6 +72,8 @@ const HomeScreen = () => {
             <NotesEmpty color={'bg-blue-500'} />
             <NotesEmpty color={'bg-blue-500'} />
             <ErrorScreen />
+            <NotesEmpty color={'bg-black'} />
+            <ThirdScreen />
             {/*<ShakingScreen />*/}
         </div>
     );
