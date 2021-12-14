@@ -20,7 +20,9 @@ const ThatIsEnoughScreen = () => {
                                    </span></h1>
                         </div>
 
-                        <div className="bg-blue-500 max-w-[8rem] py-4 flex items-center justify-center font-bold rounded-sm mt-10 hover:bg-blue-400 transition duration-150 ease-in-out cursor-pointer" onClick={session ? router.push('/dashboard') : router.push('/auth/signin')}>Go Play!</div>
+                        <div className="bg-blue-500 max-w-[8rem] py-4 flex items-center justify-center font-bold rounded-sm mt-10 hover:bg-blue-400 transition duration-150 ease-in-out cursor-pointer"
+                             // onClick={session ? router.push('/dashboard') : router.push('/auth/signin')}
+                        >Go Play!</div>
                     </div>
                 </div>
 
