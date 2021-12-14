@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DashboardComponents/Feed/Feed.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DashboardComponents/Feed/Feed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DashboardComponents/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/DashboardComponents/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/DashboardScreen/DashboardScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/DashboardScreen/DashboardScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="34680000" />
+      <workItem from="1639336533504" duration="35061000" />
     </task>
     <servers />
   </component>

@@ -7,10 +7,10 @@ const Header = () => {
                 <img src="https://www.brainlyemails.com/images/img_14.png"  className="object-contain h-36 w-56" alt=""/>
             </div>
             <div className="flex mx-3">
-                <span className="text-gray-300 font-bold text-lg flex hover:text-white cursor-pointer transition duration-150 ease-in-out">Feedback? </span>
+                <span className="text-gray-300 font-bold text-lg flex hover:text-white cursor-pointer transition duration-150 ease-in-out">Docs </span>
             </div>
             <div className="flex">
-                <span className="text-gray-300 font-bold text-lg flex hover:text-white cursor-pointer transition duration-150 ease-in-out">Rokas</span>
+                <span className="text-gray-300 font-bold text-lg flex hover:text-white cursor-pointer transition duration-150 ease-in-out">Github</span>
             </div>
         </div>
     );

@@ -5,7 +5,7 @@ import Feed from "../../components/DashboardComponents/Feed";
 const DashboardScreen = () => {
     return (
         <div className="bg-black h-screen">
-            <Header />
+            {/*<Header />*/}
             <Feed />
         </div>
     );
