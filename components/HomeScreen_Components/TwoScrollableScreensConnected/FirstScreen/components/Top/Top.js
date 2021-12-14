@@ -3,7 +3,7 @@ import ScrollViewWithDetails from "../../../../NestedRoutes/ScrollViewWithDetail
 
 const Top = () => {
     return (
-        <div className="bg-black flex-1 overflow-x-scroll scrollbar-hide x-screen text-white">
+        <div className="bg-black flex-1 overflow-x-scroll scrollbar-hide x-screen text-white ">
             <ScrollViewWithDetails />
         </div>
     );
