@@ -24,6 +24,7 @@ import NotesEmpty from "../../components/HomeScreen_Components/WhyBrainlyemailsI
 import ErrorScreen from "../../components/HomeScreen_Components/ErrorScreen/ErrorScreenComponent";
 import ThirdScreen
     from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen";
+import ThatIsEnoughScreen from "../../components/HomeScreen_Components/ThatIsEnoughScreen";
 
 const HomeScreen = () => {
 
@@ -70,10 +71,11 @@ const HomeScreen = () => {
                 <ShakingScreen />
             )}
             <NotesEmpty color={'bg-blue-500'} />
-            <NotesEmpty color={'bg-blue-500'} />
+            {/*<NotesEmpty color={'bg-blue-500'} />*/}
             <ErrorScreen />
             <NotesEmpty color={'bg-black'} />
             <ThirdScreen />
+            <ThatIsEnoughScreen />
             {/*<ShakingScreen />*/}
         </div>
     );

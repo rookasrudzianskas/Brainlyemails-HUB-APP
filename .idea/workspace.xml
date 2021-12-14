@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/InlineBlockPicture/InlineBlockPicture#3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/InlineBlockPicture/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/OverallNestedRoute/OverallNestedRoute#3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/OverallNestedRoute/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/ScrollViewWithDetails/ScrollViewWithDetails#3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/ScrollViewWithDetails/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/StaticPicture/StaticPicture.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/NestedRoutes#3/StaticPicture/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/components/Bottom/Bottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/components/Bottom/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/components/Top/Top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/components/Top/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/ThatIsEnoughScreen/ThatIsEnoughScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/HomeScreen_Components/ThatIsEnoughScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen/components/Top/Top.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen/components/Top/Top.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/ThirdScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen/ThirdScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/screens/HomeScreen/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/HomeScreen/HomeScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="27845000" />
+      <workItem from="1639336533504" duration="28494000" />
     </task>
     <servers />
   </component>
