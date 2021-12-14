@@ -49,7 +49,7 @@ const HomeScreen = () => {
             <DataUpdatesText />
             <TwoSides />
             {/*<NotesAboutIt />*/}
-            {scrollY >= 10000 && (
+            {scrollY >= 10350 && (
                 <ShakingScreen />
             )}
             <NotesAboutIt />
