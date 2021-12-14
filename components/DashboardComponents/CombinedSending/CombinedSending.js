@@ -1,4 +1,5 @@
 import React from 'react';
+import DashboardMainChart from "../../Charts/DashboardMainChart";
 
 const CombinedSending = () => {
     return (
@@ -14,7 +15,7 @@ const CombinedSending = () => {
                 </div>
             </div>
 
-
+            <DashboardMainChart />
         </div>
     );
 };
