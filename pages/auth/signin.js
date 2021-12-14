@@ -11,7 +11,7 @@ const signIn = ({ providers }) => {
                 <img className="w-80" src="https://links.papareact.com/ocw" alt=""/>
 
                 <p className="font-xs italic">
-                    This is not a REAL app, it is built to show for facebook, of what I am capable of! 🔥 ~Rokas
+                    This is not a REAL app, it is built to show for me, of what I am capable of! 🔥 ~Rokas
                 </p>
 
                 <div className="mt-40">
