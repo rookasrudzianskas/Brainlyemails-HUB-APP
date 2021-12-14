@@ -20,6 +20,7 @@ import ShakingScreen from "../../components/HomeScreen_Components/ShakingScreen"
 import FirstScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/FirstScreen";
 import SecondScreen from "../../components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen";
 import useScrollPosition from "@react-hook/window-scroll";
+import NotesEmpty from "../../components/HomeScreen_Components/WhyBrainlyemailsIsLegit/NotesEmpty";
 
 const HomeScreen = () => {
 
@@ -48,11 +49,11 @@ const HomeScreen = () => {
             <DataLoadingExplanationText />
             <DataUpdatesText />
             <TwoSides />
-            {/*<NotesAboutIt />*/}
+            {/*<NotesEmpty />*/}
             {scrollY >= 10350 && (
                 <ShakingScreen />
             )}
-            <NotesAboutIt />
+            <NotesEmpty />
             {/*<ShakingScreen />*/}
         </div>
     );
