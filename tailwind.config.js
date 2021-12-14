@@ -6,21 +6,29 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        vote: 'vote 1s ease-in-out',
+        vote: 'vote 0.2s ease-in-out',
       },
       keyframes: {
         vote: {
           '0%': {
-            transform: 'scale(0)',
+            transform: 'rotate(1deg) scale(0.9)',
+            // transform: 'scale(0)',
           },
           '25%': {
-            transform: 'scale(1.05)',
+            transform: 'rotate(0deg) scale(1)',
+            // transform: 'scale(1)',
+          },
+          '50%': {
+            transform: 'rotate(-1deg) scale(0.9)',
+            // transform: 'scale(1)',
           },
           '75%': {
-            transform: 'scale-(0)',
+            transform: 'rotate(0deg) scale(1)',
+            // transform: 'scale-(1.5)',
           },
           '100%': {
-            transform: 'scale(0.5)',
+            transform: 'rotate(1deg) scale(0.9)',
+            // transform: 'scale(0.5)',
           },
         },
       },
