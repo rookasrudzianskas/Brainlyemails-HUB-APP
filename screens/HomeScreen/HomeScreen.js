@@ -52,6 +52,7 @@ const HomeScreen = () => {
             {scrollY >= 10000 && (
                 <ShakingScreen />
             )}
+            <NotesAboutIt />
             {/*<ShakingScreen />*/}
         </div>
     );
