@@ -4,7 +4,7 @@ import Top from "./components/Top";
 
 const FirstScreen = () => {
     return (
-        <div className="w-screen h-screen bg-red-500 flex flex-row">
+        <div className="w-screen h-screen bg-red-500 flex flex-col">
             <Top />
             <Bottom />
         </div>
