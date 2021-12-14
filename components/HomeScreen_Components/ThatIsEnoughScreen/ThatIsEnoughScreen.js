@@ -2,8 +2,14 @@ import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import {useSession} from "next-auth/react";
+import {useRouter} from "next/router";
 
 const ThatIsEnoughScreen = () => {
+
+    const {data: session} = useSession();
+    const router = useRouter();
+
     return (
         <div className="h-screen w-screen bg-black flex flex-col">
                 <div className="flex flex-col flex-1  items-center justify-center">
@@ -14,7 +20,7 @@ const ThatIsEnoughScreen = () => {
                                    </span></h1>
                         </div>
 
-                        <div className="bg-blue-500 max-w-[8rem] py-4 flex items-center justify-center font-bold rounded-sm mt-10 hover:bg-blue-400 transition duration-150 ease-in-out cursor-pointer">Go Play!</div>
+                        <div className="bg-blue-500 max-w-[8rem] py-4 flex items-center justify-center font-bold rounded-sm mt-10 hover:bg-blue-400 transition duration-150 ease-in-out cursor-pointer" onClick={session ? router.push('/dashboard') : router.push('/auth/signin')}>Go Play!</div>
                     </div>
                 </div>
 
