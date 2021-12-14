@@ -6,13 +6,14 @@ import {
   useRecoilState,
   useRecoilValue,
 } from 'recoil';
+import {SessionProvider} from "next-auth/react";
 
-function MyApp({ Component, pageProps }) {
+export default function App({Component, pageProps: { session, ...pageProps },}) {
   return (
-    <RecoilRoot>
-      <Component {...pageProps} />
-    </RecoilRoot>
+      <SessionProvider session={session}>
+        <RecoilRoot>
+          <Component {...pageProps} />
+        </RecoilRoot>
+      </SessionProvider>
   )
 }
-
-export default MyApp
