@@ -5,21 +5,25 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        vote: 'vote 1s ease-in-out',
+      },
       keyframes: {
-        'fade-in-down': {
+        vote: {
           '0%': {
-            opacity: '0',
-            transform: 'translateY(-10px)'
+            transform: 'scale(0)',
+          },
+          '25%': {
+            transform: 'scale(1.05)',
+          },
+          '75%': {
+            transform: 'scale-(0)',
           },
           '100%': {
-            opacity: '1',
-            transform: 'translateY(0)'
+            transform: 'scale(0.5)',
           },
-        }
+        },
       },
-      animation: {
-        'fade-in-down': 'fade-in-down 0.5s ease-out'
-      }
     },
   },
   plugins: [
