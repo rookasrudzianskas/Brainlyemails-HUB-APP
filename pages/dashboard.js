@@ -1,9 +1,10 @@
 import React from 'react';
+import DashboardScreen from "../screens/DashboardScreen/DashboardScreen";
 
 const Dashboard = () => {
     return (
-        <div className="bg-black w-screen h-screen flex items-center justify-center">
-            <p className="text-7xl font-bold text-white">Welcome in! 🚀</p>
+        <div className="">
+            <DashboardScreen />
         </div>
     );
 };
