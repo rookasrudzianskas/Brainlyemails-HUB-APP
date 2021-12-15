@@ -228,7 +228,9 @@ const FirstSide = () => {
                 </div>
             </div>
 
-            <div className="border-b border-1 border-gray-100 mt-3"/>
+            <div className="border-b border-1 border-gray-100 mt-3 mb-3"/>
+
+
 
         </div>
     );
