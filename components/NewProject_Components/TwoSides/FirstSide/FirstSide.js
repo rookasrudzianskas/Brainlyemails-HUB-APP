@@ -25,6 +25,12 @@ const FirstSide = () => {
                 <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
                 <p className="text-gray-800 text-sm" >Upload image</p>
             </div>
+
+            <div className="border-b border-1 border-gray-100 mt-6"/>
+
+            <div className="mt-5">
+                <h1 className="text-sm font-bold text-indigo-500">Body background color</h1>
+            </div>
         </div>
     );
 };
