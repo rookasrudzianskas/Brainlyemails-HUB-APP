@@ -4,6 +4,8 @@ import { HexColorPicker } from "react-colorful";
 import CloseIcon from '@mui/icons-material/Close';
 import DoneIcon from '@mui/icons-material/Done';
 import ShowAllColors from "./components/ShowAllColors";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import {Switch} from "@mui/material";
 
 const FirstSide = () => {
     const inputFile = useRef(null);
@@ -197,6 +199,36 @@ const FirstSide = () => {
                     </div>
                 </div>
             )}
+
+            <div className="border-b border-1 border-gray-100 mt-6 mb-3"/>
+
+            <div className="flex flex-row items-center">
+                <div className="flex flex-row items-center flex-1">
+                    <p className="text-sm text-indigo-500 font-bold hover:cursor-pointer">Enable dark mode</p>
+                    <QuestionMarkIcon className="ml-2 text-xs bg-gray-100 text-gray-500 rounded-full hover:cursor-pointer" />
+                </div>
+
+                <div className="flex">
+                    <Switch
+                        className="ml-2"
+                        // checked={darkMode}
+                        // onChange={handleDarkMode}
+                        onColor="#86d3ff"
+                        onHandleColor="#2693e6"
+                        handleDiameter={20}
+                        uncheckedIcon={false}
+                        checkedIcon={false}
+                        boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                        activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                        height={15}
+                        width={35}
+                        // className="react-switch"
+                        id="material-switch"
+                    />
+                </div>
+            </div>
+
+            <div className="border-b border-1 border-gray-100 mt-3"/>
 
         </div>
     );
