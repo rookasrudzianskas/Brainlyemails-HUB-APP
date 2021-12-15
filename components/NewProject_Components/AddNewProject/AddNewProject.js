@@ -83,4 +83,4 @@ export const ManageNewCreatedProjectToTemplate = () => {
             </div>
         </div>
     )
-}
+};
