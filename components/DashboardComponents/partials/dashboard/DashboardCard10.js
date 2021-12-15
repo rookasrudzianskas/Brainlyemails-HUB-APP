@@ -87,7 +87,7 @@ function DashboardCard10() {
                                         <td className="p-2 whitespace-nowrap">
                                             <div className="flex items-center">
                                                 <div className="w-10 h-10 shrink-0 mr-2 sm:mr-3">
-                                                    <img className="rounded-full" src={customer.image} width="40" height="40" alt={customer.name} />
+                                                    <img className="rounded-full" src={'https://pbs.twimg.com/profile_images/1350895249678348292/RS1Aa0iK_400x400.jpg'} width="40" height="40" alt={customer.name} />
                                                 </div>
                                                 <div className="font-medium text-gray-800">{customer.name}</div>
                                             </div>
