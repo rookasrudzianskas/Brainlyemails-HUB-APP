@@ -6,6 +6,7 @@ import { HexColorPicker } from "react-colorful";
 const FirstSide = () => {
     const inputFile = useRef(null);
     const [color, setColor] = useState("#aabbcc");
+    const [show, setShow] = useState(false);
 
 
     const onButtonClick = () => {
@@ -14,7 +15,11 @@ const FirstSide = () => {
     };
 
     const onColorButtonClickFirst = () => {
-
+        if(show === false) {
+            setShow(true);
+        } else {
+            setShow(false);
+        }
     };
 
     return (
@@ -46,7 +51,13 @@ const FirstSide = () => {
                 </div>
                 <p className="text-gray-800 text-sm" >{color}</p>
 
-                {/*<HexColorPicker color={color} onChange={setColor} />*/}
+                {show ? (
+                    <HexColorPicker color={color} onChange={setColor} />
+                ) : (
+                    <div>
+
+                    </div>
+                )}
 
             </div>
         </div>
