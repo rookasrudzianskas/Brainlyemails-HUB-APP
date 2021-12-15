@@ -5,7 +5,8 @@ import { HexColorPicker } from "react-colorful";
 
 const FirstSide = () => {
     const inputFile = useRef(null);
-    const [color, setColor] = useState("#aabbcc");
+    const [color, setColor] = useState("#b70514");
+    // const [color, setColor] = useState("#aabbcc");
     const [show, setShow] = useState(false);
     console.log(`bg-[${color}]`)
 
@@ -60,9 +61,13 @@ const FirstSide = () => {
                                     className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="username" type="text" placeholder={color} value={color} />
                             </div>
-                                <div className="mx-3">
-                                    <HexColorPicker className="w-[10rem] h-10" color={color} onChange={setColor} />
+                                <div className="ml-[60px]">
+                                    <HexColorPicker className="w-[10rem] h-[10rem]" color={color} onChange={setColor} />
                                 </div>
+
+                            <div className="text-right" onClick={onColorButtonClickFirst}>
+                                <p className="text-sm font-bold text-indigo-500  mt-3 hover:underline transition duration-150 ease-in-out">I am happy with my color 🚀</p>
+                            </div>
 
                         </div>
 
