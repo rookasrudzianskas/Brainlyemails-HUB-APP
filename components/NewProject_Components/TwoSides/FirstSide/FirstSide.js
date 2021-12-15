@@ -189,6 +189,12 @@ const FirstSide = () => {
             {showAllColors && (
                 <div>
                     <ShowAllColors />
+
+                    <div className={`${showAllColors ? 'mt-5' : ''}`} onClick={handleShow}>
+                        {showAllColors && (
+                            <p className="text-sm text-gray-400 hover:text-gray-300 cursor-pointer transition duration-150 ease-in-out">Hide all colors</p>
+                        )}
+                    </div>
                 </div>
             )}
 
