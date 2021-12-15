@@ -1,0 +1,2 @@
+import ManageNewCreatedProjectToTemplate from './ManageNewCreatedProjectToATemplate';
+export default ManageNewCreatedProjectToTemplate;
