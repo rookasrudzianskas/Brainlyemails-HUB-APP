@@ -3,6 +3,7 @@ import UploadIcon from '@mui/icons-material/Upload';
 import { HexColorPicker } from "react-colorful";
 import CloseIcon from '@mui/icons-material/Close';
 import DoneIcon from '@mui/icons-material/Done';
+import ShowAllColors from "./components/ShowAllColors";
 
 const FirstSide = () => {
     const inputFile = useRef(null);
@@ -10,6 +11,7 @@ const FirstSide = () => {
     const [show2, setShow2] = useState(false);
     const [color, setColor] = useState("#b70514");
     const [color2, setColor2] = useState("#b70514");
+    const [showAllColors, setShowAllColors] = useState(false);
     // const [color, setColor] = useState("#aabbcc");
 
     let [bgColor, setBgColor] = useState("#b70514");
@@ -51,6 +53,14 @@ const FirstSide = () => {
             setShow2(false);
         }
     };
+
+    const handleShow = () => {
+        if(showAllColors === false) {
+            setShowAllColors(true);
+        } else {
+            setShowAllColors(false);
+        }
+    }
 
     return (
         <div className="bg-transparent flex flex-1 flex-col mx-10 max-h-[35rem] overflow-y-scroll scrollbar-hide" >
@@ -169,6 +179,19 @@ const FirstSide = () => {
                     </div>
                 )}
             </div>
+
+            <div className={`${!showAllColors ? 'mt-5' : ''}`} onClick={handleShow}>
+                {!showAllColors && (
+                    <p className="text-sm text-gray-400 hover:text-gray-300 cursor-pointer transition duration-150 ease-in-out">Show all colors</p>
+                )}
+            </div>
+
+            {showAllColors && (
+                <div>
+                    <ShowAllColors />
+                </div>
+            )}
+
         </div>
     );
 };
