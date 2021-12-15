@@ -5,7 +5,7 @@ import YouHaveNoProjects from "../../components/WelcomeScreen_Components/YouHave
 
 const WelcomeScreen = () => {
     return (
-        <div className="bg-red-300 h-screen">
+        <div className="bg-red-300 h-screen scrollbar-hide">
             <Header />
 
             {/*<MyProjects />*/}
