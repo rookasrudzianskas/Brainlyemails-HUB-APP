@@ -1,4 +1,5 @@
 import React from 'react';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const AddNewProject = () => {
     return (
@@ -14,9 +15,21 @@ const AddNewProject = () => {
                                     <h2 className="text-gray-800 max-w-xl text-lg">Projects help you stay organized — each project has its API key, sending history, settings, and more. Brainlyemails
                                         personalizes pre-made email templates with the project name you choose.</h2>
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col mb-10">
                                     <span className="text-lg text-blue-900 font-semibold mb-3">Project name</span>
-                                    <input type="text" className="focus:outline-0"/>
+                                    <input
+                                        className="appearance-none block mb-12 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                        id="grid-last-name" type="text" placeholder="My super secret project"/>
+                                </div>
+
+                                <div className="flex flex-row">
+                                    <div className="flex flex-1">
+                                        <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">cancel</p>
+                                    </div>
+                                    <div className="flex flex-row items-center bg-indigo-500 py-2 px-3 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                                        <p className="text-gray-100">Create project </p>
+                                        <ArrowForwardIcon className="text-gray-100 text-md" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
