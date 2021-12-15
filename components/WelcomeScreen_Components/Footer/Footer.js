@@ -21,16 +21,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">BRAINLYEMAILS</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Dashboard</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Dashboard</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Components</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Components</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Commerces</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Commerces</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Sponsors</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Sponsors</a>
                             </li>
                         </nav>
                     </div>
@@ -38,16 +38,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">DOCUMENTATIONS</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Brainlyemails Docs</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Brainlyemails Docs</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Brainlyemails WebPack Docs</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Brainlyemails WebPack Docs</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Suggestions</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Suggestions</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Community</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Community</a>
                             </li>
                         </nav>
                     </div>
@@ -55,16 +55,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SOCIAL</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">GitHub</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">GitHub</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">FaceBook</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">FaceBook</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Instagram</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Instagram</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Chat Now!</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Chat Now!</a>
                             </li>
                         </nav>
                     </div>
@@ -72,16 +72,16 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">WANNA JOIN?</h2>
                         <nav className="list-none mb-10">
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Careers</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Careers</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Workations</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Workations</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">About</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">About</a>
                             </li>
                             <li>
-                                <a className="text-gray-600 hover:text-gray-800">Contact Details</a>
+                                <a className="text-gray-600 hover:text-gray-800 cursor-pointer">Contact Details</a>
                             </li>
                         </nav>
                     </div>
