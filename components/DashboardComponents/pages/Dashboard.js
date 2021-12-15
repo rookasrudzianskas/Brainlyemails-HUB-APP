@@ -19,7 +19,7 @@ import DashboardCard11 from "../partials/dashboard/DashboardCard11";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import DashboardCard13 from "../partials/dashboard/DashboardCard13";
 import Banner from "../partials/Banner";
-import Header from "../Header";
+import Header from "../partials/Header";
 
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);

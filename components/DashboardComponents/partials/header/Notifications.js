@@ -60,38 +60,45 @@ function Notifications() {
                     ref={dropdown}
                     onFocus={() => setDropdownOpen(true)}
                     onBlur={() => setDropdownOpen(false)}
+                    className="m-4"
                 >
-                    <div className="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-4">Notifications</div>
+                    <div className="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-20">Notifications</div>
                     <ul>
                         <li className="border-b border-gray-200 last:border-0">
-                            <Link
-                                className="block py-2 px-4 hover:bg-gray-50"
-                                to="#0"
-                                onClick={() => setDropdownOpen(!dropdownOpen)}
-                            >
-                                <span className="block text-sm mb-2">📣 <span className="font-medium text-gray-800">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                            {/*<Link*/}
+                            {/*    className=""*/}
+                            {/*    to="#0"*/}
+                            {/*    onClick={() => setDropdownOpen(!dropdownOpen)}*/}
+                            {/*>*/}
+                            <div className="block py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                                <span className="block text-sm mb-2">📣 <span className="font-medium text-gray-800">Edit your information in a swipe</span> </span>
                                 <span className="block text-xs font-medium text-gray-400">Feb 12, 2021</span>
-                            </Link>
+                            </div>
+                            {/*</Link>*/}
                         </li>
                         <li className="border-b border-gray-200 last:border-0">
-                            <Link
-                                className="block py-2 px-4 hover:bg-gray-50"
-                                to="#0"
-                                onClick={() => setDropdownOpen(!dropdownOpen)}
-                            >
-                                <span className="block text-sm mb-2">📣 <span className="font-medium text-gray-800">Edit your information in a swipe</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                            {/*<Link*/}
+                            {/*    className="block py-2 px-4 hover:bg-gray-50"*/}
+                            {/*    to="#0"*/}
+                            {/*    onClick={() => setDropdownOpen(!dropdownOpen)}*/}
+                            {/*>*/}
+                            <div className="block py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                                <span className="block text-sm mb-2">📣 <span className="font-medium text-gray-800">Edit your information in a swipe</span> </span>
                                 <span className="block text-xs font-medium text-gray-400">Feb 9, 2021</span>
-                            </Link>
+                            </div>
+                            {/*</Link>*/}
                         </li>
                         <li className="border-b border-gray-200 last:border-0">
-                            <Link
-                                className="block py-2 px-4 hover:bg-gray-50"
-                                to="#0"
-                                onClick={() => setDropdownOpen(!dropdownOpen)}
-                            >
-                                <span className="block text-sm mb-2">🚀<span className="font-medium text-gray-800">Say goodbye to paper receipts!</span> Sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</span>
+                            {/*<Link*/}
+                            {/*    className="block py-2 px-4 hover:bg-gray-50"*/}
+                            {/*    to="#0"*/}
+                            {/*    onClick={() => setDropdownOpen(!dropdownOpen)}*/}
+                            {/*>*/}
+                            <div className="block py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                                <span className="block text-sm mb-2">🚀<span className="font-medium text-gray-800">Say goodbye to paper receipts!</span></span>
                                 <span className="block text-xs font-medium text-gray-400">Jan 24, 2020</span>
-                            </Link>
+                            </div>
+                            {/*</Link>*/}
                         </li>
                     </ul>
                 </div>
