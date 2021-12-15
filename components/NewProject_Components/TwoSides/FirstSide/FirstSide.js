@@ -62,9 +62,9 @@ const FirstSide = () => {
                                     className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="username" type="text" placeholder={color} value={color} />
                             </div>
-                                <div className="ml-[60px] flex flex-row" onClick={onColorButtonClickFirst}>
+                                <div className="ml-[60px] flex flex-row">
                                     <HexColorPicker className="w-[10rem] h-[10rem]" color={color} onChange={setColor} />
-                                    <DoneIcon className="text-gray-400 ml-[35px] bg-white rounded-full hover:text-gray-500 cursor-pointer transition duration-150 ease-in-out" />
+                                    <DoneIcon  onClick={onColorButtonClickFirst} className="text-gray-400 ml-[35px] bg-white rounded-full hover:text-gray-500 cursor-pointer transition duration-150 ease-in-out" />
                                 </div>
 
 
@@ -78,7 +78,7 @@ const FirstSide = () => {
                 ): (
                     <div onClick={onColorButtonClickFirst} className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out`}>
                         <div className="">
-                            <div className="h-7 w-7 bg-red-500 rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100"/>
+                            <div className={`h-7 w-7 bg-[${color}] rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
                         </div>
                         <p className="text-gray-800 text-sm" >{color}</p>
 
