@@ -9,17 +9,17 @@ const FirstSide = () => {
     const [color, setColor] = useState("#b70514");
     // const [color, setColor] = useState("#aabbcc");
     const [show, setShow] = useState(false);
-    console.log(`bg-[${color}]`)
-    const bgColor = null;
+    let [bgColor, setBgColor] = useState("#b70514");
 
     useEffect(() => {
         const BackgroundColor = () => {
-            const bgColor = `bg-[${color}]`;
-            console.log(bgColor);
+            setBgColor = `bg-[${color}]`;
             return bgColor;
         }
         BackgroundColor();
     }, [color]);
+
+    console.log(`bg-[${bgColor}]`);
 
 
     const onButtonClick = () => {
@@ -66,11 +66,11 @@ const FirstSide = () => {
                         <div className="">
                             <div className="mb-4 flex flex-row mt-3">
                                 <div className="">
-                                    <div className={`h-9 w-9 bg-[${bgColor}] rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
+                                    <div className={`h-9 w-9 ${bgColor} rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
                                 </div>
                                 <input
                                     className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="username" type="text" placeholder={color} value={color} />
+                                    id="username" type="text" value={color} />
                             </div>
                                 <div className="ml-[60px] flex flex-row">
                                     <HexColorPicker className="w-[10rem] h-[10rem]" color={color} onChange={setColor} />
