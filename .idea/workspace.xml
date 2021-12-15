@@ -2,8 +2,67 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/BarChart01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/BarChart02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/BarChart03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/ChartjsConfig.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/DoughnutChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/LineChart01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/LineChart02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/RealtimeChart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/additional-styles/flatpickr.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/additional-styles/range-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/additional-styles/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/additional-styles/toggle-switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/additional-styles/utility-patterns.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/css/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/icon-01.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/icon-02.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/icon-03.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-36-09.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/images/user-avatar-32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/pages/Dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/Banner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/EditMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/SidebarLinkGroup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/actions/DateSelect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/actions/Datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/actions/FilterButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardAvatars.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard01.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard02.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard03.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard05.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard06.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard07.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard08.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard09.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard10.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard11.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard13.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/WelcomeBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/header/Help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/header/Notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/header/SearchModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/header/UserMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/utils/Info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/utils/Transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/utils/Utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Charts/DashboardMainChart/DashboardMainChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Charts/DashboardMainChart/DashboardMainChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/DashboardScreen/DashboardScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/DashboardScreen/DashboardScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +98,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.google.cloudcode.ide_session_index" value="20211212_0000" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/HomeScreen_Components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/DashboardComponents" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -47,13 +106,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/DashboardComponents" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/WhyBrainlyemailsIsLegit" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/SecondScreen" />
-      <recent name="$PROJECT_DIR$/components/HomeScreen_Components/ShakingScreen" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/DashboardComponents/pages" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/components/SecondSide" />
     </key>
   </component>
@@ -65,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="39002000" />
+      <workItem from="1639336533504" duration="40909000" />
     </task>
     <servers />
   </component>
