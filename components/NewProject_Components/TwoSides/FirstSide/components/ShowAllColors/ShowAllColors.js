@@ -27,6 +27,7 @@ const ShowAllColors = () => {
     let [bgMutedTextColor, setBgMutedTextColor] = useState("#ffffff");
     let [bgFooterTextColor, setBgFooterTextColor] = useState("#ffffff");
 
+
     const onColorButtonClickFirst = () => {
         if(show === false) {
             setShow(true);
