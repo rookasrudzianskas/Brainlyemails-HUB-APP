@@ -54,7 +54,7 @@ const Dashboard = () => {
                                 {/* Filter button */}
                                 <FilterButton />
                                 {/* Datepicker built with flatpickr */}
-                                <Datepicker />
+                                {/*<Datepicker />*/}
                                 {/* Add view button */}
                                 <button className="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                                     <svg className="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">

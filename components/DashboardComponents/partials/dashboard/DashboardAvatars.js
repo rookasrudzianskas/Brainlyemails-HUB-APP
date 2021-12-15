@@ -4,30 +4,19 @@ import User02 from '../../images/user-36-02.jpg';
 import User03 from '../../images/user-36-03.jpg';
 import User04 from '../../images/user-36-04.jpg';
 import Link from "next/link";
+import {USERS} from "../../../../data/TwitterCards/people";
 
 function DashboardAvatars() {
+
     return (
         <ul className="flex flex-wrap justify-center sm:justify-start mb-8 sm:mb-0 -space-x-3 -ml-px">
-            <li>
-                <div className="block" >
-                    <img className="w-9 h-9 rounded-full" src={User01} width="36" height="36" alt="User 01" />
-                </div>
-            </li>
-            <li>
-                <div className="block" >
-                    <img className="w-9 h-9 rounded-full" src={User02} width="36" height="36" alt="User 02" />
-                </div>
-            </li>
-            <li>
-                <div className="block" >
-                    <img className="w-9 h-9 rounded-full" src={User03} width="36" height="36" alt="User 03" />
-                </div>
-            </li>
-            <li>
-                <div className="block" >
-                    <img className="w-9 h-9 rounded-full" src={User04} width="36" height="36" alt="User 04" />
-                </div>
-            </li>
+            {USERS.map((user, index) => (
+                <li key={index}>
+                    <div className="block">
+                        <img className="w-9 h-9 rounded-full object-cover" src={user.image} width="36" height="36" alt="User 02" />
+                    </div>
+                </li>
+            ))}
             <li>
                 <button className="flex justify-center items-center w-9 h-9 rounded-full bg-white border border-gray-200 hover:border-gray-300 text-indigo-500 shadow-sm transition duration-150 ml-2">
                     <span className="sr-only">Add new user</span>
