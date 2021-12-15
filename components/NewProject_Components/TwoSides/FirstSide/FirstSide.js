@@ -67,6 +67,7 @@ const FirstSide = () => {
                                     <DoneIcon className="text-gray-400 ml-[35px] bg-white rounded-full hover:text-gray-500 cursor-pointer transition duration-150 ease-in-out" />
                                 </div>
 
+
                             {/*<div className="text-right" onClick={onColorButtonClickFirst}>*/}
                             {/*    <p className="text-sm font-bold text-indigo-500  mt-3 hover:underline transition duration-150 ease-in-out">I am happy with my color 🚀</p>*/}
                             {/*</div>*/}
