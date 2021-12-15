@@ -6,6 +6,7 @@ import DoneIcon from '@mui/icons-material/Done';
 import ShowAllColors from "./components/ShowAllColors";
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import {Switch} from "@mui/material";
+import PrimaryFont from "./components/PrimaryFont";
 
 const FirstSide = () => {
     const inputFile = useRef(null);
@@ -231,6 +232,9 @@ const FirstSide = () => {
             <div className="border-b border-1 border-gray-100 mt-3 mb-3"/>
 
 
+            <div>
+                <PrimaryFont />
+            </div>
 
         </div>
     );
