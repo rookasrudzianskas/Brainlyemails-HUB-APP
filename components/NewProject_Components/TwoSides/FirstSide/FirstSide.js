@@ -1,7 +1,8 @@
 import React, {useRef, useState} from 'react';
 import UploadIcon from '@mui/icons-material/Upload';
 import { HexColorPicker } from "react-colorful";
-
+import CloseIcon from '@mui/icons-material/Close';
+import DoneIcon from '@mui/icons-material/Done';
 
 const FirstSide = () => {
     const inputFile = useRef(null);
@@ -51,7 +52,7 @@ const FirstSide = () => {
                 {show ? (
                     <div
                         // onClick={onColorButtonClickFirst}
-                          className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out`}>
+                          className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover: cursor-pointer transition duration-150 ease-in-out`}>
                         <div className="">
                             <div className="mb-4 flex flex-row mt-3">
                                 <div className="">
@@ -61,13 +62,14 @@ const FirstSide = () => {
                                     className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="username" type="text" placeholder={color} value={color} />
                             </div>
-                                <div className="ml-[60px]">
+                                <div className="ml-[60px] flex flex-row" onClick={onColorButtonClickFirst}>
                                     <HexColorPicker className="w-[10rem] h-[10rem]" color={color} onChange={setColor} />
+                                    <DoneIcon className="text-gray-400 ml-[35px] bg-white rounded-full hover:text-gray-500 cursor-pointer transition duration-150 ease-in-out" />
                                 </div>
 
-                            <div className="text-right" onClick={onColorButtonClickFirst}>
-                                <p className="text-sm font-bold text-indigo-500  mt-3 hover:underline transition duration-150 ease-in-out">I am happy with my color 🚀</p>
-                            </div>
+                            {/*<div className="text-right" onClick={onColorButtonClickFirst}>*/}
+                            {/*    <p className="text-sm font-bold text-indigo-500  mt-3 hover:underline transition duration-150 ease-in-out">I am happy with my color 🚀</p>*/}
+                            {/*</div>*/}
 
                         </div>
 
