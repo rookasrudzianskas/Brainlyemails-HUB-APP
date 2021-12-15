@@ -7,6 +7,7 @@ const FirstSide = () => {
     const inputFile = useRef(null);
     const [color, setColor] = useState("#aabbcc");
     const [show, setShow] = useState(false);
+    console.log(`bg-[${color}]`)
 
 
     const onButtonClick = () => {
@@ -23,7 +24,7 @@ const FirstSide = () => {
     };
 
     return (
-        <div className="bg-transparent flex flex-1 flex-col mx-10">
+        <div className="bg-transparent flex flex-1 flex-col mx-10" >
             <div className="mt-5">
                 <h1 className="text-sm font-bold text-indigo-500">Logo</h1>
             </div>
@@ -45,20 +46,43 @@ const FirstSide = () => {
                 <h1 className="text-sm font-bold text-indigo-500">Body background color</h1>
             </div>
 
-            <div onClick={onColorButtonClickFirst} className="flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out">
-                <div className="">
-                    <div className="h-7 w-7 bg-red-500 rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100"/>
-                </div>
-                <p className="text-gray-800 text-sm" >{color}</p>
-
+            <div>
                 {show ? (
-                    <HexColorPicker color={color} onChange={setColor} />
-                ) : (
-                    <div>
+                    <div
+                        // onClick={onColorButtonClickFirst}
+                          className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out`}>
+                        <div className="">
+                            <div className="mb-4 flex flex-row mt-3">
+                                <div className="">
+                                    <div className={`h-9 w-9 bg-[${color}] rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
+                                </div>
+                                <input
+                                    className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="username" type="text" placeholder={color} value={color} />
+                            </div>
+                                <div className="mx-3">
+                                    <HexColorPicker className="w-[10rem] h-10" color={color} onChange={setColor} />
+                                </div>
+
+                        </div>
+
+                    </div>
+                ): (
+                    <div onClick={onColorButtonClickFirst} className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out`}>
+                        <div className="">
+                            <div className="h-7 w-7 bg-red-500 rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100"/>
+                        </div>
+                        <p className="text-gray-800 text-sm" >{color}</p>
+
+                        {/*{show ? (*/}
+                        {/*) : (*/}
+                        {/*    <div>*/}
+
+                        {/*    </div>*/}
+                        {/*)}*/}
 
                     </div>
                 )}
-
             </div>
         </div>
     );
