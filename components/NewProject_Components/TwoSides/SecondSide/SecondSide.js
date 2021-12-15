@@ -2,8 +2,8 @@ import React from 'react';
 
 const SecondSide = () => {
     return (
-        <div className="">
-
+        <div className="bg-blue-500 flex items-center justify-center flex-1">
+            Rokas
         </div>
     );
 };

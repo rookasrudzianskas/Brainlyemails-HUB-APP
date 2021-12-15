@@ -1,4 +1,6 @@
 import React from "react";
+import FirstSide from "../TwoSides/FirstSide";
+import SecondSide from "../TwoSides/SecondSide";
 
 const ManageNewCreatedProjectToTemplate = () => {
     return (
@@ -23,7 +25,8 @@ const ManageNewCreatedProjectToTemplate = () => {
                     <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto ">
                         <div className="inline-block min-w-full shadow rounded-lg overflow-hidden  bg-white flex flex-col space-y-2 p-10">
                             <main className="flex">
-                                Rokas
+                                <FirstSide />
+                                <SecondSide />
                             </main>
                         </div>
                     </div>
