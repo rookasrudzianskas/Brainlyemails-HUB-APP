@@ -8,8 +8,8 @@ const YouHaveNoProjects = () => {
                     <div className="py-8">
                         <div className="flex flex-row items-center  mt-[2rem]">
                             <div className="flex flex-col flex-1">
-                                <h1 className="text-gray-900">Emails</h1>
-                                <h1 className="font-semibold text-3xl text-gray-900">My Emails</h1>
+                                <h1 className="text-gray-900">Campaigns</h1>
+                                <h1 className="font-semibold text-3xl text-gray-900">My Emails Campaigns</h1>
                             </div>
                             <div className="bg-indigo-500 flex max-w-1 max-h-10 flex items-center px-4 py-3 justify-center rounded-sm  hover:bg-indigo-400 cursor-pointer  transition duration-150 ease-in-out">
                                 <p className="text-white font-semibold">+ Add Email</p>
