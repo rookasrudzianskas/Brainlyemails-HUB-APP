@@ -1,4 +1,6 @@
 import React from 'react';
+import FontPicker from "font-picker-react";
+// import FontPicker from "font-picker-react";
 
 const PrimaryFont = () => {
     return (
@@ -17,6 +19,16 @@ const PrimaryFont = () => {
                 <h1 className="text-sm font-bold text-indigo-500">Font (size & line height)</h1>
             </div>
 
+            <div>
+                <FontPicker
+                    apiKey={process.env.GOOGLE_FONTS_API_KEY}
+                    // activeFontFamily={this.state.activeFontFamily}
+                    onChange={(nextFont) =>
+                        console.log(nextFont)
+                    }
+                    className="mt-2 w-[10rem]"
+                />
+            </div>
         </div>
     );
 };

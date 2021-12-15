@@ -1058,7 +1058,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.13", "@babel/runtime@^7.12.5", "@babel/runtime@^7.15.4", "@babel/runtime@^7.7.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.16.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.5.tgz#7f3e34bf8bdbbadf03fbb7b1ea0d929569c9487a"
   integrity sha512-TXWihFIS3Pyv5hzR7j6ihmeLkZfrXGxAr5UfSl8CHf+6q/wpiYDkUau0czckpYG8QmnCIuPpdLtuA9VmuGGyMA==
@@ -2273,6 +2273,13 @@
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
+
+"@samuelmeuli/font-manager@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@samuelmeuli/font-manager/-/font-manager-1.4.0.tgz#8499a00f5e48850128669e0c0775ae3a081bc0be"
+  integrity sha512-TaPoX4qA6ABrACiSI18lQOOKjvbLNrT+84UWfzwcguWQ4nT+sprOSRyt/RVXnt9fQp/wFQVC2NcHbzd+AkXffg==
+  dependencies:
+    "@babel/runtime" "^7.7.4"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -6191,6 +6198,13 @@ follow-redirects@^1.0.0:
   version "1.14.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
   integrity sha512-fhUl5EwSJbbl8AR+uYL2KQDxLkdSjZGR36xy46AO7cOMTrCMON6Sa28FmAnC2tRTDbd/Uuzz3aJBv7EBN7JH8A==
+
+font-picker-react@^3.5.2:
+  version "3.5.2"
+  resolved "https://registry.yarnpkg.com/font-picker-react/-/font-picker-react-3.5.2.tgz#6111fb37091d2ed210140c03fcebce0f6469cff3"
+  integrity sha512-0JkWIDf2hi6JwnvjIiacLDhO+Sl38RQ4mUGhCWN+Hvj95XalVZ0Aq5zJs/Ybend4uk2yI9rd1QhRRF9RnfHqIQ==
+  dependencies:
+    "@samuelmeuli/font-manager" "^1.4.0"
 
 for-in@^1.0.2:
   version "1.0.2"
