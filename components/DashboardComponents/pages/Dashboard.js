@@ -1,7 +1,6 @@
-import React from 'react';
-import {useState} from "next-auth/core/lib/oauth/state-handler";
+import React, {useState} from 'react';
+// import {useState} from "next-auth/core/lib/oauth/state-handler";
 import Sidebar from "../partials/Sidebar";
-import Header from "../../HomeScreen_Components/Header";
 import WelcomeBanner from "../partials/dashboard/WelcomeBanner";
 import DashboardAvatars from "../partials/dashboard/DashboardAvatars";
 import FilterButton from "../partials/actions/FilterButton";
@@ -20,6 +19,7 @@ import DashboardCard11 from "../partials/dashboard/DashboardCard11";
 import DashboardCard12 from "../partials/dashboard/DashboardCard12";
 import DashboardCard13 from "../partials/dashboard/DashboardCard13";
 import Banner from "../partials/Banner";
+import Header from "../Header";
 
 const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);

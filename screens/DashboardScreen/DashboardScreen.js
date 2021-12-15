@@ -2,9 +2,9 @@ import React, {useEffect} from 'react';
 import Header from "../../components/DashboardComponents/Header/Header";
 import Feed from "../../components/DashboardComponents/Feed";
 import Dashboard from "../../components/DashboardComponents/pages/Dashboard";
-import './css/style.scss';
+// import '../css/style.scss';
 
-import './charts/ChartjsConfig';
+// import './charts/ChartjsConfig';
 
 const DashboardScreen = () => {
 

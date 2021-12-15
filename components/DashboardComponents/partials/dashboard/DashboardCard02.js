@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import LineChart from '../../charts/LineChart01';
 import Icon from '../../images/icon-02.svg';
 import EditMenu from '../EditMenu';
@@ -68,13 +67,13 @@ function DashboardCard02() {
                     {/* Menu button */}
                     <EditMenu className="relative inline-flex">
                         <li>
-                            <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">Option 1</Link>
+                            <div className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" >Option 1</div>
                         </li>
                         <li>
-                            <Link className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" to="#0">Option 2</Link>
+                            <div className="font-medium text-sm text-gray-600 hover:text-gray-800 flex py-1 px-3" >Option 2</div>
                         </li>
                         <li>
-                            <Link className="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" to="#0">Remove</Link>
+                            <div className="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" >Remove</div>
                         </li>
                     </EditMenu>
                 </header>
