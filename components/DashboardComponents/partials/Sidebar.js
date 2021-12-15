@@ -57,7 +57,7 @@ function Sidebar({
             <div
                 id="sidebar"
                 ref={sidebar}
-                className={`flex flex-col absolute z-40 left-0 top-0 lg:static lg:left-auto lg:top-auto lg:translate-x-0 transform h-screen overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-gray-800 p-4 transition-all duration-200 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-64'}`}
+                className={`flex flex-col absolute z-40 left-0 top-0 lg:static lg:left-auto lg:top-auto lg:translate-x-0 transform h-screen overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-gray-900 p-4 transition-all duration-200 ease-in-out ${sidebarOpen ? 'translate-x-0' : '-translate-x-64'}`}
             >
 
                 {/* Sidebar header */}
@@ -77,6 +77,8 @@ function Sidebar({
                     </button>
                     {/* Logo */}
                     {/*<NavLink exact to="/" className="block">*/}
+                <div className="block">
+                    <div className="block">
                         <svg width="32" height="32" viewBox="0 0 32 32">
                             <defs>
                                 <linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
@@ -93,6 +95,8 @@ function Sidebar({
                             <path d="M7.404 2.503l18.339 26.19A15.93 15.93 0 0116 32C7.163 32 0 24.837 0 16 0 10.327 2.952 5.344 7.404 2.503z" fill="url(#logo-a)" />
                             <path d="M2.223 24.14L29.777 7.86A15.926 15.926 0 0132 16c0 8.837-7.163 16-16 16-5.864 0-10.991-3.154-13.777-7.86z" fill="url(#logo-b)" />
                         </svg>
+                    </div>
+                </div>
                     {/*</NavLink>*/}
                 </div>
 
@@ -108,6 +112,7 @@ function Sidebar({
                             {/* Dashboard */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150 ${pathname === '/' && 'hover:text-gray-200'}`}>*/}
+                                <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-400 !text-indigo-500`} d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0z" />
@@ -116,11 +121,13 @@ function Sidebar({
                                         </svg>
                                         <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Dashboard</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Analytics */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150 ${pathname.includes('analytics') && 'hover:text-gray-200'}`}>*/}
+                                <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-600 text-indigo-500`} d="M0 20h24v2H0z" />
@@ -128,6 +135,7 @@ function Sidebar({
                                         </svg>
                                         <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Analytics</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* E-Commerce */}
@@ -159,47 +167,65 @@ function Sidebar({
                                                 <ul className={`pl-9 mt-1 ${!open && 'hidden'}`}>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Customers</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Orders</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Invoices</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Shop</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Shop 2</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Single Product</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Cart</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Cart 2</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                     <li className="mb-1 last:mb-0">
                                                         {/*<NavLink exact to="/" className="block text-gray-400 hover:text-gray-200 transition duration-150 truncate">*/}
+                                                        <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                                             <span className="text-sm font-medium lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Pay</span>
+                                                        </div>
                                                         {/*</NavLink>*/}
                                                     </li>
                                                 </ul>
@@ -211,13 +237,15 @@ function Sidebar({
                             {/* Campaigns */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150 hover:text-gray-200`}>*/}
+                                <div className="block text-gray-200 hover:text-white cursor-pointer truncate transition duration-150">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-600 text-indigo-500`} d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z" />
                                             <path className={`fill-current text-gray-400 text-indigo-300`} d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z" />
                                         </svg>
-                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Campaigns</span>
+                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Campaigns (Coming)</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Team */}
@@ -270,50 +298,58 @@ function Sidebar({
                             {/* Messages */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150  hover:text-gray-200`}>*/}
+                                <div className="block text-gray-200 hover:text-white truncate transition duration-150  hover:text-gray-200 cursor-pointer">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-600  text-indigo-500`} d="M14.5 7c4.695 0 8.5 3.184 8.5 7.111 0 1.597-.638 3.067-1.7 4.253V23l-4.108-2.148a10 10 0 01-2.692.37c-4.695 0-8.5-3.184-8.5-7.11C6 10.183 9.805 7 14.5 7z" />
                                             <path className={`fill-current text-gray-400  text-indigo-300`} d="M11 1C5.477 1 1 4.582 1 9c0 1.797.75 3.45 2 4.785V19l4.833-2.416C8.829 16.85 9.892 17 11 17c5.523 0 10-3.582 10-8s-4.477-8-10-8z" />
                                         </svg>
-                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
+                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages (Coming)</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Tasks */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150 hover:text-gray-200`}>*/}
+                                <div className="block text-gray-200 hover:text-white truncate transition duration-150 hover:text-gray-200 cursor-pointer">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-600 text-indigo-500`} d="M8 1v2H3v19h18V3h-5V1h7v23H1V1z" />
                                             <path className={`fill-current text-gray-600 text-indigo-500`} d="M1 1h22v23H1z" />
                                             <path className={`fill-current text-gray-400 text-indigo-300`} d="M15 10.586L16.414 12 11 17.414 7.586 14 9 12.586l2 2zM5 0h14v4H5z" />
                                         </svg>
-                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Tasks</span>
+                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Tasks (Coming)</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Inbox */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150 hover:text-gray-200`}>*/}
+                                <div className="block text-gray-200 hover:text-white truncate transition duration-150 hover:text-gray-200 cursor-pointer">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-6 text-indigo-500`} d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z" />
                                             <path className={`fill-current text-gray-4 text-indigo-300`} d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z" />
                                         </svg>
-                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox</span>
+                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Inbox (Coming)</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Calendar */}
                             <li className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0  bg-gray-900`}>
                                 {/*<NavLink exact to="/" className={`block text-gray-200 hover:text-white truncate transition duration-150  hover:text-gray-200`}>*/}
+                                <div className="block text-gray-200 hover:text-white truncate transition duration-150  hover:text-gray-200 cursor-pointer">
                                     <div className="flex items-center">
                                         <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <path className={`fill-current text-gray-600  text-indigo-500`} d="M1 3h22v20H1z" />
                                             <path className={`fill-current text-gray-400  text-indigo-300`} d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z" />
                                         </svg>
-                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Calendar</span>
+                                        <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Calendar (Coming)</span>
                                     </div>
+                                </div>
                                 {/*</NavLink>*/}
                             </li>
                             {/* Settings */}
