@@ -1,4 +1,17 @@
 import React, {useState} from 'react';
+import DashboardCard01 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard01";
+import DashboardCard02 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard02";
+import DashboardCard03 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard03";
+import DashboardCard04 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard04";
+import DashboardCard05 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard05";
+import DashboardCard06 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard06";
+import DashboardCard07 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard07";
+import DashboardCard08 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard08";
+import DashboardCard09 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard09";
+import DashboardCard10 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard10";
+import DashboardCard11 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard11";
+import DashboardCard12 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard12";
+import DashboardCard13 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard13";
 
 const EmailsChart = () => {
     const [show, setShow] = useState(false);
@@ -100,6 +113,9 @@ const EmailsChart = () => {
 
 
 
+            </div>
+            <div className="grid grid-cols-1 mt-10">
+                <DashboardCard05 />
             </div>
 
         </div>
