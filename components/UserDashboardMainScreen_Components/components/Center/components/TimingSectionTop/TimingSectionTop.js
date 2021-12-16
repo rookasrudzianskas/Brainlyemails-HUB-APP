@@ -1,8 +1,10 @@
 import React from 'react';
+import SelectTime from "../SelectTime";
 
 const TimingSectionTop = () => {
     return (
-        <div className="">
+        <div className="flex w-full">
+            <SelectTime />
 
         </div>
     );
