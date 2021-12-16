@@ -2,13 +2,18 @@ import React from "react";
 import FirstSide from "../TwoSides/FirstSide";
 import SecondSide from "../TwoSides/SecondSide";
 import {useRecoilState} from "recoil";
-import {newProjectNavigation} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
+import {
+    newProjectBackNavigation,
+    newProjectNavigation
+} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
 
 const ManageNewCreatedProjectToTemplate = () => {
     const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
+    const [newProjectBackNavigationState, setNewProjectBackNavigationState] = useRecoilState(newProjectBackNavigation);
 
     const handleNextComponent = () => {
         setNewProjectNavigationState(parseInt(newProjectNavigationState) + 1);
+        setNewProjectBackNavigationState(parseInt(newProjectBackNavigationState) + 1);
     };
 
     return (

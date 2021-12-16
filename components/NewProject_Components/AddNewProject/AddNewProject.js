@@ -6,25 +6,28 @@ import {useRecoilState} from "recoil";
 import {projectName} from "../../../contentManagement/atoms/ProjectName/ProjectName";
 import AddNewTemplatesToEmailCampaign from "../AddNewTemplatesToEmailCampaign";
 import ConnectToTheGooglePay from "../ConnectToTheGooglePay";
-import {newProjectNavigation} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
+import {
+    newProjectBackNavigation,
+    newProjectNavigation
+} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
 
 const AddNewProject = () => {
 
     const router = useRouter();
     const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
-
+    const [newProjectBackNavigationState, setNewProjectBackNavigationState] = useRecoilState(newProjectBackNavigation);
 
     return (
         <div className="">
-            {newProjectNavigationState === 1 && (
+            {newProjectNavigationState === 1 || newProjectBackNavigationState === 1 &&(
                 <CreateANewProject />
             )}
 
-            {newProjectNavigationState === 2 && (
+            {newProjectNavigationState === 2 || newProjectBackNavigationState === 2 &&(
                 <ManageNewCreatedProjectToTemplate />
             )}
 
-            {newProjectNavigationState === 3 && (
+            {newProjectNavigationState === 3 || newProjectBackNavigationState === 3 &&(
                 <AddNewTemplatesToEmailCampaign />
             )}
 
@@ -43,6 +46,7 @@ export default AddNewProject;
 export const CreateANewProject = () => {
     const router = useRouter();
     const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
+    const [newProjectBackNavigationState, setNewProjectBackNavigationState] = useRecoilState(newProjectBackNavigation);
 
     const [newProjectName, setNewProjectName] = useState('');
     // 👇 this writes the name of project into the datastore
@@ -51,6 +55,7 @@ export const CreateANewProject = () => {
 
     const handleNextComponent = () => {
         setNewProjectNavigationState(parseInt(newProjectNavigationState) + 1);
+        setNewProjectBackNavigationState(parseInt(newProjectBackNavigationState) + 1);
     };
 
     return (

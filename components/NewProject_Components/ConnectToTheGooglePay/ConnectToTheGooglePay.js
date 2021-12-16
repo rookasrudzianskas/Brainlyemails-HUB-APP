@@ -2,9 +2,16 @@ import React from 'react';
 import TemplatesScreen from "../ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/TemplatesScreen";
 import GoogleIcon from '@mui/icons-material/Google';
 import {useRouter} from "next/router";
+import {useRecoilState} from "recoil";
+import {newProjectBackNavigation} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
 
 const ConnectToTheGooglePay = () => {
     const router = useRouter();
+    const [newProjectBackNavigationStateGoingBack, setNewProjectBackNavigationStateGoingBack] = useRecoilState(newProjectBackNavigation);
+
+    const handleBackNavigation = () => {
+        setNewProjectBackNavigationStateGoingBack(parseInt(newProjectBackNavigationStateGoingBack) -1);
+    }
 
     return (
         <div className="">
@@ -16,9 +23,14 @@ const ConnectToTheGooglePay = () => {
                         </div>
 
                         <div className="flex flex-row mt-16 items-center space-x-4 ">
+                            <div onClick={handleBackNavigation}>
+                                <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">Cancel</p>
+                            </div>
+
                             <div onClick={() => router.push('w43242342342342')}>
                                 <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">Skip</p>
                             </div>
+
                         </div>
                     </div>
                     <div className="py-8">
