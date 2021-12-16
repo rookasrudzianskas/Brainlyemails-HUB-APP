@@ -15,7 +15,7 @@ const Template = ({text}) => {
     }
 
     return (
-        <div className={`flex flex-col w-[15rem] h-[15rem] ${show ? ' border border-1 border-indigo-500' : ''} bg-red-500 border border-1 border-gray-300 rounded-sm hover:shadow-md transition duration-150 ease-in-out`} onClick={handleShow}>
+        <div className={`flex flex-col w-[15rem] h-[15rem] ${show ? ' border border-1 border-indigo-500' : ''} bg-indigo-500 border border-1 border-gray-300 rounded-sm hover:shadow-md transition duration-150 ease-in-out`} onClick={handleShow}>
             <div className="flex flex-1 items-center justify-center">
                 <img src="https://freesvg.org/img/Loading_icon_no_fade.png" className="w-[12rem] h-[12rem]" alt=""/>
             </div>
@@ -35,7 +35,7 @@ const Template = ({text}) => {
 
                         </div>
                         <div>
-                            <p className="text-gray-700 ml-2 truncate">{text}</p>
+                            <p className="text-gray-700 text-md ml-2 truncate">{text}</p>
                         </div>
                     </div>
                 </div>
@@ -53,7 +53,7 @@ const Template = ({text}) => {
 
                         </div>
                         <div className="overflow-hidden">
-                            <p className="text-gray-700  ml-2 truncate text-ellipsis overflow-hidden">{text}</p>
+                            <p className="text-gray-700 text-md  ml-2 truncate text-ellipsis overflow-hidden">{text}</p>
                         </div>
                     </div>
 
