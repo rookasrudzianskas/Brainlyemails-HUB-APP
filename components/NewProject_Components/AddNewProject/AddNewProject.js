@@ -13,6 +13,7 @@ const AddNewProject = () => {
         <div className="">
             {/*<CreateANewProject />*/}
             <ManageNewCreatedProjectToTemplate />
+            <AddNewTemplatesToEmailCampaign />
         </div>
     );
 };

@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {
-    bodyBackgroundColor, chosenButtonTextColor,
-    chosenContentBackgroundColor, chosenContentBorderColor, chosenMutedTextColor, chosenTextColor, chosenTitleTextColor,
+    bodyBackgroundColor,
+    chosenButtonTextColor,
+    chosenContentBackgroundColor,
+    chosenContentBorderColor,
+    chosenMutedTextColor,
+    chosenTextColor,
+    chosenTitleTextColor,
     highlightColor
 } from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 import {useRecoilState, useRecoilValue} from "recoil";
