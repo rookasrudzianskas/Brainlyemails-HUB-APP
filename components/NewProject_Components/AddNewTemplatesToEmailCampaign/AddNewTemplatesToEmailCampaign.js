@@ -1,6 +1,7 @@
 import React from 'react';
 import FirstSide from "../TwoSides/FirstSide";
 import SecondSide from "../TwoSides/SecondSide";
+import TemplatesScreen from "../ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/TemplatesScreen";
 
 const AddNewTemplatesToEmailCampaign = () => {
     return (
@@ -22,16 +23,17 @@ const AddNewTemplatesToEmailCampaign = () => {
                             </div>
                         </div>
                     </div>
-                    {/*<div className="py-8">*/}
-                    {/*    <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto ">*/}
-                    {/*        <div className="inline-block min-w-full shadow rounded-lg overflow-hidden  bg-white flex flex-col space-y-2 p-10">*/}
-                    {/*            <main className="flex">*/}
-                    {/*                <FirstSide />*/}
-                    {/*                <SecondSide />*/}
-                    {/*            </main>*/}
-                    {/*        </div>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                    <div className="py-8">
+                        <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto ">
+                            <div className="inline-block min-w-full shadow rounded-lg overflow-hidden  bg-white flex flex-col space-y-2 p-10">
+                                <main className="flex items-center justify-center">
+                                    <TemplatesScreen />
+                                    {/*<FirstSide />*/}
+                                    {/*<SecondSide />*/}
+                                </main>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
