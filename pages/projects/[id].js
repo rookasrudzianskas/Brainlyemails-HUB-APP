@@ -6,7 +6,7 @@ import UserDashboardMainScreen from "../../screens/UserDashboardMainScreen";
 
 const UserDashboard = () => {
     return (
-        <div className="">
+        <div className="overflow-y-scroll scrollbar-hide">
             <UserDashboardMainScreen />
         </div>
     );
