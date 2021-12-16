@@ -15,7 +15,7 @@ const Template = ({text}) => {
     }
 
     return (
-        <div className="flex flex-col w-[15rem] h-[15rem] bg-red-500 border border-1 border-gray-300 rounded-sm hover:shadow-md transition duration-150 ease-in-out" onClick={handleShow}>
+        <div className={`flex flex-col w-[15rem] h-[15rem] ${show ? ' border border-1 border-indigo-500' : ''} bg-red-500 border border-1 border-gray-300 rounded-sm hover:shadow-md transition duration-150 ease-in-out`} onClick={handleShow}>
             <div className="flex flex-1 items-center justify-center">
                 <img src="https://freesvg.org/img/Loading_icon_no_fade.png" className="w-[12rem] h-[12rem]" alt=""/>
             </div>
