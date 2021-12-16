@@ -2,6 +2,7 @@ import React from 'react';
 import SelectTime from "../SelectTime";
 import InformationSection from "../InformationSection";
 import EmailsChart from "../EmailsChart";
+import BottomEmailChart from "../BottomEmailChart";
 
 const TimingSectionTop = () => {
     return (
