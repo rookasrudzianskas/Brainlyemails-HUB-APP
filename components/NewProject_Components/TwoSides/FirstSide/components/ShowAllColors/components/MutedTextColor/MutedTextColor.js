@@ -7,7 +7,7 @@ import {
 } from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const MutedTextColor = () => {
-    const [mutedTextColor, setMutedTextColor] = useState('#236961');
+    const [mutedTextColor, setMutedTextColor] = useState('#CBD5E1');
     const [show6, setShow6] = useState(false);
     let [bgMutedTextColor, setBgMutedTextColor] = useState("#236961");
 

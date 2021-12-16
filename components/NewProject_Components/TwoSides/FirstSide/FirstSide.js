@@ -15,8 +15,8 @@ const FirstSide = () => {
     const inputFile = useRef(null);
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
-    const [color, setColor] = useState("#b70514");
-    const [color2, setColor2] = useState("#b70514");
+    const [color, setColor] = useState("#F1F5F9");
+    const [color2, setColor2] = useState("#6366F1");
     const [showAllColors, setShowAllColors] = useState(false);
 
 

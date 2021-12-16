@@ -5,7 +5,7 @@ import {useRecoilState} from "recoil";
 import {chosenContentBackgroundColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const ContentBackgroundColor = () => {
-    const [contentBackgroundColor, setContentBackgroundColor] = useState('#772020');
+    const [contentBackgroundColor, setContentBackgroundColor] = useState('#FFFFFF');
     const [show, setShow] = useState(false);
     let [bgColorContentBackgroundColor, setBgColorContentBackgroundColor] = useState("#772020");
 

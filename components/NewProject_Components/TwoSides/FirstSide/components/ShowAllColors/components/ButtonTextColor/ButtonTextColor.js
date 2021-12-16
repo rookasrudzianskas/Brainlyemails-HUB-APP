@@ -7,7 +7,7 @@ import {
 } from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const ButtonTextColor = () => {
-    const [buttonTextColor, setButtonTextColor] = useState('#b0c451');
+    const [buttonTextColor, setButtonTextColor] = useState('#F1F5F9');
     const [show3, setShow3] = useState(false);
     let [bgButtonTextColor, setBgButtonTextColor] = useState("#b0c451");
 

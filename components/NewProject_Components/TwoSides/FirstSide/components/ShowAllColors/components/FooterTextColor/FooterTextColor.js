@@ -7,7 +7,7 @@ import {
 } from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const FooterTextColor = () => {
-    const [footerTextColor, setFooterTextColor] = useState('#b0c451');
+    const [footerTextColor, setFooterTextColor] = useState('#CBD5E1');
     const [show7, setShow7] = useState(false);
     let [bgFooterTextColor, setBgFooterTextColor] = useState("#B0C451FF");
 

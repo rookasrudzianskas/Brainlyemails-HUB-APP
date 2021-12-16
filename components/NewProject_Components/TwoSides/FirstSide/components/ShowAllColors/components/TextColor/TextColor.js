@@ -7,7 +7,7 @@ import {
 } from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const TextColor = () => {
-    const [textColor, setTextColor] = useState('#de983d');
+    const [textColor, setTextColor] = useState('#64748B');
     const [show4, setShow4] = useState(false);
     let [bgTextColor, setBgTextColor] = useState("#de983d");
 

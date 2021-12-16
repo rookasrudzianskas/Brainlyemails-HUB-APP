@@ -8,7 +8,7 @@ import {
 
 const ContentBorderColor = () => {
 
-    const [contentBorderColor, setContentBorderColor] = useState('#234a7e');
+    const [contentBorderColor, setContentBorderColor] = useState('#e7e6e6');
     const [show2, setShow2] = useState(false);
     let [bgContentBorderColor, setBgContentBorderColor] = useState("#234a7e");
 

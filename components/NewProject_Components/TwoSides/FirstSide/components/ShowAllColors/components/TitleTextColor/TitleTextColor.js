@@ -5,7 +5,7 @@ import {useRecoilState} from "recoil";
 import {chosenTitleTextColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const TitleTextColor = () => {
-    const [titleTextColor, setTitleTextColor] = useState('#03151f');
+    const [titleTextColor, setTitleTextColor] = useState('#1E293B');
     const [show5, setShow5] = useState(false);
     let [bgTitleTextColor, setBgTitleTextColor] = useState("#03151f");
 
