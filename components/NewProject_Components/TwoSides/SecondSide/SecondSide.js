@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {bodyBackgroundColor} from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 import {useRecoilState, useRecoilValue} from "recoil";
 
@@ -7,10 +7,15 @@ const SecondSide = () => {
     // coloring the email 🔥
     // 👇 the background state is set to the background color of the chosen color
     const [chosenBodyBackgroundColor, setChosenBodyBackgroundColor] = useRecoilState(bodyBackgroundColor);
-    console.log(`bg-[${chosenBodyBackgroundColor}]`);
+    // console.log(`bg-[${chosenBodyBackgroundColor}]`);
+    const [color, setColor] = useState('#ffffff');
+    useEffect(() => {
+        setColor(`bg-[${chosenBodyBackgroundColor}]`);
+    }, [chosenBodyBackgroundColor]);
+    console.log(color);
 
     return (
-        <div className={`bg-[#651217] flex justify-center w-[45rem] flex-col items-center`}>
+        <div className={`${color} flex justify-center w-[45rem] flex-col items-center`}>
             <div className="mb-8">
                 <p className="text-2xl text-gray-800 hover:cursor-pointer">Company</p>
             </div>
