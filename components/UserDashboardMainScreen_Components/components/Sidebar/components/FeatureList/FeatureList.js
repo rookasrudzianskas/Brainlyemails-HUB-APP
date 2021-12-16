@@ -1,51 +1,34 @@
 import React from 'react';
-import Feature from "../Feature";
-import GridViewIcon from '@mui/icons-material/GridView';
-import SendIcon from '@mui/icons-material/Send';
-import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
-import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import EmailIcon from '@mui/icons-material/Email';
-import HistoryIcon from '@mui/icons-material/History';
-import CloudSyncIcon from '@mui/icons-material/CloudSync';
-import SettingsIcon from '@mui/icons-material/Settings';
+import Overview from "../../SeparateMenuItems/SeparateMenuItems/components/Overview";
+import Messenger from "../../SeparateMenuItems/SeparateMenuItems/components/Messenger";
+import Automation from "../../SeparateMenuItems/SeparateMenuItems/components/Automation";
+import Contacts from "../../SeparateMenuItems/SeparateMenuItems/components/Contacts";
+import Forms from "../../SeparateMenuItems/SeparateMenuItems/components/Forms";
+import Templates from "../../SeparateMenuItems/SeparateMenuItems/components/Templates";
+import History from "../../SeparateMenuItems/SeparateMenuItems/components/History";
+import API from "../../SeparateMenuItems/SeparateMenuItems/components/API";
+import Settings from "../../SeparateMenuItems/SeparateMenuItems/components/Settings";
 
 const FeatureList = () => {
     return (
         <div className="">
-
-
-
-
-
-
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <HistoryIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">History</p>
-                </div>
-
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <CloudSyncIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">API</p>
-                </div>
-
+            <Overview />
             <div className="mt-10">
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <SettingsIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Settings</p>
-                </div>
+                <Messenger />
+                <Automation />
+                <Contacts />
+                <Forms />
             </div>
 
+            <div className="mt-10">
+                <Templates />
+                <History />
+                <API />
+            </div>
 
+            <div className="mt-10">
+                <Settings />
+            </div>
         </div>
     );
 };
