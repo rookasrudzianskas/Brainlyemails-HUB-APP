@@ -2,8 +2,16 @@ import React from 'react';
 import FirstSide from "../TwoSides/FirstSide";
 import SecondSide from "../TwoSides/SecondSide";
 import TemplatesScreen from "../ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/TemplatesScreen";
+import {useRecoilState} from "recoil";
+import {newProjectNavigation} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
 
 const AddNewTemplatesToEmailCampaign = () => {
+    const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
+
+    const handleNextComponent = () => {
+        setNewProjectNavigationState(parseInt(newProjectNavigationState) + 1);
+    };
+
     return (
         <div className="">
             <div className=" bg-gray-100 h-screen">
@@ -18,7 +26,7 @@ const AddNewTemplatesToEmailCampaign = () => {
                                 <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">Skip</p>
                             </div>
 
-                            <div className="flex flex-row items-center bg-indigo-500 py-2 px-3 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                            <div onClick={handleNextComponent} className="flex flex-row items-center bg-indigo-500 py-2 px-3 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
                                 <p className="text-gray-100">Import & continue</p>
                             </div>
                         </div>
