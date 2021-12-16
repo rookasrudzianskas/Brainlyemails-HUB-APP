@@ -14,54 +14,81 @@ const FeatureList = () => {
     return (
         <div className="">
             <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                <GridViewIcon style={{ color: 'red', fontSize: 25 }} />
-                <p className="text-md ml-2">Overview</p>
+                <GridViewIcon
+                    // style={{ color: 'red', fontSize: 25 }}
+                    className="text-gray-300"
+                />
+                <p className="text-md ml-2 text-gray-600 focus:text-gray-900">Overview</p>
             </div>
 
             <div className="mt-10">
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <SendIcon />
-                    <p className="text-md ml-2">Messenger</p>
+                    <SendIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Messenger</p>
                 </div>
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <RocketLaunchIcon />
-                    <p className="text-md ml-2">Automation</p>
+                    <RocketLaunchIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Automation</p>
                 </div>
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <EmojiPeopleIcon />
-                    <p className="text-md ml-2">Contacts</p>
+                    <EmojiPeopleIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Contacts</p>
                 </div>
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <AlternateEmailIcon />
-                    <p className="text-md ml-2">Forms</p>
+                    <AlternateEmailIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Forms</p>
                 </div>
             </div>
 
 
             <div className="mt-10">
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <EmailIcon />
-                    <p className="text-md ml-2">Templates</p>
+                    <EmailIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Templates</p>
                 </div>
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <HistoryIcon />
-                    <p className="text-md ml-2">History</p>
+                    <HistoryIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">History</p>
                 </div>
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <CloudSyncIcon />
-                    <p className="text-md ml-2">API</p>
+                    <CloudSyncIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">API</p>
                 </div>
             </div>
 
             <div className="mt-10">
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <SettingsIcon />
-                    <p className="text-md ml-2">Settings</p>
+                    <SettingsIcon
+                        // style={{ color: 'red', fontSize: 25 }}
+                        className="text-gray-300"
+                    />
+                    <p className="text-md ml-2  text-gray-600">Settings</p>
                 </div>
             </div>
 
