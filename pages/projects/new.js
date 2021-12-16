@@ -7,10 +7,7 @@ const New = () => {
     return (
         <div className="">
             <Header />
-
             <AddNewProject />
-
-
             <Footer />
         </div>
     );

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/BarChart04.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard14.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/TopPart/TopPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/TopPart/TopPart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/BottomEmailChart/BottomEmailChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/BottomEmailChart/BottomEmailChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/TimingSectionTop/TimingSectionTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/TimingSectionTop/TimingSectionTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/new.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="93035000" />
+      <workItem from="1639336533504" duration="93215000" />
     </task>
     <servers />
   </component>
