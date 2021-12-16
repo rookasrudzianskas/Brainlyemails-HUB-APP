@@ -1,8 +1,11 @@
 import React from 'react';
 import TemplatesScreen from "../ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/TemplatesScreen";
 import GoogleIcon from '@mui/icons-material/Google';
+import {useRouter} from "next/router";
 
 const ConnectToTheGooglePay = () => {
+    const router = useRouter();
+
     return (
         <div className="">
             <div className=" bg-gray-100 h-screen">
@@ -13,7 +16,7 @@ const ConnectToTheGooglePay = () => {
                         </div>
 
                         <div className="flex flex-row mt-16 items-center space-x-4 ">
-                            <div>
+                            <div onClick={() => router.push('w43242342342342')}>
                                 <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">Skip</p>
                             </div>
                         </div>
