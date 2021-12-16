@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/AddNewTemplatesToEmailCampaign/AddNewTemplatesToEmailCampaign.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/AddNewTemplatesToEmailCampaign/AddNewTemplatesToEmailCampaign.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/ManageNewCreatedProjectToATemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/ManageNewCreatedProjectToATemplate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/API/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Automation/Automation.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Automation/Automation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Contacts/Contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Contacts/Contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Forms/Forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Forms/Forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/History/History.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/History/History.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Messenger/Messenger.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Messenger/Messenger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Overview/Overview.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Overview/Overview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Settings/Settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Settings/Settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Templates/Templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Sidebar/SeparateMenuItems/SeparateMenuItems/components/Templates/Templates.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="96721000" />
+      <workItem from="1639336533504" duration="97158000" />
     </task>
     <servers />
   </component>
