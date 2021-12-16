@@ -20,7 +20,7 @@ const EmailsChart = () => {
                         <div className="flex flex-col">
                             <p  className="text-sm text-gray-400 mb-2">Opens</p>
                             <p  className="text-xl">0%
-                            <span>
+                            <span className="text-sm text-gray-400 ml-2">
                                 0
                             </span>
                             </p>
@@ -31,8 +31,12 @@ const EmailsChart = () => {
                 <div className="">
                     <div className="flex flex-row items-center justify-center">
                         <div className="flex flex-col">
-                            <p  className="text-sm text-gray-400 mb-2">Emails sent</p>
-                            <p  className="text-xl">0</p>
+                            <p  className="text-sm text-gray-400 mb-2">Bounces</p>
+                            <p  className="text-xl">0%
+                                <span className="text-sm text-gray-400 ml-2">
+                                0
+                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -40,8 +44,12 @@ const EmailsChart = () => {
                 <div className="">
                     <div className="flex flex-row items-center justify-center">
                         <div className="flex flex-col">
-                            <p  className="text-sm text-gray-400 mb-2">Emails sent</p>
-                            <p  className="text-xl">0</p>
+                            <p  className="text-sm text-gray-400 mb-2">Complaints</p>
+                            <p  className="text-xl">0%
+                                <span className="text-sm text-gray-400 ml-2">
+                                0
+                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>
