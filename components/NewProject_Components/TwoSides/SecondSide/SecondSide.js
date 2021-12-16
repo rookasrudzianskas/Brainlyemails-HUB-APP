@@ -7,10 +7,10 @@ const SecondSide = () => {
     // coloring the email 🔥
     // 👇 the background state is set to the background color of the chosen color
     const [chosenBodyBackgroundColor, setChosenBodyBackgroundColor] = useRecoilState(bodyBackgroundColor);
-    // console.log("This is >>>>>", chosenBodyBackgroundColor);
+    console.log(`bg-[${chosenBodyBackgroundColor}]`);
 
     return (
-        <div className={`bg-[${chosenBodyBackgroundColor}] flex justify-center w-[45rem] flex-col items-center`}>
+        <div className={`bg-[#651217] flex justify-center w-[45rem] flex-col items-center`}>
             <div className="mb-8">
                 <p className="text-2xl text-gray-800 hover:cursor-pointer">Company</p>
             </div>
