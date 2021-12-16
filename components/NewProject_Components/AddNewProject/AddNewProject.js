@@ -13,10 +13,10 @@ const AddNewProject = () => {
 
     return (
         <div className="">
-            {/*<CreateANewProject />*/}
+            <CreateANewProject />
             {/*<ManageNewCreatedProjectToTemplate />*/}
             {/*<AddNewTemplatesToEmailCampaign />*/}
-            <ConnectToTheGooglePay />
+            {/*<ConnectToTheGooglePay />*/}
         </div>
     );
 };
