@@ -7,14 +7,23 @@ import ShowAllColors from "./components/ShowAllColors";
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import {Switch} from "@mui/material";
 import PrimaryFont from "./components/PrimaryFont";
+import {useRecoilState} from "recoil";
+import {bodyBackgroundColor, highlightColor} from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const FirstSide = () => {
+
     const inputFile = useRef(null);
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [color, setColor] = useState("#b70514");
     const [color2, setColor2] = useState("#b70514");
     const [showAllColors, setShowAllColors] = useState(false);
+
+
+    const [chosenBackgroundColor, setChoseBackgroundColor] = useRecoilState(bodyBackgroundColor);
+    const [chosenHighlightColor, setChoseHighlightColor] = useRecoilState(highlightColor);
+
+
     // const [color, setColor] = useState("#aabbcc");
 
     let [bgColor, setBgColor] = useState("#b70514");
@@ -23,6 +32,7 @@ const FirstSide = () => {
     useEffect(() => {
         const BackgroundColor = () => {
             setBgColor = `bg-[${color}]`;
+            setChoseBackgroundColor(color);
             return bgColor;
         }
         BackgroundColor();
@@ -31,6 +41,7 @@ const FirstSide = () => {
     useEffect(() => {
         const BackgroundColor2 = () => {
             setBgColor2 = `bg-[${color2}]`;
+            setChoseHighlightColor(color2);
             return bgColor2;
         }
         BackgroundColor2();
