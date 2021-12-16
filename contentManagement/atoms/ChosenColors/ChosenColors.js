@@ -2,7 +2,7 @@ import {atom} from "recoil";
 
 export const bodyBackgroundColor = atom({
     key: 'bodyBackgroundColor', // unique ID (with respect to other atoms/selectors)
-    default: '', // default value (aka initial value)
+    default: '#ffffff', // default value (aka initial value)
 });
 
 export const highlightColor = atom({
