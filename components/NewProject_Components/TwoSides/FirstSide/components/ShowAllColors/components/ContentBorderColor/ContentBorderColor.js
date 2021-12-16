@@ -4,9 +4,9 @@ import DoneIcon from "@mui/icons-material/Done";
 
 const ContentBorderColor = () => {
 
-    const [contentBorderColor, setContentBorderColor] = useState('#ffffff');
+    const [contentBorderColor, setContentBorderColor] = useState('#234a7e');
     const [show2, setShow2] = useState(false);
-    let [bgContentBorderColor, setBgContentBorderColor] = useState("#ffffff");
+    let [bgContentBorderColor, setBgContentBorderColor] = useState("#234a7e");
 
 
     const onColorButtonClickSecond = () => {

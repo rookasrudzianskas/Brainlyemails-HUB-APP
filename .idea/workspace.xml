@@ -5,7 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/ShowAllColors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/ShowAllColors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ButtonTextColor/ButtonTextColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ButtonTextColor/ButtonTextColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBackgroundColor/ContentBackgroundColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBackgroundColor/ContentBackgroundColor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBorderColor/ContentBorderColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBorderColor/ContentBorderColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/FooterTextColor/FooterTextColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/FooterTextColor/FooterTextColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/MutedTextColor/MutedTextColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/MutedTextColor/MutedTextColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TextColor/TextColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TextColor/TextColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TitleTextColor/TitleTextColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TitleTextColor/TitleTextColor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="65446000" />
+      <workItem from="1639336533504" duration="65974000" />
     </task>
     <servers />
   </component>

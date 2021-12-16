@@ -3,9 +3,9 @@ import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 
 const ButtonTextColor = () => {
-    const [buttonTextColor, setButtonTextColor] = useState('#ffffff');
+    const [buttonTextColor, setButtonTextColor] = useState('#b0c451');
     const [show3, setShow3] = useState(false);
-    let [bgButtonTextColor, setBgButtonTextColor] = useState("#ffffff");
+    let [bgButtonTextColor, setBgButtonTextColor] = useState("#b0c451");
 
 
     const onColorButtonClickThird = () => {

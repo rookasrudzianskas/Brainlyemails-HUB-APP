@@ -3,9 +3,9 @@ import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 
 const ContentBackgroundColor = () => {
-    const [contentBackgroundColor, setContentBackgroundColor] = useState('#ffffff');
+    const [contentBackgroundColor, setContentBackgroundColor] = useState('#772020');
     const [show, setShow] = useState(false);
-    let [bgColorContentBackgroundColor, setBgColorContentBackgroundColor] = useState("#ffffff");
+    let [bgColorContentBackgroundColor, setBgColorContentBackgroundColor] = useState("#772020");
 
     const onColorButtonClickFirst = () => {
         if(show === false) {
