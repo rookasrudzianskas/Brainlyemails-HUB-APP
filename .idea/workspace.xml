@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ButtonTextColor/ButtonTextColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBackgroundColor/ContentBackgroundColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/ContentBorderColor/ContentBorderColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/FooterTextColor/FooterTextColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/MutedTextColor/MutedTextColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TextColor/TextColor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components/TitleTextColor/TitleTextColor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/PrimaryFont/PrimaryFont.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/PrimaryFont/PrimaryFont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/ShowAllColors.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/ShowAllColors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -59,6 +67,7 @@
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/WhyBrainlyemailsIsLegit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components" />
       <recent name="$PROJECT_DIR$/components/DashboardComponents/pages" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/components/SecondSide" />
     </key>
@@ -71,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="64272000" />
+      <workItem from="1639336533504" duration="65278000" />
     </task>
     <servers />
   </component>

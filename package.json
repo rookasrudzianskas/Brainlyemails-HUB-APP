@@ -17,11 +17,11 @@
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "add": "^2.0.6",
     "autoprefixer": "^9.8.8",
     "chart.js": "^3.6.0",
     "chartjs-adapter-moment": "^1.0.0",
     "firebase": "^9.6.1",
-    "font-picker-react": "^3.5.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "next": "latest",
@@ -32,6 +32,7 @@
     "react-dom": "^17.0.2",
     "react-fade-in": "^2.0.1",
     "react-flatpickr": "^3.10.7",
+    "react-google-font-picker": "^0.9.3",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
@@ -40,7 +41,8 @@
     "recoil": "^0.5.2",
     "sass": "^1.43.4",
     "tailwind-scrollbar-hide": "^1.1.6",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

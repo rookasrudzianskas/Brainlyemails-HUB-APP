@@ -1,6 +1,4 @@
 import React from 'react';
-import FontPicker from "font-picker-react";
-// import FontPicker from "font-picker-react";
 
 const PrimaryFont = () => {
     return (
@@ -20,14 +18,7 @@ const PrimaryFont = () => {
             </div>
 
             <div>
-                <FontPicker
-                    apiKey={process.env.GOOGLE_FONTS_API_KEY}
-                    // activeFontFamily={this.state.activeFontFamily}
-                    onChange={(nextFont) =>
-                        console.log(nextFont)
-                    }
-                    className="mt-2 w-[10rem]"
-                />
+
             </div>
         </div>
     );
