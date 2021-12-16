@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/charts/BarChart04.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard/DashboardCard14.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/TopPart/TopPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/TopPart/TopPart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/BottomEmailChart/BottomEmailChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/BottomEmailChart/BottomEmailChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/TimingSectionTop/TimingSectionTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserDashboardMainScreen_Components/components/Center/components/TimingSectionTop/TimingSectionTop.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +45,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.0.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/DashboardComponents/charts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -50,11 +54,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/DashboardComponents/charts" />
+      <recent name="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/components/DashboardComponents" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components" />
-      <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScrollableScreensConnected/ThirdScreenMoreAdvanced/ThirdScreen" />
-      <recent name="$PROJECT_DIR$/components/HomeScreen_Components/WhyBrainlyemailsIsLegit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/NewProject_Components" />
@@ -71,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="92626000" />
+      <workItem from="1639336533504" duration="93035000" />
     </task>
     <servers />
   </component>

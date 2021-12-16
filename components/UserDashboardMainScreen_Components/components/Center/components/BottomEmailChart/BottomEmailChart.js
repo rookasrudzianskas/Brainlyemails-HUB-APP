@@ -1,6 +1,9 @@
 import React from 'react';
 import ShowChartIcon from "@mui/icons-material/ShowChart";
 import CheckIcon from "@mui/icons-material/Check";
+import DashboardCard01 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard01";
+import DashboardCard04 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard04";
+import DashboardCard14 from "../../../../../DashboardComponents/partials/dashboard/DashboardCard14";
 
 const BottomEmailChart = () => {
     return (
@@ -42,8 +45,8 @@ const BottomEmailChart = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex w-[40rem] bg-blue-500">
-                    Rokas
+                <div className="w-[40rem] grid grid-cols-1">
+                    <DashboardCard14 />
                 </div>
             </div>
         </div>

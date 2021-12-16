@@ -11,7 +11,6 @@ const TimingSectionTop = () => {
             <InformationSection />
             <EmailsChart />
             <BottomEmailChart />
-
         </div>
     );
 };
