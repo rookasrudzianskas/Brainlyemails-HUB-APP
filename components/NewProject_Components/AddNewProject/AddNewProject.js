@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import {useRouter} from "next/router";
 import ManageNewCreatedProjectToTemplate from "../ManageNewCreatedProjectToATemplate";
+import {useRecoilState} from "recoil";
+import {projectName} from "../../../contentManagement/atoms/ProjectName/ProjectName";
 
 const AddNewProject = () => {
 
@@ -20,6 +22,11 @@ export default AddNewProject;
 export const CreateANewProject = () => {
     const router = useRouter();
 
+    const [newProjectName, setNewProjectName] = useState('');
+    // 👇 this writes the name of project into the datastore
+    const [newProjectNameState, setNewProjectNameState] = useRecoilState(projectName);
+    setNewProjectNameState(newProjectName);
+
     return (
         <div className=" bg-gray-100 h-screen">
             <div className="container mx-auto px-4 sm:px-8 max-w-4xl">
@@ -35,7 +42,10 @@ export const CreateANewProject = () => {
                                 <span className="text-lg text-blue-900 font-semibold mb-3">Project name</span>
                                 <input
                                     className="appearance-none block mb-12 w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                    id="grid-last-name" type="text" placeholder="My super secret project"/>
+                                    id="grid-last-name" type="text"
+                                    value={newProjectName}
+                                    onChange={(e) => setNewProjectName(e.target.value)}
+                                    placeholder="My super secret project"/>
                             </div>
 
                             <div className="flex flex-row">

@@ -5,6 +5,7 @@ import {
     highlightColor
 } from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 import {useRecoilState, useRecoilValue} from "recoil";
+import {projectName} from "../../../../contentManagement/atoms/ProjectName/ProjectName";
 
 const SecondSide = () => {
 
@@ -28,11 +29,13 @@ const SecondSide = () => {
     const [chosenMutedTextColorState, setChosenMutedTextColorState] = useRecoilState(chosenMutedTextColor);
     // 👇 this is for the bottom footer element
     const [chosenFooterTextColorState, setChosenFooterTextColorState] = useRecoilState(chosenMutedTextColor);
+    // 👇 with this we get the project name from the data store
+    const [projectNameState, setNewProjectNameState] = useRecoilState(projectName);
 
     return (
         <div className={`flex justify-center w-[45rem] flex-col items-center`} style={{backgroundColor: chosenBodyBackgroundColor}}>
             <div className="mb-8">
-                <p className="text-2xl text-gray-800 hover:cursor-pointer">Company</p>
+                <p className="text-2xl text-gray-800 hover:cursor-pointer">{projectNameState ? projectNameState : 'Company'}</p>
             </div>
 
             <div className="w-[39rem] h-[23rem] border border-1 border-white bg-white flex rounded-sm justify-center py-10 overflow-y-scroll scrollbar-hide" style={{backgroundColor: chosenContentBackgroundColorState, borderColor: chosenContentColorState}}>
