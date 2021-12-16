@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
+import {useRecoilState} from "recoil";
+import {
+    chosenFooterTextColor,
+} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const MutedTextColor = () => {
     const [mutedTextColor, setMutedTextColor] = useState('#236961');
     const [show6, setShow6] = useState(false);
     let [bgMutedTextColor, setBgMutedTextColor] = useState("#236961");
 
+    const [chosenMutedTextColorState, setChosenMutedTextColorState] = useRecoilState(chosenFooterTextColor);
+    setChosenMutedTextColorState(mutedTextColor);
 
     const onColorButtonClickSixth = () => {
         if(show6 === false) {
