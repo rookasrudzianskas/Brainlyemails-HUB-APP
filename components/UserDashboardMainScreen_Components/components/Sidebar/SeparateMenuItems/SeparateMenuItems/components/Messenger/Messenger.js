@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import SendIcon from "@mui/icons-material/Send";
 
 const Messenger = () => {
-    const [clicked, setClicked] = useState(true);
+    const [clicked, setClicked] = useState(false);
     const handleStyles = () => {
         if(clicked === false) {
             setClicked(true);
