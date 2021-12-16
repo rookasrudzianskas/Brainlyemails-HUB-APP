@@ -28,8 +28,6 @@ const AddNewTemplatesToEmailCampaign = () => {
                             <div className="inline-block min-w-full shadow rounded-lg overflow-hidden  bg-white flex flex-col space-y-2 p-10">
                                 <main className="flex items-center justify-center">
                                     <TemplatesScreen />
-                                    {/*<FirstSide />*/}
-                                    {/*<SecondSide />*/}
                                 </main>
                             </div>
                         </div>
