@@ -7,12 +7,7 @@ const SecondSide = () => {
     // coloring the email 🔥
     // 👇 the background state is set to the background color of the chosen color
     const [chosenBodyBackgroundColor, setChosenBodyBackgroundColor] = useRecoilState(bodyBackgroundColor);
-    // console.log(`bg-[${chosenBodyBackgroundColor}]`);
-    const [color, setColor] = useState('#ffffff');
-    useEffect(() => {
-        setColor(`bg-[${chosenBodyBackgroundColor}]`);
-    }, [chosenBodyBackgroundColor]);
-    console.log(color);
+
 
     return (
         <div className={`flex justify-center w-[45rem] flex-col items-center`} style={{backgroundColor: chosenBodyBackgroundColor}}>
