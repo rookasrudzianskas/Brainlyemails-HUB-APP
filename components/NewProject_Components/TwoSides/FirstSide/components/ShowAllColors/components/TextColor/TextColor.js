@@ -38,7 +38,7 @@ const TextColor = () => {
                         <div className="">
                             <div className="mb-4 flex flex-row mt-3">
                                 <div className="">
-                                    <div className={`h-9 w-9 ${bgTextColor} rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
+                                    <div className={`h-9 w-9 ${bgTextColor} rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`} style={{backgroundColor: textColor}}/>
                                 </div>
                                 <input
                                     className="shadow appearance-none border rounded w-[16rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -60,7 +60,7 @@ const TextColor = () => {
                 ): (
                     <div onClick={onColorButtonClickFourth} className={`flex flex-row mt-5 bg-gray-200 py-[10px] rounded-sm items-center border border-gray-400 border-1 hover:bg-gray-300 cursor-pointer transition duration-150 ease-in-out`}>
                         <div className="">
-                            <div className={`h-7 w-7 bg-[${bgTextColor}] rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}/>
+                            <div className={`h-7 w-7 bg-[${bgTextColor}] rounded-full mx-3 p-1 border border-2 rounded-full border-white border-opacity-100`}  style={{backgroundColor: textColor}}/>
                         </div>
                         <p className="text-gray-800 text-sm" >{textColor}</p>
 
