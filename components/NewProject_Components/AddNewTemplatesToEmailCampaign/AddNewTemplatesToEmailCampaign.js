@@ -17,6 +17,12 @@ const AddNewTemplatesToEmailCampaign = () => {
         setNewProjectBackNavigationState(parseInt(newProjectBackNavigationState) + 1);
     };
 
+    const handleSkipButton = () => {
+        setNewProjectNavigationState(parseInt(newProjectNavigationState) + 1);
+        setNewProjectBackNavigationState(parseInt(newProjectBackNavigationState) + 1);
+    };
+
+
     return (
         <div className="">
             <div className=" bg-gray-100 h-screen">
@@ -27,7 +33,7 @@ const AddNewTemplatesToEmailCampaign = () => {
                         </div>
 
                         <div className="flex flex-row mt-16 items-center space-x-4">
-                            <div>
+                            <div onClick={handleSkipButton}>
                                 <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">Skip</p>
                             </div>
 

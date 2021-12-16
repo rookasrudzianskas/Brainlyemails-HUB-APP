@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/AddNewTemplatesToEmailCampaign/AddNewTemplatesToEmailCampaign.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/AddNewTemplatesToEmailCampaign/AddNewTemplatesToEmailCampaign.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/ConnectToTheGooglePay/ConnectToTheGooglePay.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/ConnectToTheGooglePay/ConnectToTheGooglePay.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/ManageNewCreatedProjectToATemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/ManageNewCreatedProjectToATemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contentManagement/atoms/NewProjectNavigation/NewProjectNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentManagement/atoms/NewProjectNavigation/NewProjectNavigation.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="96462000" />
+      <workItem from="1639336533504" duration="96721000" />
     </task>
     <servers />
   </component>

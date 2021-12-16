@@ -19,15 +19,15 @@ const AddNewProject = () => {
 
     return (
         <div className="">
-            {newProjectNavigationState === 1 || newProjectBackNavigationState === 1 &&(
+            {newProjectNavigationState === 1 &&(
                 <CreateANewProject />
             )}
 
-            {newProjectNavigationState === 2 || newProjectBackNavigationState === 2 &&(
+            {newProjectNavigationState === 2 &&(
                 <ManageNewCreatedProjectToTemplate />
             )}
 
-            {newProjectNavigationState === 3 || newProjectBackNavigationState === 3 &&(
+            {newProjectNavigationState === 3 &&(
                 <AddNewTemplatesToEmailCampaign />
             )}
 
