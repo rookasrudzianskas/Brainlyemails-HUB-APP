@@ -1,6 +1,4 @@
 import React, {useState} from 'react';
-import ShowChartIcon from "@mui/icons-material/ShowChart";
-import CheckIcon from "@mui/icons-material/Check";
 
 const EmailsChart = () => {
     const [show, setShow] = useState(false);
@@ -103,7 +101,7 @@ const EmailsChart = () => {
 
 
             </div>
-                Rokas
+
         </div>
     );
 };
