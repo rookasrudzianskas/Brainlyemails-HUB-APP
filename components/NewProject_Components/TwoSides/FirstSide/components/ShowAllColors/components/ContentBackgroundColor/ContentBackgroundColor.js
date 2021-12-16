@@ -2,11 +2,14 @@ import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 import {useRecoilState} from "recoil";
+import {contentBackgroundColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const ContentBackgroundColor = () => {
     const [contentBackgroundColor, setContentBackgroundColor] = useState('#772020');
     const [show, setShow] = useState(false);
     let [bgColorContentBackgroundColor, setBgColorContentBackgroundColor] = useState("#772020");
+
+    const [chosenContentBackgroundColor, setChosenContentBackgroundColor] = useRecoilState(chosenContentBackgroundColor);
 
     const onColorButtonClickFirst = () => {
         if(show === false) {
