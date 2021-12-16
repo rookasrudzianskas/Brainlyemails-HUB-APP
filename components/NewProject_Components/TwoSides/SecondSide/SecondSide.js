@@ -15,7 +15,7 @@ const SecondSide = () => {
     console.log(color);
 
     return (
-        <div className={`${color} flex justify-center w-[45rem] flex-col items-center`}>
+        <div className={`flex justify-center w-[45rem] flex-col items-center`} style={{backgroundColor: chosenBodyBackgroundColor}}>
             <div className="mb-8">
                 <p className="text-2xl text-gray-800 hover:cursor-pointer">Company</p>
             </div>
