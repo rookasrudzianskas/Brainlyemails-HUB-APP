@@ -1,12 +1,19 @@
 import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
+import {useRecoilState} from "recoil";
+import {
+    chosenContentBorderColor
+} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const ContentBorderColor = () => {
 
     const [contentBorderColor, setContentBorderColor] = useState('#234a7e');
     const [show2, setShow2] = useState(false);
     let [bgContentBorderColor, setBgContentBorderColor] = useState("#234a7e");
+
+    const [chosenContentBorderColorState, setChosenContentBorderColorState] = useRecoilState(chosenContentBorderColor);
+    setChosenContentBorderColorState(contentBorderColor);
 
 
     const onColorButtonClickSecond = () => {

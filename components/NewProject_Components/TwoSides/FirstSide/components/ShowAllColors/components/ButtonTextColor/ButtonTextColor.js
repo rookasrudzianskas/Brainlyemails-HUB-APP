@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
+import {useRecoilState} from "recoil";
+import {
+    chosenButtonTextColor,
+} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const ButtonTextColor = () => {
     const [buttonTextColor, setButtonTextColor] = useState('#b0c451');
     const [show3, setShow3] = useState(false);
     let [bgButtonTextColor, setBgButtonTextColor] = useState("#b0c451");
 
+    const [chosenButtonTextColorState, setChosenButtonTextColorState] = useRecoilState(chosenButtonTextColor);
+    setChosenButtonTextColorState(buttonTextColor);
 
     const onColorButtonClickThird = () => {
         if(show3 === false) {
