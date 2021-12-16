@@ -15,49 +15,9 @@ const FeatureList = () => {
         <div className="">
 
 
-            <div className="mt-10">
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <SendIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Messenger</p>
-                </div>
-
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <RocketLaunchIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Automation</p>
-                </div>
-
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <EmojiPeopleIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Contacts</p>
-                </div>
-
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <AlternateEmailIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Forms</p>
-                </div>
-            </div>
 
 
-            <div className="mt-10">
-                <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
-                    <EmailIcon
-                        // style={{ color: 'red', fontSize: 25 }}
-                        className="text-gray-300"
-                    />
-                    <p className="text-md ml-2  text-gray-600">Templates</p>
-                </div>
+
 
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
                     <HistoryIcon
@@ -74,7 +34,6 @@ const FeatureList = () => {
                     />
                     <p className="text-md ml-2  text-gray-600">API</p>
                 </div>
-            </div>
 
             <div className="mt-10">
                 <div className="flex flex-row py-2 pl-4 pr-20 rounded-sm hover:bg-gray-200 cursor-pointer transition duration-150 ease-in-out">
