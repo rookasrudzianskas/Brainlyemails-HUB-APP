@@ -1,5 +1,9 @@
 import React, {useEffect, useState} from 'react';
-import {bodyBackgroundColor} from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
+import {
+    bodyBackgroundColor,
+    chosenContentBackgroundColor, chosenContentBorderColor,
+    highlightColor
+} from "../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 import {useRecoilState, useRecoilValue} from "recoil";
 
 const SecondSide = () => {
@@ -7,6 +11,12 @@ const SecondSide = () => {
     // coloring the email 🔥
     // 👇 the background state is set to the background color of the chosen color
     const [chosenBodyBackgroundColor, setChosenBodyBackgroundColor] = useRecoilState(bodyBackgroundColor);
+    // 👇 this is the button background color
+    const [chosenHighlightColor, setChosenHighlightColor] = useRecoilState(highlightColor);
+    // 👇 this is the content background color
+    const [chosenContentBackgroundColorState, setChosenContentBackgroundColorState] = useRecoilState(chosenContentBackgroundColor);
+    // 👇 content border color
+    const [chosenContentColorState, setChosenContentColorState] = useRecoilState(chosenContentBorderColor);
 
 
     return (
@@ -15,7 +25,7 @@ const SecondSide = () => {
                 <p className="text-2xl text-gray-800 hover:cursor-pointer">Company</p>
             </div>
 
-            <div className="w-[39rem] h-[23rem] bg-white flex justify-center py-10 overflow-y-scroll scrollbar-hide">
+            <div className="w-[39rem] h-[23rem] border border-1 border-white bg-white flex rounded-sm justify-center py-10 overflow-y-scroll scrollbar-hide" style={{backgroundColor: chosenContentBackgroundColorState, borderColor: chosenContentColorState}}>
                 <div className="flex flex-col max-w-lg">
                     <div>
                         <h1 className="text-2xl text-gray-800">Hello!</h1>
@@ -28,7 +38,7 @@ const SecondSide = () => {
                     </div>
 
                     <div className="flex items-center justify-center">
-                        <div className="flex items-center justify-center mt-5 bg-indigo-500 max-w-[13rem] py-3 px-4 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                        <div className="flex items-center justify-center mt-5 bg-indigo-500 max-w-[13rem] py-3 px-4 rounded-sm hover:opacity-80 cursor-pointer transition duration-150 ease-in-out" style={{backgroundColor: chosenHighlightColor}}>
                             <p className="text-gray-100 font-semibold">Look at this button!</p>
                         </div>
                     </div>
