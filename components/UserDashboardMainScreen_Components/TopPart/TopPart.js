@@ -12,7 +12,7 @@ const TopPart = () => {
                             <h1 className="text-xl text-gray-800">name</h1>
                         </div>
                     </div>
-                    <div className="py-8 flex space-x-5">
+                    <div className="py-8 flex space-x-5 mt-10">
                         <Sidebar />
                         <Center />
                     </div>

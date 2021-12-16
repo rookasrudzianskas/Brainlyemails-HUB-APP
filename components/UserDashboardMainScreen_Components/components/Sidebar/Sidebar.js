@@ -6,7 +6,9 @@ import FeatureList from "./components/FeatureList";
 const Sidebar = () => {
     return (
         <div className="flex max-w-2xl h-screen">
-           <FeatureList />
+           <div className="">
+               <FeatureList />
+           </div>
         </div>
     );
 };
