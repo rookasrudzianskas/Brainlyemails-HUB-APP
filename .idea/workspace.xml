@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/ConnectToTheGooglePay/ConnectToTheGooglePay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewProject_Components/ConnectToTheGooglePay/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/components/Template/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/ManageNewCreatedProjectToATemplate/GridTemplates/TemplatesScreen/components/Template/Template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewProject_Components/AddNewProject/AddNewProject.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +59,7 @@
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/WhyBrainlyemailsIsLegit" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/NewProject_Components" />
       <recent name="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components" />
       <recent name="$PROJECT_DIR$/components/DashboardComponents/pages" />
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/components/SecondSide" />
@@ -70,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="77055000" />
+      <workItem from="1639336533504" duration="77651000" />
     </task>
     <servers />
   </component>

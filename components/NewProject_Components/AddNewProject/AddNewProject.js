@@ -5,6 +5,7 @@ import ManageNewCreatedProjectToTemplate from "../ManageNewCreatedProjectToATemp
 import {useRecoilState} from "recoil";
 import {projectName} from "../../../contentManagement/atoms/ProjectName/ProjectName";
 import AddNewTemplatesToEmailCampaign from "../AddNewTemplatesToEmailCampaign";
+import ConnectToTheGooglePay from "../ConnectToTheGooglePay";
 
 const AddNewProject = () => {
 
@@ -14,7 +15,8 @@ const AddNewProject = () => {
         <div className="">
             {/*<CreateANewProject />*/}
             {/*<ManageNewCreatedProjectToTemplate />*/}
-            <AddNewTemplatesToEmailCampaign />
+            {/*<AddNewTemplatesToEmailCampaign />*/}
+            <ConnectToTheGooglePay />
         </div>
     );
 };
