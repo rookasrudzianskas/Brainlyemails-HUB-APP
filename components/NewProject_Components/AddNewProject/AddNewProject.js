@@ -4,6 +4,7 @@ import {useRouter} from "next/router";
 import ManageNewCreatedProjectToTemplate from "../ManageNewCreatedProjectToATemplate";
 import {useRecoilState} from "recoil";
 import {projectName} from "../../../contentManagement/atoms/ProjectName/ProjectName";
+import AddNewTemplatesToEmailCampaign from "../AddNewTemplatesToEmailCampaign";
 
 const AddNewProject = () => {
 
@@ -12,7 +13,7 @@ const AddNewProject = () => {
     return (
         <div className="">
             {/*<CreateANewProject />*/}
-            <ManageNewCreatedProjectToTemplate />
+            {/*<ManageNewCreatedProjectToTemplate />*/}
             <AddNewTemplatesToEmailCampaign />
         </div>
     );
