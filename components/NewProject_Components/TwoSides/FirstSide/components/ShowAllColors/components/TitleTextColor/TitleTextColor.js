@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 import {useRecoilState} from "recoil";
-import {chosenTextColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
+import {chosenTitleTextColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const TitleTextColor = () => {
     const [titleTextColor, setTitleTextColor] = useState('#03151f');
     const [show5, setShow5] = useState(false);
     let [bgTitleTextColor, setBgTitleTextColor] = useState("#03151f");
 
-    const [chosenTitleTextColorState, setChosenTitleTextColorState] = useRecoilState(chosenTextColor);
+    const [chosenTitleTextColorState, setChosenTitleTextColorState] = useRecoilState(chosenTitleTextColor);
     setChosenTitleTextColorState(titleTextColor);
 
 

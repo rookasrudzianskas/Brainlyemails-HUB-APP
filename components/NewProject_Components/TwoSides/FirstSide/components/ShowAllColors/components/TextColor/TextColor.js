@@ -3,7 +3,7 @@ import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 import {useRecoilState} from "recoil";
 import {
-    chosenTitleTextColor
+    chosenTextColor,
 } from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const TextColor = () => {
@@ -11,8 +11,9 @@ const TextColor = () => {
     const [show4, setShow4] = useState(false);
     let [bgTextColor, setBgTextColor] = useState("#de983d");
 
-    const [chosenTextColorState, setChosenTextColorState] = useRecoilState(chosenTitleTextColor);
+    const [chosenTextColorState, setChosenTextColorState] = useRecoilState(chosenTextColor);
     setChosenTextColorState(textColor);
+    // console.log('>>>>>>>', textColor);
 
     const onColorButtonClickFourth = () => {
         if(show4 === false) {

@@ -2,14 +2,16 @@ import React, {useState} from 'react';
 import {HexColorPicker} from "react-colorful";
 import DoneIcon from "@mui/icons-material/Done";
 import {useRecoilState} from "recoil";
-import {chosenMutedTextColor} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
+import {
+    chosenFooterTextColor,
+} from "../../../../../../../../contentManagement/atoms/ChosenColors/ChosenColors";
 
 const FooterTextColor = () => {
     const [footerTextColor, setFooterTextColor] = useState('#b0c451');
     const [show7, setShow7] = useState(false);
     let [bgFooterTextColor, setBgFooterTextColor] = useState("#B0C451FF");
 
-    const [chosenFooterTextColorState, setChosenFooterTextColorState] = useRecoilState(chosenMutedTextColor);
+    const [chosenFooterTextColorState, setChosenFooterTextColorState] = useRecoilState(chosenFooterTextColor);
     setChosenFooterTextColorState(footerTextColor);
 
     const onColorButtonClickSeventh = () => {
