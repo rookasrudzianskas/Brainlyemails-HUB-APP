@@ -9,6 +9,7 @@ const TimingSectionTop = () => {
             <SelectTime />
             <InformationSection />
             <EmailsChart />
+            <BottomEmailChart />
 
         </div>
     );
