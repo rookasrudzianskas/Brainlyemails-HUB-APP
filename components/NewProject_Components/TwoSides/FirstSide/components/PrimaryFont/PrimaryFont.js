@@ -17,8 +17,18 @@ const PrimaryFont = () => {
                 <h1 className="text-sm font-bold text-indigo-500">Font (size & line height)</h1>
             </div>
 
-            <div>
+            <div className="flex space-x-3 mt-3 mb-5">
+                <input
+                    className="shadow appearance-none border rounded w-[10rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="username" type="text" value={'Lato'} />
 
+                <input
+                    className="shadow appearance-none border rounded w-[5rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="username" type="text" value={'20'} />
+
+                <input
+                    className="shadow appearance-none border rounded w-[4rem] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="username" type="text" value={'2'} />
             </div>
         </div>
     );
