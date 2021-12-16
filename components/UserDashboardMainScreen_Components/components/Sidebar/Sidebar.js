@@ -2,7 +2,12 @@ import React from 'react';
 
 const Sidebar = () => {
     return (
-        <div className="flex flex-1 bg-red-500 h-screen">
+        <div className="flex max-w-2xl bg-red-500 h-screen">
+            Rokas
+            Rokas
+            Rokas
+            Rokas
+            Rokas
             Rokas
         </div>
     );
