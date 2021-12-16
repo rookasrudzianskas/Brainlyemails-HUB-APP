@@ -6,14 +6,31 @@ import {useRecoilState} from "recoil";
 import {projectName} from "../../../contentManagement/atoms/ProjectName/ProjectName";
 import AddNewTemplatesToEmailCampaign from "../AddNewTemplatesToEmailCampaign";
 import ConnectToTheGooglePay from "../ConnectToTheGooglePay";
+import {newProjectNavigation} from "../../../contentManagement/atoms/NewProjectNavigation/NewProjectNavigation";
 
 const AddNewProject = () => {
 
     const router = useRouter();
+    const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
+
 
     return (
         <div className="">
-            <CreateANewProject />
+            {newProjectNavigationState === 1 && (
+                <CreateANewProject />
+            )}
+
+            {newProjectNavigationState === 2 && (
+                <ManageNewCreatedProjectToTemplate />
+            )}
+
+            {newProjectNavigationState === 3 && (
+                <AddNewTemplatesToEmailCampaign />
+            )}
+
+            {newProjectNavigationState === 4 && (
+                <ConnectToTheGooglePay />
+            )}
             {/*<ManageNewCreatedProjectToTemplate />*/}
             {/*<AddNewTemplatesToEmailCampaign />*/}
             {/*<ConnectToTheGooglePay />*/}
@@ -25,11 +42,16 @@ export default AddNewProject;
 
 export const CreateANewProject = () => {
     const router = useRouter();
+    const [newProjectNavigationState, setNewProjectNavigationState] = useRecoilState(newProjectNavigation);
 
     const [newProjectName, setNewProjectName] = useState('');
     // 👇 this writes the name of project into the datastore
     const [newProjectNameState, setNewProjectNameState] = useRecoilState(projectName);
     setNewProjectNameState(newProjectName);
+
+    const handleNextComponent = () => {
+        setNewProjectNavigationState(parseInt(newProjectNavigationState) + 1);
+    };
 
     return (
         <div className=" bg-gray-100 h-screen">
@@ -56,7 +78,7 @@ export const CreateANewProject = () => {
                                 <div className="flex flex-1" onClick={() => router.back()}>
                                     <p className="text-gray-500 hover:underline cursor-pointer transition duration-150 ease-in-out">cancel</p>
                                 </div>
-                                <div className="flex flex-row items-center bg-indigo-500 py-2 px-3 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                                <div onClick={handleNextComponent} className="flex flex-row items-center bg-indigo-500 py-2 px-3 rounded-sm hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
                                     <p className="text-gray-100">Create project </p>
                                     <ArrowForwardIcon className="text-gray-100 text-md" />
                                 </div>
