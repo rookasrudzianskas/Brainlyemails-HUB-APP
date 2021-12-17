@@ -22,7 +22,6 @@ const AddNewTemplatesToEmailCampaign = () => {
         setNewProjectBackNavigationState(parseInt(newProjectBackNavigationState) + 1);
     };
 
-
     return (
         <div className="">
             <div className=" bg-gray-100 h-screen">

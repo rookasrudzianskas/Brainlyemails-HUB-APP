@@ -4,6 +4,9 @@ import {
     handleDiscardEmailModal,
     handleEmailSchedulingSystemModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {TIMES} from "../../../data/SendingTimes/SendingTimes";
+import Times from "../../NewEmailScreen_Components/EmailFeaturesContainer/Sidebar/components/Times";
+import CodeIcon from '@mui/icons-material/Code';
 
 const EmailSchedulingSendModal = () => {
     const [handleEmailSchedulingSystemModalState, setHandleEmailSchedulingSystemModalState] = useRecoilState(handleEmailSchedulingSystemModal);
@@ -21,7 +24,27 @@ const EmailSchedulingSendModal = () => {
                             <p className="text-xl text-gray-800">Schedule delivery</p>
 
                             <div className="mt-6">
-                                <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
+                                {TIMES.map((time, index) => (
+                                    <div key={index} className="flex flex-col">
+                                        <Times time={time} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        <div className="flex flex-row space-x-2 mt-6">
+                            <div className="border border-1 border-indigo-200 px-2 max-w-[8rem] flex items-center justify-center py-1 rounded-sm hover:bg-indigo-100 cursor-pointer transition duration-150 ease-in-out">
+                                <p className="text-gray-800">20 Dec 2021</p>
+                            </div>
+
+                            <div className="border border-1 border-indigo-200 px-2 max-w-[3rem] flex items-center justify-center py-1 rounded-sm hover:bg-indigo-100 cursor-pointer transition duration-150 ease-in-out">
+                                <p className="text-gray-800 mr-1">08</p>
+                                <CodeIcon className="rotate-90 text-gray-800 text-xs" />
+                            </div>
+
+                            <div className="border border-1 border-indigo-200 px-2 max-w-[3rem] flex items-center justify-center py-1 rounded-sm hover:bg-indigo-100 cursor-pointer transition duration-150 ease-in-out">
+                                <p className="text-gray-800 mr-1">00</p>
+                                <CodeIcon className="rotate-90 text-gray-800 text-xs" />
                             </div>
                         </div>
 
