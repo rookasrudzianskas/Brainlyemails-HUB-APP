@@ -1,24 +1,42 @@
-import React from 'react';
-import FromSection from "../components/FromSection";
-import ToSection from "../components/ToSection";
-import SubjectSection from "../components/SubjectSection";
-import EmailBodySection from "../components/EmailBodySection";
-import {handleTextEditorAndTemplate} from "../../../../contentManagement/atoms/HandleTextEditorAndTemplateState/HandleTextEditorAndTemplateState";
-import {useRecoilState} from "recoil";
-import ChooseASpecificEmailTemplate from "../components/ChooseASpecificEmailTemplate";
-import {handleShowEmailPreviewModal} from "../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import React, {useState} from 'react';
 
 const Center = () => {
-    const [handleTextEditorAndTemplateState, setHandleTextEditorAndTemplateState] = useRecoilState(handleTextEditorAndTemplate);
-    const [handleShowEmailPreviewModalState, setHandleShowEmailPreviewModalState] = useRecoilState(handleShowEmailPreviewModal);
-
+    const [show, setShow] = useState(false);
+    const [show2, setShow2] = useState(false);
     return (
-        <div className="flex w-[50rem] flex flex-col bg-white border border-1 border-indigo-500 rounded-sm">
-            <FromSection />
-            <ToSection />
-            <SubjectSection />
-            {!handleTextEditorAndTemplateState && <EmailBodySection />}
-            {handleTextEditorAndTemplateState && <ChooseASpecificEmailTemplate />}
+        <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm px-10 py-12">
+            <div className="max-w-5xl">
+                <p className="text-xl text-gray-800">
+                    Triggers
+                </p>
+                <p className="text-gray-500 mt-3">
+                    Select conditions that will trigger this automation. Intentionally,
+                    it's possible for the same contact to trigger this automation multiple
+                    times if the contact's data change from condition matching state to
+                    non-matching state back to matching state, and if the goal hasn't been reached or is not set.
+                </p>
+            </div>
+
+            <div className="flex flex-row items-center space-x-3 mt-5">
+                <p className="text-gray-800 hover:cursor-pointer">Filters match:</p>
+                <div onClick={() => setShow(!show)} className="flex space-x-2 flex-row items-center  hover:text-gray-700 cursor-pointer transition duration-150 ease-in-out">
+                    <div className={`w-5 h-5 ${show ? 'bg-indigo-500' : 'bg-gray-100'} rounded-full border-[1px] ${show ? 'border-indigo-300' : 'border-gray-300'} flex items-center justify-center`}>
+                        {show && (
+                            <div className="w-[8px] h-[8px] bg-gray-100 rounded-full"/>
+                        )}
+                    </div>
+                    <p>All conditions</p>
+                </div>
+
+                <div onClick={() => setShow2(!show2)} className="flex space-x-2 flex-row items-center hover:text-gray-700 cursor-pointer transition duration-150 ease-in-out">
+                    <div  className={`w-5 h-5 ${show2 ? 'bg-indigo-500' : 'bg-gray-100'} rounded-full border-[1px] ${show2 ? 'border-indigo-300' : 'border-gray-300'} flex items-center justify-center`}>
+                        {show2 && (
+                            <div className="w-[8px] h-[8px] bg-gray-100 rounded-full"/>
+                        )}
+                    </div>
+                    <p>Any condition</p>
+                </div>
+            </div>
         </div>
     );
 };

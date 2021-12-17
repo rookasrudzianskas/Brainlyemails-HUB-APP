@@ -35,7 +35,7 @@ const TopPart = () => {
                         </div>
                     </div>
                     <div className="py-8 flex space-x-5 mt-2">
-                        {/*<Center />*/}
+                        <Center />
                         {/*<Sidebar />*/}
                     </div>
                 </div>
