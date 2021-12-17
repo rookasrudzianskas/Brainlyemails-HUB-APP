@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/MessengerScreen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/Center/Center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/Center/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/Sidebar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/TopPart/TopPart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/TopPart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/[user]/hub/messenger.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user]/hub/messenger.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="98216000" />
+      <workItem from="1639336533504" duration="98587000" />
     </task>
     <servers />
   </component>
