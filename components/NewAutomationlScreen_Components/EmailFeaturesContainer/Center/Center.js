@@ -37,6 +37,10 @@ const Center = () => {
                     <p>Any condition</p>
                 </div>
             </div>
+
+            <div>
+                Rokas
+            </div>
         </div>
     );
 };
