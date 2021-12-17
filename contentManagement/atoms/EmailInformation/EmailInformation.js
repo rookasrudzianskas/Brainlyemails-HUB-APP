@@ -4,7 +4,7 @@ export const emailInformationData = atom({
     key: 'emailInformationData',
     default: {
         senderEmail: 'rokas@byrookas.com',
-        receiverEmail: '',
+        receiverEmail: 'testing@testing.com',
         subject: '',
         message: '',
     }

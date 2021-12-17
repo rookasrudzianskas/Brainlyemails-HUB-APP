@@ -1,9 +1,13 @@
 import React, {useState} from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
+import {useRecoilState} from "recoil";
+import {emailInformationData} from "../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
 const ToSection = () => {
 
     const [show, setShow] = useState(false);
+    const [emailInformationDataState, setEmailInformationDataState] = useRecoilState(emailInformationData);
+
     const handleShow = () => {
         setShow(!show);
     }
@@ -17,7 +21,9 @@ const ToSection = () => {
                     </div>
 
                     <div className="ml-[58px]">
-                        <p className="text-gray-600">1 recipient</p>
+                        <p className="text-gray-600">{emailInformationDataState.receiverEmail}
+                            {/*{emailInformationDataState.receiverEmail.length} */}
+                            <span className="ml-2">(1</span> recipient)</p>
                         {!show && <p className="text-gray-800 mt-4">Everyone subscribed</p>}
                     </div>
                 </div>
