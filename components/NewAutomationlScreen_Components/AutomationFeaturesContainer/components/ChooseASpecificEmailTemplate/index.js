@@ -1,0 +1,2 @@
+import ChooseASpecificAutomationTemplate from './ChooseASpecificAutomationTemplate';
+export default ChooseASpecificAutomationTemplate;

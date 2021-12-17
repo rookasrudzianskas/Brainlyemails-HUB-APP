@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import CodeIcon from '@mui/icons-material/Code';
+import TriggerComponent from "../components/TriggerComponent";
 
 const Center = () => {
     const [show, setShow] = useState(false);
@@ -38,9 +40,11 @@ const Center = () => {
                 </div>
             </div>
 
-            <div>
-                Rokas
+            <div className="mt-10">
+                <TriggerComponent />
             </div>
+
+
         </div>
     );
 };
