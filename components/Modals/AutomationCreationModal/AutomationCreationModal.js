@@ -3,9 +3,11 @@ import {useRecoilState} from "recoil";
 import {
     handleCreateAutomationModal,
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {newAutomationName} from "../../../contentManagement/atoms/NewAutomations/NewAutomations";
 
 const AutomationCreationModal = () => {
     const [handleCreateAutomationModalState, setHandleCreateAutomationModalState] = useRecoilState(handleCreateAutomationModal);
+    const [newAutomationNameState, setNewAutomationNameState] = useRecoilState(newAutomationName);
 
     return (
         <div>
@@ -29,7 +31,9 @@ const AutomationCreationModal = () => {
                                 <p className="font-semibold text-indigo-500 mb-1">Name</p>
                                 <input
                                     className="shadow appearance-none border border border-indigo-200 rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="username" type="text" placeholder="eg. Onboarding sequence" />
+                                    id="username" type="text" placeholder="eg. Onboarding sequence" value={newAutomationNameState}
+                                    onChange={(e) => setNewAutomationNameState(e.target.value)}
+                                />
 
                             </div>
                         </div>
