@@ -12,13 +12,28 @@ const EmailPreviewDraftModal = () => {
     return (
         <div>
             <div
-                className=" bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute -top-16 right-0 bottom-0 left-0"
+                className=" bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute -top-24 right-0 bottom-0 left-0"
                 id="modal">
                 <div role="alert" className="container mx-auto w-[50rem] md:w-[50rem] max-w-8xl">
                     <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
                         <div className="mb-5 flex flex-row items-center">
                             <div>
                                 <p className="text-xl text-gray-800">This is draft preview</p>
+
+                                <div className="flex flex-col mt-3">
+                                    <div className="flex flex-row">
+                                        <p className="mr-2">From:</p>
+                                        <p>{emailInformationDataState.senderEmail}</p>
+                                    </div>
+                                    <div className="flex flex-row">
+                                        <p className="mr-2">To:</p>
+                                        <p>{emailInformationDataState.receiverEmail}</p>
+                                    </div>
+                                    <div className="flex flex-row">
+                                        <p className="mr-2">Subject:</p>
+                                        <p>{emailInformationDataState.subject}</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div>
