@@ -12,9 +12,9 @@ const TopPart = () => {
                     <div className="flex flex-row items-center">
                         <div className="flex flex-col mt-10">
                             <div className="flex flex-row items-center space-x-5 ">
-                                <div className="flex flex-row space-x-2 hover:cursor-pointer hover:text-indigo-500">
-                                    <ArrowBackIcon className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out" />
-                                    <p className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out">Go back</p>
+                                <div className="flex flex-row space-x-2 px-2 py-1 rounded-sm hover:cursor-pointer hover:text-indigo-500 hover:bg-indigo-200 transition duration-150 ease-in-out">
+                                    <ArrowBackIcon className="text-indigo-500 " />
+                                    <p className="text-indigo-500">Go back</p>
                                 </div>
                                 <FiberManualRecordIcon className="text-xs text-indigo-500" style={{fontSize: 5}} />
                                 <p className="text-gray-500">draft saved</p>
