@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/projects/hub/messenger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/MessengerScreen/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects/[user]/hub/messenger.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user]/hub/messenger.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +59,11 @@
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/projects/[user]" />
       <recent name="$PROJECT_DIR$/pages/projects/hub" />
       <recent name="$PROJECT_DIR$/components/NewProject_Components" />
       <recent name="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components" />
       <recent name="$PROJECT_DIR$/components/DashboardComponents/pages" />
-      <recent name="$PROJECT_DIR$/components/HomeScreen_Components/TwoScreenSidesScrollThing/TwoSides/components/SecondSide" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -73,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="97925000" />
+      <workItem from="1639336533504" duration="98216000" />
     </task>
     <servers />
   </component>

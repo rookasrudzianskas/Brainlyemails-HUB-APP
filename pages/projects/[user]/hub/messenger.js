@@ -1,9 +1,10 @@
 import React from 'react';
+import MessengerScreen from "../../../../screens/MessengerScreen";
 
 const Messenger = () => {
     return (
         <div>
-            Messenger
+            <MessengerScreen />
         </div>
     );
 };
