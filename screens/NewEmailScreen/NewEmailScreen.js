@@ -2,23 +2,33 @@ import React from 'react';
 import Footer from "../../components/WelcomeScreen_Components/Footer/Footer";
 import TopPart from "../../components/NewEmailScreen_Components/EmailFeaturesContainer/TopPart";
 import {useRecoilState} from "recoil";
-import {handleDiscardEmailModal} from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {
+    handleDiscardEmailModal,
+    handleShowEmailPreviewModal
+} from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import EmailDraftDiscardModal from "../../components/Modals/EmailDraftDiscardModal";
 import Header from "../../components/DashboardComponents/partials/Header";
+import EmailPreviewDraftModal from "../../components/Modals/EmailPreviewDraftModal";
 
 const NewEmailScreen = () => {
 
     const [handleDiscardEmailModalState, setHandleDiscardEmailModalState] = useRecoilState(handleDiscardEmailModal);
-    console.log(handleDiscardEmailModalState);
+    const [handleShowEmailPreviewModalState, setHandleShowEmailPreviewModalState] = useRecoilState(handleShowEmailPreviewModal);
+
+    // console.log(handleDiscardEmailModalState);
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            {!handleDiscardEmailModalState ?  <Header/> : null}
+            {!handleDiscardEmailModalState || !handleShowEmailPreviewModalState ?  <Header/> : null}
             <TopPart />
-            {!handleDiscardEmailModalState ? <Footer /> : null}
+            {!handleDiscardEmailModalState || !handleShowEmailPreviewModalState ? <Footer /> : null}
 
             {handleDiscardEmailModalState && (
                 <EmailDraftDiscardModal />
+            )}
+
+            {handleShowEmailPreviewModalState && (
+                <EmailPreviewDraftModal />
             )}
         </div>
     );
