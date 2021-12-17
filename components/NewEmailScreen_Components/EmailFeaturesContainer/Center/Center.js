@@ -17,8 +17,8 @@ const Center = () => {
             <FromSection />
             <ToSection />
             <SubjectSection />
-            {!handleTextEditorAndTemplateState || !handleShowEmailPreviewModalState && <EmailBodySection />}
-            {handleTextEditorAndTemplateState || handleShowEmailPreviewModalState && <ChooseASpecificEmailTemplate />}
+            {!handleTextEditorAndTemplateState && <EmailBodySection />}
+            {handleTextEditorAndTemplateState && <ChooseASpecificEmailTemplate />}
         </div>
     );
 };
