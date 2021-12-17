@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/automation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/AutomationScreen/AutomationScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/AutomationScreen/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/NewAutomationScreen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/AllFeaturesContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/Email/Email.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/Email/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/EmailsSection/EmailsSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/EmailsSection/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/NewMessage/NewMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/NewMessage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/TopInformationBanner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Center/Center.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Center/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Sidebar/Sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Sidebar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/TopPart/TopPart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationScreen_Components/TopPart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/automation.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/automation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screens/AutomationScreen/AutomationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/AutomationScreen/AutomationScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +58,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.0.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Modals" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/NewAutomationScreen_Components" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -54,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/NewAutomationScreen_Components" />
+      <recent name="$PROJECT_DIR$/components/NewAutomation_Components/AllFeaturesContainer/components" />
       <recent name="$PROJECT_DIR$/components/Modals" />
       <recent name="$PROJECT_DIR$/components/NewEmailScreen_Components/EmailFeaturesContainer/components" />
       <recent name="$PROJECT_DIR$/components/NewEmailScreen_Components/EmailFeaturesContainer" />
-      <recent name="$PROJECT_DIR$/components/DashboardComponents/charts" />
-      <recent name="$PROJECT_DIR$/components/DashboardComponents/partials/dashboard" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/NewEmailScreen_Components/EmailFeaturesContainer" />
@@ -76,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="122939000" />
+      <workItem from="1639336533504" duration="124425000" />
     </task>
     <servers />
   </component>
