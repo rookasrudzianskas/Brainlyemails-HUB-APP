@@ -4,10 +4,12 @@ import {
     handleCreateAutomationModal,
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {newAutomationName} from "../../../contentManagement/atoms/NewAutomations/NewAutomations";
+import {useRouter} from "next/router";
 
 const AutomationCreationModal = () => {
     const [handleCreateAutomationModalState, setHandleCreateAutomationModalState] = useRecoilState(handleCreateAutomationModal);
     const [newAutomationNameState, setNewAutomationNameState] = useRecoilState(newAutomationName);
+    const router = useRouter();
 
     return (
         <div>
@@ -49,6 +51,7 @@ const AutomationCreationModal = () => {
                                     Cancel
                                 </button>
                                 <button
+                                    onClick={() => router.push('/projects/rokasrudzianskas/hub/new')}
                                     className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Create automation
                                 </button>
                             </div>

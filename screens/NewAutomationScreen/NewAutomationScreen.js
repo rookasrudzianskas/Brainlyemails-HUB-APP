@@ -4,6 +4,7 @@ import Footer from "../../components/WelcomeScreen_Components/Footer/Footer";
 import {useRecoilState} from "recoil";
 import {handleCreateAutomationModal} from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import AutomationCreationModal from "../../components/Modals/AutomationCreationModal";
+import TopPart from "../../components/NewAutomationlScreen_Components/EmailFeaturesContainer/TopPart";
 
 const NewAutomationScreen = () => {
     const [handleCreateAutomationModalState, setHandleCreateAutomationModalState] = useRecoilState(handleCreateAutomationModal);
@@ -12,6 +13,7 @@ const NewAutomationScreen = () => {
         <div className="overflow-y-scroll scrollbar-hide">
             {/*{!handleCreateAutomationModalState && <Header/>}*/}
             <Header />
+            <TopPart />
             <Footer />
 
             {/*{handleCreateAutomationModalState && (*/}
