@@ -12,7 +12,7 @@ const AutomationCreationModal = () => {
             <div
                 className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out absolute top-0 right-0 bottom-0 left-0"
                 id="modal">
-                <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+                <div role="alert" className="container mx-auto w-[50rem] md:w-[50rem] max-w-8xl">
                     <div className="relative mt-[10rem]  z-50 opacity-100 py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
 
 
@@ -24,20 +24,28 @@ const AutomationCreationModal = () => {
                                     to your users automatically when they meet specified conditions.
                                     This is perfect for on-boarding, boosting trial-to-paid conversion, re-engaging inactive users.</p>
                             </div>
+
+                            <div className="mt-5 flex flex-col">
+                                <p className="font-semibold text-indigo-500 mb-1">Name</p>
+                                <input
+                                    className="shadow appearance-none border border border-indigo-200 rounded w-full py-2 px-3 text-gray-500 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="username" type="text" placeholder="eg. Onboarding sequence" />
+
+                            </div>
                         </div>
 
                         <div className="flex items-center justify-start w-full mt-8">
                             <div className="flex flex-1">
                             </div>
 
-                            <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
+                            <div className="flex space-x-3">
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
                                     onClick={() => setHandleCreateAutomationModalState(!handleCreateAutomationModalState)}>
                                     Cancel
+                                </button>
+                                <button
+                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Create automation
                                 </button>
                             </div>
                         </div>
