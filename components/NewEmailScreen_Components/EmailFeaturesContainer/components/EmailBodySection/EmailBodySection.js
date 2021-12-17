@@ -7,6 +7,7 @@ import { createEditor } from 'slate'
 // Import the Slate components and React plugin.
 import { Slate, Editable, withReact } from 'slate-react'
 const EmailBodySection = () => {
+
     const editor = useMemo(() => withReact(createEditor()), [])
     const [value, setValue] = useState([
         {
@@ -18,7 +19,7 @@ const EmailBodySection = () => {
 
 
     return (
-        <div className="px-10 py-5">
+        <div className="px-10 py-5 h-[10rem]">
             <div className="flex flex-row items-center">
                 <Slate
                     editor={editor}
