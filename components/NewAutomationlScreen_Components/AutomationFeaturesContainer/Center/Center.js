@@ -51,10 +51,11 @@ const Center = () => {
                     </div>
                 ))}
 
-            <div onClick={() =>
+            <div className="mt-5 hover:text-indigo-400 cursor-pointer"
+                onClick={() =>
                 setAddNewAutomationTriggersState(addNewAutomationTriggersState + 1)
             }>
-                Add something
+                <p className="text-indigo-500">+ Add condition</p>
             </div>
 
 
