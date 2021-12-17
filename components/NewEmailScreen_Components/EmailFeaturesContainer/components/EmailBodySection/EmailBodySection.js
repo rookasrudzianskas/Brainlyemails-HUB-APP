@@ -1,4 +1,4 @@
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect, useRef} from 'react';
 // Import React dependencies.
 import { useMemo, useState } from 'react'
 // Import the Slate editor factory.
@@ -9,16 +9,31 @@ import CodeIcon from '@mui/icons-material/Code';
 import { Slate, Editable, withReact } from 'slate-react';
 import { Editor, Transforms } from 'slate';
 import {CustomEditor} from "../SubjectSection/utils/CustomEditor";
+import {useRecoilState} from "recoil";
+import {emailInformationData} from "../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
 
 
 const EmailBodySection = () => {
-    const editor = useMemo(() => withReact(createEditor()), [])
+    const editorRef = useRef();
+    if (!editorRef.current) editorRef.current = withReact(createEditor());
+    const editor = editorRef.current;
+    const [emailInformationDataState, setEmailInformationDataState] = useRecoilState(emailInformationData);
+
     const [value, setValue] = useState([
         {
             type: 'paragraph',
-            children: [{ text: 'A line of text in a paragraph.' }],
+            children: [ {text: emailInformationDataState.message} ],
         },
-    ])
+    ]);
+    const [text, setText] = useState(value[0].children[0].text)
+    // useEffect(() => {
+    //     setText(value[0].children[0].text);
+    // }, [value]);
+
+    setEmailInformationDataState({...emailInformationDataState, message: value[0].children[0].text});
+    console.log('This is the real time changing value', value[0].children[0].text);
+
+
 
     const renderElement = useCallback(props => {
         switch (props.element.type) {
