@@ -25,13 +25,20 @@ const EmailBodySection = () => {
             children: [ {text: emailInformationDataState.message} ],
         },
     ]);
-    const [text, setText] = useState(value[0].children[0].text)
-    // useEffect(() => {
-    //     setText(value[0].children[0].text);
-    // }, [value]);
+    // console.log(value)
+    // const [text, setText] = useState(value[0].children[0].text)
+    useEffect(() => {
+        // setText(value[0].children[0].text);
+        handleDataLayer();
+    }, [value]);
 
-    setEmailInformationDataState({...emailInformationDataState, message: value[0].children[0].text});
-    console.log('This is the real time changing value', value[0].children[0].text);
+    const handleDataLayer = () => {
+        setEmailInformationDataState({
+            ...emailInformationDataState,
+            message: value[0].children[0].text
+        });
+    }
+    // console.log('This is the real time changing value', value[0].children[0].text);
 
 
 
