@@ -2,7 +2,7 @@ import React from 'react';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const ToSection = () => {
     return (
-        <div className="px-10 py-8">
+        <div className="px-10 py-2">
             <div className="flex flex-row items-center">
                 <div className="flex flex-1">
                     <div>
