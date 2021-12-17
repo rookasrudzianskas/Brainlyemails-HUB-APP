@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Modals/AutomationCreationModal/AutomationCreationModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Modals/AutomationCreationModal/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/AllFeaturesContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/AllFeaturesContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/AutomationsSection/AutomationsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/AutomationsSection/AutomationsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/AutomationsSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/AutomationsSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/Email/Email.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/Email/Email.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/Email/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/Email/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/NewAutomation/NewAutomation.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/NewAutomation/NewAutomation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/NewAutomation/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/NewAutomation/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/TopInformationBanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/TopInformationBanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/components/TopInformationBanner/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/AllFeaturesContainer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/AllFeaturesContainer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/Center/Center.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Center/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/Center/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/Sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/Sidebar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/TopPart/TopPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/TopPart/TopPart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationScreen_Components/TopPart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/AutomationScreen_Components/TopPart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/AutomationScreen/AutomationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/AutomationScreen/AutomationScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modals/AutomationCreationModal/AutomationCreationModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modals/AutomationCreationModal/AutomationCreationModal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="126177000" />
+      <workItem from="1639336533504" duration="126484000" />
     </task>
     <servers />
   </component>

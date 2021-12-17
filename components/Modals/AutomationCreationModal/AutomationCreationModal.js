@@ -10,17 +10,19 @@ const AutomationCreationModal = () => {
     return (
         <div>
             <div
-                className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
+                className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out absolute top-0 right-0 bottom-0 left-0"
                 id="modal">
                 <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
-                    <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
+                    <div className="relative mt-[10rem]  z-50 opacity-100 py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
 
 
                         <div>
-                            <p className="text-xl text-gray-800">Discard draft?</p>
+                            <p className="text-xl text-gray-800">Create new automation</p>
 
-                            <div className="mt-6">
-                                <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
+                            <div className="mt-3">
+                                <p className="text-md text-gray-500">Automation allows you to send an email or email sequence
+                                    to your users automatically when they meet specified conditions.
+                                    This is perfect for on-boarding, boosting trial-to-paid conversion, re-engaging inactive users.</p>
                             </div>
                         </div>
 
