@@ -3,7 +3,7 @@ import Footer from "../../components/WelcomeScreen_Components/Footer/Footer";
 import TopPart from "../../components/NewEmailScreen_Components/EmailFeaturesContainer/TopPart";
 import {useRecoilState} from "recoil";
 import {
-    handleDiscardEmailModal,
+    handleDiscardEmailModal, handleEmailSchedulingSystemModal,
     handleShowEmailPreviewModal
 } from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import EmailDraftDiscardModal from "../../components/Modals/EmailDraftDiscardModal";
@@ -14,14 +14,15 @@ const NewEmailScreen = () => {
 
     const [handleDiscardEmailModalState, setHandleDiscardEmailModalState] = useRecoilState(handleDiscardEmailModal);
     const [handleShowEmailPreviewModalState, setHandleShowEmailPreviewModalState] = useRecoilState(handleShowEmailPreviewModal);
+    const [handleEmailSchedulingSystemModalState, setHandleEmailSchedulingSystemModalState] = useRecoilState(handleEmailSchedulingSystemModal);
 
     // console.log(handleDiscardEmailModalState);
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState ?  <Header/> : null}
+            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState && !handleEmailSchedulingSystemModalState ?  <Header/> : null}
             <TopPart />
-            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState ? <Footer /> : null}
+            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState && !handleEmailSchedulingSystemModalState ? <Footer /> : null}
 
             {handleDiscardEmailModalState && (
                 <EmailDraftDiscardModal />
@@ -29,6 +30,12 @@ const NewEmailScreen = () => {
 
             {handleShowEmailPreviewModalState && (
                 <EmailPreviewDraftModal />
+            )}
+
+            {handleEmailSchedulingSystemModalState && (
+                <div>
+
+                </div>
             )}
         </div>
     );
