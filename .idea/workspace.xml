@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer/components/Email/Email.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer/components/Email/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer/components/EmailsSection/EmailsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer/components/EmailsSection/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MessengerScreen_Components/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/Center/Center.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MessengerScreen_Components/TopPart/TopPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MessengerScreen_Components/TopPart/TopPart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +57,11 @@
       <recent name="$PROJECT_DIR$/components/HomeScreen_Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/projects/[user]/hub/messenger" />
       <recent name="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer" />
       <recent name="$PROJECT_DIR$/pages/projects/[user]" />
       <recent name="$PROJECT_DIR$/pages/projects/hub" />
       <recent name="$PROJECT_DIR$/components/NewProject_Components" />
-      <recent name="$PROJECT_DIR$/components/NewProject_Components/TwoSides/FirstSide/components/ShowAllColors/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="100849000" />
+      <workItem from="1639336533504" duration="101121000" />
     </task>
     <servers />
   </component>
