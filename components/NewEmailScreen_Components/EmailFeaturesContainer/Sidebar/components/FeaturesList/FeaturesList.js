@@ -5,7 +5,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import TodayIcon from '@mui/icons-material/Today';
 import {useRecoilState} from "recoil";
 import {
-    handleDiscardEmailModal,
+    handleDiscardEmailModal, handleEmailSchedulingSystemModal,
     handleShowEmailPreviewModal
 } from "../../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {handleTextEditorAndTemplate} from "../../../../../../contentManagement/atoms/HandleTextEditorAndTemplateState/HandleTextEditorAndTemplateState";
@@ -15,6 +15,7 @@ const FeaturesList = () => {
     const [handleDiscardEmailModalState, setHandleDiscardEmailModalState] = useRecoilState(handleDiscardEmailModal);
     const [handleTextEditorAndTemplateState, setHandleTextEditorAndTemplateState] = useRecoilState(handleTextEditorAndTemplate);
     const [handleShowEmailPreviewModalState, setHandleShowEmailPreviewModalState] = useRecoilState(handleShowEmailPreviewModal);
+    const [handleEmailSchedulingSystemModalState, setHandleEmailSchedulingSystemModalState] = useRecoilState(handleEmailSchedulingSystemModal);
 
 
 
@@ -44,7 +45,7 @@ const FeaturesList = () => {
                 <p className="text-gray-600">Show email preview</p>
             </div>
 
-            <div className="flex flex-row py-2 px-2 hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out rounded-sm cursor-pointer ">
+            <div onClick={() => setHandleEmailSchedulingSystemModalState(!handleEmailSchedulingSystemModalState)} className="flex flex-row py-2 px-2 hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out rounded-sm cursor-pointer ">
                 <TodayIcon className="text-gray-400 mr-3 hover:text-gray-800" />
                 <p className="text-gray-600">Schedule delivery</p>
             </div>

@@ -1,9 +1,12 @@
 import React from 'react';
 import {useRecoilState} from "recoil";
-import {handleDiscardEmailModal} from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {
+    handleDiscardEmailModal,
+    handleEmailSchedulingSystemModal
+} from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 
 const EmailSchedulingSendModal = () => {
-    const [handleDiscardEmailModalState, setHandleDiscardEmailModalState] = useRecoilState(handleDiscardEmailModal);
+    const [handleEmailSchedulingSystemModalState, setHandleEmailSchedulingSystemModalState] = useRecoilState(handleEmailSchedulingSystemModal);
 
     return (
         <div>
