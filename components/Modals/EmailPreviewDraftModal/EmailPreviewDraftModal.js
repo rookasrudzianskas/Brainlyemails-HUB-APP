@@ -18,20 +18,20 @@ const EmailPreviewDraftModal = () => {
                     <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
                         <div className="mb-5 flex flex-row items-center">
                             <div>
-                                <p className="text-xl text-gray-800">This is draft preview</p>
+                                <p className="text-xl text-gray-800">This is draft preview 👇</p>
 
                                 <div className="flex flex-col mt-3">
                                     <div className="flex flex-row">
-                                        <p className="mr-2">From:</p>
-                                        <p>{emailInformationDataState.senderEmail}</p>
+                                        <p className="mr-2 text-gray-400 text-sm">From:</p>
+                                        <p className="text-gray-600 text-sm font-semibold ml-[16px]">{emailInformationDataState.senderEmail}</p>
                                     </div>
                                     <div className="flex flex-row">
-                                        <p className="mr-2">To:</p>
-                                        <p>{emailInformationDataState.receiverEmail}</p>
+                                        <p className="mr-2 text-gray-400 text-sm">To:</p>
+                                        <p className="text-gray-600 text-sm font-semibold ml-[33px]">{emailInformationDataState.receiverEmail}</p>
                                     </div>
                                     <div className="flex flex-row">
-                                        <p className="mr-2">Subject:</p>
-                                        <p>{emailInformationDataState.subject}</p>
+                                        <p className="mr-2 text-gray-400 text-sm">Subject:</p>
+                                        <p className="text-gray-600 text-sm font-semibold">{emailInformationDataState.subject}</p>
                                     </div>
                                 </div>
                             </div>
@@ -80,6 +80,12 @@ const EmailPreviewDraftModal = () => {
                                                     <p className="text-gray-500 text-sm">This is the part of an email where you can tell your users about minor things.
                                                         For example, if they didn't request a password change, they can safely ignore the message.
 
+                                                    </p>
+                                                </div>
+
+                                                <div className="mt-10 border-t-[1px] border-indigo-200">
+                                                    <p className="text-sm text-gray-800 mt-2">Don't want to hear from us anymore?
+                                                        <span className="text-indigo-500 ml-2 hover:underline cursor-pointer">Unsubscribe.</span>
                                                     </p>
                                                 </div>
 
