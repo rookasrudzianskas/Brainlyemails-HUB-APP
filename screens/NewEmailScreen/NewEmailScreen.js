@@ -19,9 +19,9 @@ const NewEmailScreen = () => {
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            {!handleDiscardEmailModalState || !handleShowEmailPreviewModalState ?  <Header/> : null}
+            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState ?  <Header/> : null}
             <TopPart />
-            {!handleDiscardEmailModalState || !handleShowEmailPreviewModalState ? <Footer /> : null}
+            {!handleDiscardEmailModalState && !handleShowEmailPreviewModalState ? <Footer /> : null}
 
             {handleDiscardEmailModalState && (
                 <EmailDraftDiscardModal />
