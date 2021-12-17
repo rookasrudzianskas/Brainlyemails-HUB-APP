@@ -22,8 +22,12 @@ const TriggerComponent = () => {
                 <input className="flex flex-1  px-2 text-gray-800 appearance-none outline-none bg-gray-100 py-2 placeholder:gray-800" placeholder={'Type value'}/>
             </div>
 
-            <div onClick={() =>
+            <div onClick={() => {
+                if (addNewAutomationTriggersState <= 1) {
+                    return;
+                }
                 setAddNewAutomationTriggersState(addNewAutomationTriggersState - 1)
+            }
             } className="flex items-center px-1">
                 <CancelIcon className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer" />
             </div>
