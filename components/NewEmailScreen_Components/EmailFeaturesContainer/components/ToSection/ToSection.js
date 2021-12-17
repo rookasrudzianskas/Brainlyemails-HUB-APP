@@ -22,7 +22,7 @@ const ToSection = () => {
                     </div>
                 </div>
 
-                <div onClick={handleShow} className="ml-7 cursor-pointer">
+                <div onClick={handleShow} className="ml-7 cursor-pointer mr-7">
                     <ExpandMoreIcon className="text-gray-500" />
                 </div>
             </div>
