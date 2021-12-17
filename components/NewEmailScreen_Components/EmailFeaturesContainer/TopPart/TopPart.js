@@ -35,3 +35,4 @@ const TopPart = () => {
 };
 
 export default TopPart;
+
