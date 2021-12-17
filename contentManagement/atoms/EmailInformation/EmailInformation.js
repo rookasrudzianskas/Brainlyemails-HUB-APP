@@ -5,7 +5,7 @@ export const emailInformationData = atom({
     default: {
         senderEmail: 'rokas@byrookas.com',
         receiverEmail: 'testing@testing.com',
-        subject: '',
+        subject: 'Something very secret',
         message: '',
     }
 });
