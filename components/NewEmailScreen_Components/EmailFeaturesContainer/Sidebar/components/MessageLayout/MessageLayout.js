@@ -17,7 +17,7 @@ const MessageLayout = () => {
             <div onClick={handleClickForWithLayout} className="flex flex-row p-3 items-center hover:bg-indigo-100 rounded-sm transition duration-150 ease-in-out cursor-pointer">
                 <AttachEmailIcon className="text-2xl text-gray-700" style={{fontSize: 40}} />
                 <div className="flex flex-col ml-3">
-                    <p className={`${addStyles === 1 ? 'text-gray-400' : 'text-gray-800'}`}>With layout</p>
+                    <p className={`${addStyles === 1 ? 'text-gray-800' : 'text-gray-400'}`}>With layout</p>
                     <p className="text-xs text-gray-400">Branded message with logo</p>
                 </div>
             </div>
