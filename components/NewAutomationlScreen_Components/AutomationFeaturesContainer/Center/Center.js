@@ -1,10 +1,15 @@
 import React, {useState} from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 import TriggerComponent from "../components/TriggerComponent";
+import {useRecoilState} from "recoil";
+import {addNewAutomationTriggers} from "../../../../contentManagement/atoms/AddNewAutomationTriggers/AddNewAutomationTriggers";
 
 const Center = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
+    const [addNewAutomationTriggersState, setAddNewAutomationTriggersState] = useRecoilState(addNewAutomationTriggers);
+    console.log(addNewAutomationTriggersState)
+
     return (
         <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm px-10 py-12">
             <div className="max-w-5xl">
@@ -40,11 +45,15 @@ const Center = () => {
                 </div>
             </div>
 
-            <div className="mt-10">
-                <TriggerComponent />
-            </div>
+            {Array(addNewAutomationTriggersState).fill().map((_, i) => (
+                    <div className="mt-5">
+                        <TriggerComponent />
+                    </div>
+                ))}
 
-            <div>
+            <div onClick={() =>
+                setAddNewAutomationTriggersState(addNewAutomationTriggersState + 1)
+            }>
                 Add something
             </div>
 
