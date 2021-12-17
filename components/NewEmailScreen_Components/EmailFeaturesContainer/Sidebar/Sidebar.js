@@ -1,5 +1,6 @@
 import React from 'react';
 import MessageLayout from "./components/MessageLayout";
+import FeaturesList from "./components/FeaturesList";
 
 const Sidebar = () => {
     return (
@@ -7,6 +8,7 @@ const Sidebar = () => {
             <div>
                 <p className="text-sm font-semibold text-gray-500">MESSAGE TYPE:</p>
                 <MessageLayout />
+                <FeaturesList />
             </div>
         </div>
     );
