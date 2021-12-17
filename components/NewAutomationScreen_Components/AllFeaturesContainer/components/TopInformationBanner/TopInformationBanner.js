@@ -1,6 +1,5 @@
 import React from 'react';
-import ShowChartIcon from "@mui/icons-material/ShowChart";
-import CheckIcon from "@mui/icons-material/Check";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const TopInformationBanner = () => {
     return (
@@ -12,13 +11,22 @@ const TopInformationBanner = () => {
                     </div>
                     <div className="max-w-xl mt-4">
                         <p className="text-gray-500">
-                            Let your users know about what you're working on – send newsletters, product updates, and follow‑ups.
-                            Send branded messages with your logo, simple messages without any layout or pick from your templates.
+                            Learn how to set up an onboarding sequence for SaaS. The goal is to convert trial users to paid customers.
+                            This is a common use-case, and it's easy to set up with Brainlyemails.
                         </p>
                     </div>
                 </div>
                 <div className="flex flex-col">
-                    <img src="https://blush.design/api/download?shareUri=A0R3cDdGSlW_tDfP&c=Accesories_0%7Ebbdb98&w=800&h=800&fm=png" className="w-32 h-32 object-contain" alt=""/>
+                    <div>
+                        <p className="text-xs text-indigo-500 mb-3">
+                            30 MINUTES INTEGRATION
+                        </p>
+
+                        <div className="flex flex-row">
+                            <p className="text-indigo-500 mr-2 hover:text-indigo-400 hover:underline transition duration-150 ease-in-out cursor-pointer">Step-by-step guide</p>
+                            <ArrowForwardIcon className="text-indigo-500" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,3 +14,9 @@ export const handleEmailSchedulingSystemModal = atom({
     key: 'handleEmailSchedulingSystemModal', // unique ID (with respect to other atoms/selectors)
     default: false, // default value (aka initial value)
 });
+
+export const handleCreateAutomationModal = atom({
+    key: 'handleCreateAutomationModal', // unique ID (with respect to other atoms/selectors)
+    default: false, // default value (aka initial value)
+});
+

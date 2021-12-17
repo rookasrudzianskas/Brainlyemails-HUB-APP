@@ -1,11 +1,11 @@
 import React from 'react';
-import {FAKE_EMAILS} from "../../../../../data/FakeEmails/FakeEmails";
 import Email from "../Email";
+import {FAKE_AUTOMATIONS} from "../../../../../data/FakeAutomations/FakeEmails";
 
-const EmailsSection = () => {
+const AutomationsSection = () => {
     return (
         <div className="">
-            {FAKE_EMAILS.map((email, index) => {
+            {FAKE_AUTOMATIONS.map((email, index) => {
                 return (
                     <Email email={email} key={index} />
                 )
@@ -16,7 +16,7 @@ const EmailsSection = () => {
     );
 };
 
-export default EmailsSection;
+export default AutomationsSection;
 
 export const PaginationSection = () => {
     return (
