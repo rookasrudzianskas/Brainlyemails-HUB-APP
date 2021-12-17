@@ -2,7 +2,7 @@ import React from 'react';
 
 const FromSection = () => {
     return (
-        <div className="px-10 py-8">
+        <div className="px-10 py-8 border-b-[1px] border-indigo-200">
             <div className="flex flex-row items-center">
                 <div>
                     <p className="text-gray-400">From:</p>

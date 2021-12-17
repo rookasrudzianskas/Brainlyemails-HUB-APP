@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubjectSection = () => {
     return (
-        <div className="px-10 py-5">
+        <div className="px-10 py-5  border-b-[1px] border-indigo-200">
             <div className="flex flex-row items-center">
                 <div>
                     <p className="text-gray-400">Subject:</p>
