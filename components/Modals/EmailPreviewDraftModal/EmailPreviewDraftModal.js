@@ -95,14 +95,20 @@ const EmailPreviewDraftModal = () => {
                                 </div>
                             {/* end of this is email preview */}
                             <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
-                                <button
-                                    className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
-                                    onClick={() => setHandleShowEmailPreviewModalState(!handleShowEmailPreviewModalState)}>
-                                    Cancel
-                                </button>
+                                <div className="flex flex-1">
+
+                                </div>
+                                <div className="flex">
+                                    <button
+                                        className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
+                                    </button>
+                                    <button
+                                        className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
+                                        onClick={() => setHandleShowEmailPreviewModalState(!handleShowEmailPreviewModalState)}>
+                                        Cancel
+                                    </button>
+                                </div>
+
                             </div>
                         </div>
 
