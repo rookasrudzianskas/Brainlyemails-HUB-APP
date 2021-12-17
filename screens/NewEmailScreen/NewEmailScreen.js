@@ -9,6 +9,7 @@ import {
 import EmailDraftDiscardModal from "../../components/Modals/EmailDraftDiscardModal";
 import Header from "../../components/DashboardComponents/partials/Header";
 import EmailPreviewDraftModal from "../../components/Modals/EmailPreviewDraftModal";
+import EmailSchedulingSendModal from "../../components/Modals/EmailSchedulingSendModal";
 
 const NewEmailScreen = () => {
 
@@ -33,9 +34,7 @@ const NewEmailScreen = () => {
             )}
 
             {handleEmailSchedulingSystemModalState && (
-                <div>
-
-                </div>
+                <EmailSchedulingSendModal />
             )}
         </div>
     );
