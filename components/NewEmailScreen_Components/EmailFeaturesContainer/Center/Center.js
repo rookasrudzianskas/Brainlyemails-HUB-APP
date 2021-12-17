@@ -2,6 +2,7 @@ import React from 'react';
 import FromSection from "../components/FromSection";
 import ToSection from "../components/ToSection";
 import SubjectSection from "../components/SubjectSection";
+import EmailBodySection from "../components/EmailBodySection";
 
 const Center = () => {
     return (
@@ -9,6 +10,7 @@ const Center = () => {
             <FromSection />
             <ToSection />
             <SubjectSection />
+            <EmailBodySection />
         </div>
     );
 };
