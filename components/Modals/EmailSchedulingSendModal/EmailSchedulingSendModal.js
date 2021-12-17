@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
 import {
     handleDiscardEmailModal,
@@ -7,9 +7,11 @@ import {
 import {TIMES} from "../../../data/SendingTimes/SendingTimes";
 import Times from "../../NewEmailScreen_Components/EmailFeaturesContainer/Sidebar/components/Times";
 import CodeIcon from '@mui/icons-material/Code';
+import CheckIcon from "@mui/icons-material/Check";
 
 const EmailSchedulingSendModal = () => {
     const [handleEmailSchedulingSystemModalState, setHandleEmailSchedulingSystemModalState] = useRecoilState(handleEmailSchedulingSystemModal);
+    const [checked, setChecked] = useState(false);
 
     return (
         <div>
@@ -48,18 +50,49 @@ const EmailSchedulingSendModal = () => {
                             </div>
                         </div>
 
+                        <div className="flex flex-row mt-5">
+                            {checked ? (
+                                <div onClick={() => setChecked(!checked)} className="flex items-center justify-center w-6 h-6  bg-indigo-500  border border-1 border-indigo-400 rounded-sm">
+                                    {/*<Player*/}
+                                    {/*    autoplay*/}
+                                    {/*    loop={true}*/}
+                                    {/*    src={'https://assets8.lottiefiles.com/private_files/lf30_7hzb2r1r.json'}*/}
+                                    {/*    style={{height: 20, width: 20}}*/}
+                                    {/*/>*/}
+                                    {/*<Checkbox defaultChecked />*/}
+                                    <CheckIcon className="text-white text-sm" size={10} />
+
+                                </div>
+                            ) : (
+                                <div onClick={() => setChecked(!checked)} className="flex items-center justify-center w-6 h-6  bg-gray-100  border border-1 border-gray-300 rounded-sm">
+                                    {/*<Player*/}
+                                    {/*    autoplay*/}
+                                    {/*    loop={true}*/}
+                                    {/*    src={'https://assets8.lottiefiles.com/private_files/lf30_7hzb2r1r.json'}*/}
+                                    {/*    style={{height: 20, width: 20}}*/}
+                                    {/*/>*/}
+                                    {/*<Checkbox defaultChecked />*/}
+                                    {/*<CheckIcon className="text-white text-sm" size={10} />*/}
+
+                                </div>
+                            )}
+
+                            <p className="ml-2 text-gray-800">Timezone-based delivery</p>
+                        </div>
+
                         <div className="flex items-center justify-start w-full mt-8">
                             <div className="flex flex-1">
                             </div>
 
-                            <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
+                            <div className="flex space-x-2">
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
                                     onClick={() => setHandleEmailSchedulingSystemModalState(!handleEmailSchedulingSystemModalState)}>
                                     Cancel
+                                </button>
+                                <button
+                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">
+                                    Set schedule delivery
                                 </button>
                             </div>
                         </div>
