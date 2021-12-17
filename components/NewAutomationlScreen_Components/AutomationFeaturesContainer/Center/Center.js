@@ -44,6 +44,10 @@ const Center = () => {
                 <TriggerComponent />
             </div>
 
+            <div>
+                Add something
+            </div>
+
 
         </div>
     );

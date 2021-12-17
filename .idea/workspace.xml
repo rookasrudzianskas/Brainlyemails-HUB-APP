@@ -2,37 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/TriggerComponent/TriggerComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/TriggerComponent/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contentManagement/atoms/AddNewAutomationTriggers/AddNewAutomationTriggers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/Center.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Center/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/Sidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/Sidebar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/FeaturesList/FeaturesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/FeaturesList/FeaturesList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/FeaturesList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/FeaturesList/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/MessageLayout/MessageLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/MessageLayout/MessageLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/MessageLayout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/MessageLayout/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/PreviewAndSend/PreviewAndSend.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/PreviewAndSend/PreviewAndSend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/PreviewAndSend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/PreviewAndSend/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/Times/Times.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/Times/Times.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/components/Times/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/components/Times/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/Sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Sidebar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/TopPagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/TopPagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/TopPart/TopPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/TopPart/TopPart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/TopPart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/TopPart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/ChooseASpecificEmailTemplate/ChooseASpecificEmailTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/ChooseASpecificEmailTemplate/ChooseASpecificAutomationTemplate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/ChooseASpecificEmailTemplate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/ChooseASpecificEmailTemplate/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/EmailBodySection/EmailBodySection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/AutomationBodySection/EmailBodySection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/EmailBodySection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/AutomationBodySection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/FromSection/FromSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/FromSection/FromSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/FromSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/FromSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/SubjectSection/SubjectSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/SubjectSection/SubjectSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/SubjectSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/SubjectSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/SubjectSection/utils/CustomEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/SubjectSection/utils/CustomEditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/ToSection/ToSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/ToSection/ToSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/components/ToSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/ToSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/EmailFeaturesContainer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/NewAutomationScreen/NewAutomationScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/Center.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +58,11 @@
       <recent name="$PROJECT_DIR$/components/NewAutomation_Components/AllFeaturesContainer/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/contentManagement/atoms" />
       <recent name="$PROJECT_DIR$/components/NewEmailScreen_Components/EmailFeaturesContainer" />
       <recent name="$PROJECT_DIR$/pages/projects/[user]/hub/messenger" />
       <recent name="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer" />
       <recent name="$PROJECT_DIR$/pages/projects/[user]" />
-      <recent name="$PROJECT_DIR$/pages/projects/hub" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="130241000" />
+      <workItem from="1639336533504" duration="130544000" />
     </task>
     <servers />
   </component>
