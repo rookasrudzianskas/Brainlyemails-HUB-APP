@@ -3,9 +3,11 @@ import {useRecoilState} from "recoil";
 import {
     handleShowEmailPreviewModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {emailInformationData} from "../../../contentManagement/atoms/EmailInformation/EmailInformation";
 
 const EmailPreviewDraftModal = () => {
     const [handleShowEmailPreviewModalState, setHandleShowEmailPreviewModalState] = useRecoilState(handleShowEmailPreviewModal);
+    const [emailInformationDataState, setEmailInformationDataState] = useRecoilState(emailInformationData);
 
     return (
         <div>
@@ -18,6 +20,10 @@ const EmailPreviewDraftModal = () => {
 
                         <div>
                             <p className="text-xl text-gray-800">This is draft preview</p>
+                            <p>{emailInformationDataState.senderEmail}</p>
+                            <p>{emailInformationDataState.receiverEmail}</p>
+                            <p>{emailInformationDataState.subject}</p>
+                            <p>{emailInformationDataState.text}</p>
 
                             <div className="mt-6">
                                 <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
