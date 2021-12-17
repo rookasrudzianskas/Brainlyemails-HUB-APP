@@ -4,6 +4,7 @@ import TriggerComponent from "../components/TriggerComponent";
 import {useRecoilState} from "recoil";
 import {addNewAutomationTriggers} from "../../../../contentManagement/atoms/AddNewAutomationTriggers/AddNewAutomationTriggers";
 
+
 const Center = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
