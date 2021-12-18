@@ -1,13 +1,16 @@
 import React from 'react';
 import {newGoalName} from "../../../../../contentManagement/atoms/NewAutomations/NewAutomations";
 import {useRecoilState} from "recoil";
+import GoalComponent from "../../GoalComponent";
+import FiltersMatch from "../../GoalComponent/components/FiltersMatch/FiltersMatch";
+import TriggerComponent from "../TriggerComponent";
 
 const AddGoals = () => {
     const [newGoalNameState, setNewGoalNameState] = useRecoilState(newGoalName);
 
     return (
-        <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm ">
-            <div className="px-10 pt-12">
+        <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm px-10">
+            <div className=" pt-12">
                 <div className="max-w-5xl">
                     <p className="text-xl text-gray-800">
                         Goals <span className="text-gray-300 text-lg">(optional)</span>
@@ -21,8 +24,28 @@ const AddGoals = () => {
 
             </div>
 
+            <div className="flex flex-col space-y-5 w-full">
+                <div className="flex">
+                    <FiltersMatch />
+                </div>
+                <div className="flex">
+                    {Array(newGoalNameState).fill().map((_, i) => (
+                        <div className="mt-5 w-full">
+                            <GoalComponent />
+                        </div>
+                    ))}
+                </div>
+            </div>
+
             <div className="px-12 py-10 mt-6 flex">
                 <p>+ Add condition</p>
+            </div>
+
+            <div className="mt-5 hover:text-indigo-400 cursor-pointer"
+                 onClick={() =>
+                     setNewGoalNameState(newGoalNameState + 1)
+                 }>
+                <p className="text-indigo-500">+ Add condition</p>
             </div>
         </div>
     );
