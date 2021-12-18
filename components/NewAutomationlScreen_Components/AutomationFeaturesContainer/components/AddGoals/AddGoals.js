@@ -53,7 +53,7 @@ const AddGoals = () => {
                 )}
 
 
-                {newGoalNameState >= 1 && (
+                {newGoalNameState === 0 && (
                     <div>
                         <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
                          onClick={() =>
