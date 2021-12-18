@@ -4,3 +4,9 @@ export const newAutomationName = atom({
     key: 'newAutomationName',
     default: '',
 });
+
+
+export const newGoalName = atom({
+    key: 'newGoalName',
+    default: '',
+});

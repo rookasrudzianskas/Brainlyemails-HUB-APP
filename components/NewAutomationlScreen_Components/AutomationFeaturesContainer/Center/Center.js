@@ -5,6 +5,7 @@ import {useRecoilState} from "recoil";
 import {addNewAutomationTriggers} from "../../../../contentManagement/atoms/AddNewAutomationTriggers/AddNewAutomationTriggers";
 import AddMessages from "../components/AddMessages";
 import TriggerSection from "../components/TriggerSection/TriggerSection";
+import AddGoals from "../components/AddGoals";
 
 
 const Center = () => {
@@ -21,6 +22,10 @@ const Center = () => {
 
            <div className="flex">
                <AddMessages />
+           </div>
+
+           <div className="flex">
+               <AddGoals />
            </div>
        </div>
     );
