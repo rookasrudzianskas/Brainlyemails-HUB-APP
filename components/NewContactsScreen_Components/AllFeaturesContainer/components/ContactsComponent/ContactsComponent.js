@@ -5,11 +5,11 @@ import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
 
 const ContactsComponent = () => {
     return (
-        <div className="bg-white mt-5 py-6  border border-1 border-indigo-500 rounded-sm">
+        <div className="bg-white mt-5 py-6 bg-indigo-100 border border-1 border-indigo-500 rounded-sm">
             <div className="flex flex-row items-center w-full">
-                <div className="flex bg-transparent flex-1 w-full">
+                <div className="flex  bg-indigo-100 flex-1 w-full">
                     <div className="px-10 flex flex-col w-full">
-                        <div className=" flex flex-1 items-center border border-indigo-500 rounded-sm justify-center px-2">
+                        <div className=" flex flex-1 items-center bg-white border border-indigo-500 rounded-sm justify-center px-2">
                             <SearchIcon
                                 className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
                             />
@@ -26,9 +26,7 @@ const ContactsComponent = () => {
                         </div>
 
                         <div className="flex flex-row space-x-2">
-                            <SubscribedAndUnsubscribed title={'All'} defaultState={true}/>
-                            <SubscribedAndUnsubscribed title={'Subscribed'} />
-                            <SubscribedAndUnsubscribed title={'Unsubscribed'} />
+                            <SubscribedAndUnsubscribed/>
                         </div>
 
                     </div>
