@@ -17,10 +17,12 @@ const NewGroupCreationModal = () => {
 
 
                         <div>
-                            <p className="text-xl text-gray-800">Discard draft?</p>
+                            <p className="text-xl text-gray-800">New group</p>
 
                             <div className="mt-6">
-                                <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
+                                <p className="text-md text-gray-500 mb-2">Name</p>
+
+                                <input type="text" className="rounded-sm w-full text-gray-800" placeholder="Name"/>
                             </div>
                         </div>
 
@@ -28,14 +30,14 @@ const NewGroupCreationModal = () => {
                             <div className="flex flex-1">
                             </div>
 
-                            <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
+                            <div className="flex space-x-3">
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
                                     onClick={() => setHandleNewGroupCreationModalState(!handleNewGroupCreationModalState)}>
-                                    Cancel
+                                    Discard
+                                </button>
+                                <button
+                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Create group
                                 </button>
                             </div>
                         </div>
