@@ -15,7 +15,7 @@ const ContactsComponent = () => {
             <div className="flex flex-row w-full">
                 <div className="flex  bg-white flex-1 w-full">
                     <div className=" flex flex-col w-full">
-                       <div className="flex w-full flex-col border-b-[1px] border-indigo-500 border-r-4 border-indigo-500 px-10">
+                       <div className="flex w-full flex-col border-b-[1px] border-indigo-500 border-r-1 border-indigo-500 px-10">
                            <div className=" flex flex-1 items-center bg-white border border-indigo-500 rounded-sm justify-center px-2">
                                <SearchIcon
                                    className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
