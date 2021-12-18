@@ -23,7 +23,7 @@ const ContactsComponent = () => {
                                <input
                                    type="text"
                                    placeholder="Search"
-                                   className="flex flex-1 h-[10px] rounded-sm text-gray-500"
+                                   className="flex flex-1 h-0 rounded-sm text-gray-500"
                                    style={{border: 0, outline: 0}}
                                />
                                <SettingsApplicationsIcon
