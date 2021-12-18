@@ -3,6 +3,7 @@ import {useRecoilState} from "recoil";
 import {
     handleAutomatedMessageSendingTimeModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import CodeIcon from '@mui/icons-material/Code';
 
 const AutomatedEmailImediateSendingTimeSelection = () => {
     const [handleAutomatedMessageSendingTimeModalState, setHandleAutomatedMessageSendingTimeModalState] = useRecoilState(handleAutomatedMessageSendingTimeModal);
@@ -27,8 +28,17 @@ const AutomatedEmailImediateSendingTimeSelection = () => {
                             <div className="mt-5 flex flex-col">
                                 <p className="text-indigo-500 font-semibold hover:cursor-pointer">When to send</p>
 
-                                <div className="flex flex-row">
-
+                                <div className="flex flex-row max-w-xl space-x-3 items-center mt-4">
+                                    <div className="bg-gray-100 w-[7rem] px-2 py-2 hover:bg-indigo-200 border border-indigo-400 cursor-pointer transition duration-150 ease-in-out rounded-sm">
+                                        <p className="text-gray-800">0</p>
+                                    </div>
+                                    <div className="flex flex-row items-center bg-gray-100 w-[7rem] px-2 py-2 hover:bg-indigo-200 border border-indigo-400 cursor-pointer transition duration-150 ease-in-out rounded-sm">
+                                        <p className="text-gray-800 flex flex-1">minutes</p>
+                                        <CodeIcon className="rotate-90 text-sm flex" />
+                                    </div>
+                                    <div>
+                                        <p className="text-gray-800 cursor-pointer">after the trigger conditions were met</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -37,14 +47,14 @@ const AutomatedEmailImediateSendingTimeSelection = () => {
                             <div className="flex flex-1">
                             </div>
 
-                            <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
+                            <div className="flex space-x-3">
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
                                     onClick={() => setHandleAutomatedMessageSendingTimeModalState(!handleAutomatedMessageSendingTimeModalState)}>
                                     Cancel
+                                </button>
+                                <button
+                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Update delivery delay
                                 </button>
                             </div>
                         </div>
