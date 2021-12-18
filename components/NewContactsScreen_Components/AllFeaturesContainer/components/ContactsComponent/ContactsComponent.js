@@ -8,19 +8,19 @@ const ContactsComponent = () => {
             <div className="flex flex-row items-center w-full">
                 <div className="flex bg-transparent flex-1 w-full">
                     <div className="px-10 flex w-full">
-                        <div className=" flex flex-1 items-center">
+                        <div className=" flex flex-1 items-center border border-indigo-500 rounded-sm justify-center px-2">
                             <SearchIcon
-                                className="text-indigo-500"
+                                className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
                             />
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="flex flex-1 h-[9px] rounded-sm"
+                                className="flex flex-1 h-[9px] rounded-sm text-gray-500"
                                 style={{border: 0, outline: 0}}
                             />
                             <SettingsApplicationsIcon
-                                className="text-2xl text-indigo-500"
-                                style={{fontSize: 38}}
+                                className="text-2xl text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
+                                style={{fontSize: 30}}
                             />
                         </div>
                     </div>
