@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/AllFeaturesContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/components/NewContact/NewContact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/components/NewContact/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/Center/Center.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/Center/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/Sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/TopPart/TopPart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/TopPart/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/components/ContactsComponent/ContactsComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/ContactsScreen/ContactsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/ContactsScreen/ContactsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/screens/MessengerScreen/MessengerScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/NewContactsScreen_Components/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/Center/Center.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="143814000" />
+      <workItem from="1639336533504" duration="143919000" />
     </task>
     <servers />
   </component>
