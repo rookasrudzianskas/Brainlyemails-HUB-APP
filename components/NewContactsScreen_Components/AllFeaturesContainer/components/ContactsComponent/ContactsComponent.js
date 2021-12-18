@@ -74,19 +74,22 @@ const ContactsComponent = () => {
                 </div>
 
                 <div className="flex w-96 flex-col px-10">
-                    <div className="border-b-[1px] border-indigo-500">
-                        <p className="text-xl text-gray-800 hover:cursor-pointer mb-5">Groups</p>
+                    <div className=" border-indigo-500">
+                        <p className="text-xl text-gray-800 hover:cursor-pointer mb-3">Groups</p>
+                        <p className="text-sm text-gray-800 hover:cursor-pointer">Groups on Brainlyemails are used to make your life easier.
+                            It gives you flexibility to select the users you want to send the emails too.
+                        </p>
                     </div>
 
                     <div className="flex mt-10 border-y-[1px] border-indigo-500">
-                        <p className="text-indigo-500 italic">Add your first group...</p>
+                        <p className="text-indigo-500 italic  mb-6 mt-6">Add your first group...</p>
                     </div>
 
                     <div
                         onClick={() =>
                             setHandleNewGroupCreationModalState(!handleNewGroupCreationModalState)
                         }
-                        className="flex mt-10 border-y-[1px] border-indigo-500">
+                        className="flex mt-10">
                         <p className="text-indigo-500 hover:text-indigo-400 hover:underline transition duration-150 ease-in-out cursor-pointer">+ New Group</p>
                     </div>
                 </div>
