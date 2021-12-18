@@ -28,17 +28,13 @@ const AddGoals = () => {
                 <div className="flex">
                     <FiltersMatch />
                 </div>
-                <div className="flex">
+                <div className="flex flex-col">
                     {Array(newGoalNameState).fill().map((_, i) => (
                         <div className="mt-5 w-full">
                             <GoalComponent />
                         </div>
                     ))}
                 </div>
-            </div>
-
-            <div className="px-12 py-10 mt-6 flex">
-                <p>+ Add condition</p>
             </div>
 
             <div className="mt-5 hover:text-indigo-400 cursor-pointer"
