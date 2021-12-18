@@ -8,5 +8,5 @@ export const newAutomationName = atom({
 
 export const newGoalName = atom({
     key: 'newGoalName',
-    default: 1,
+    default: 0,
 });

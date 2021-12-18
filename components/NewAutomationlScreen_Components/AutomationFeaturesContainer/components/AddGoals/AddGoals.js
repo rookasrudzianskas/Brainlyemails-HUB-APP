@@ -24,33 +24,37 @@ const AddGoals = () => {
 
             </div>
 
-            <div className="flex flex-col space-y-5 w-full">
-                <div className="flex">
-                    <FiltersMatch />
+            {newGoalNameState === 0 && (
+            <div>
+                <div className="flex flex-col space-y-5 w-full">
+                    <div className="flex">
+                        <FiltersMatch />
+                    </div>
+                    <div className="flex flex-col">
+                        {Array(newGoalNameState).fill().map((_, i) => (
+                            <div className="mt-5 w-full">
+                                <GoalComponent />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex flex-col">
-                    {Array(newGoalNameState).fill().map((_, i) => (
-                        <div className="mt-5 w-full">
-                            <GoalComponent />
-                        </div>
-                    ))}
+
+                <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
+                     onClick={() =>
+                         setNewGoalNameState(newGoalNameState + 1)
+                     }>
+                    <p className="text-indigo-500">+ Add condition</p>
+                </div>
+
+
+                <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
+                     onClick={() =>
+                         setNewGoalNameState(newGoalNameState + 1)
+                     }>
+                    <p className="text-indigo-500">Remove goal</p>
                 </div>
             </div>
-
-            <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
-                 onClick={() =>
-                     setNewGoalNameState(newGoalNameState + 1)
-                 }>
-                <p className="text-indigo-500">+ Add condition</p>
-            </div>
-
-
-            <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
-                 onClick={() =>
-                     setNewGoalNameState(newGoalNameState + 1)
-                 }>
-                <p className="text-indigo-500">Remove goal</p>
-            </div>
+                )}
         </div>
     );
 };
