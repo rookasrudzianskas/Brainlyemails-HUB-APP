@@ -7,7 +7,7 @@ import ContactsList from "../ContactsList";
 const ContactsComponent = () => {
     return (
         <div className="bg-white mt-5 py-6 bg-white border border-1 border-indigo-500 rounded-sm">
-            <div className="flex flex-row items-center w-full">
+            <div className="flex flex-row w-full">
                 <div className="flex  bg-white flex-1 w-full">
                     <div className=" flex flex-col w-full">
                        <div className="flex w-full flex-col border-b-[1px] border-indigo-500 border-r-4 border-indigo-500 px-10">
@@ -68,8 +68,10 @@ const ContactsComponent = () => {
                     </div>
                 </div>
 
-                <div className="flex bg-blue-500 w-96">
-                    Rokas
+                <div className="flex w-96">
+                    <div className="border-b-[4px] border-indigo-500">
+                        <p className="text-xl text-gray-800 hover:cursor-pointer">Groups</p>
+                    </div>
                 </div>
             </div>
         </div>
