@@ -11,16 +11,9 @@ const NewAutomationScreen = () => {
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            {/*{!handleCreateAutomationModalState && <Header/>}*/}
             <Header />
             <TopPart />
             <Footer />
-
-            {/*{handleCreateAutomationModalState && (*/}
-            {/*    <AutomationCreationModal />*/}
-            {/*)}*/}
-
-            {/*{!handleCreateAutomationModalState && <Footer />}*/}
         </div>
     );
 };
