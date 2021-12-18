@@ -5,13 +5,16 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import {useRecoilState} from "recoil";
 import {newAutomationName} from "../../../../contentManagement/atoms/NewAutomations/NewAutomations";
+import {handleAutomatedMessageSendingTimeModal} from "../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import AutomatedEmailImediateSendingTimeSelection from "../../../Modals/AutomatedEmailImediateSendingTimeSelection";
 
 const TopPart = () => {
     const [newAutomationNameState, setNewAutomationNameState] = useRecoilState(newAutomationName);
+    const [handleAutomatedMessageSendingTimeModalState, setHandleAutomatedMessageSendingTimeModalState] = useRecoilState(handleAutomatedMessageSendingTimeModal);
 
     return (
         <div className="">
-            <div className=" bg-gray-100 h-[85rem]">
+            <div className={`${handleAutomatedMessageSendingTimeModalState ? 'h-[45rem]' : ' h-[85rem]'} bg-gray-100`}>
                 <div className="container mx-auto px-4 sm:px-8 max-w-7xl">
                     <div className="flex flex-row items-center">
                         <div className="flex flex-col mt-10 w-full">
@@ -36,6 +39,10 @@ const TopPart = () => {
                     </div>
                     <div className="py-8 flex space-x-5 mt-2">
                         <Center />
+
+                        {handleAutomatedMessageSendingTimeModalState && (
+                            <AutomatedEmailImediateSendingTimeSelection />
+                        )}
                     </div>
                 </div>
             </div>

@@ -6,12 +6,15 @@ import {addNewAutomationTriggers} from "../../../../contentManagement/atoms/AddN
 import AddMessages from "../components/AddMessages";
 import TriggerSection from "../components/TriggerSection/TriggerSection";
 import AddGoals from "../components/AddGoals";
+import {handleAutomatedMessageSendingTimeModal} from "../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import EmailDraftDiscardModal from "../../../Modals/EmailDraftDiscardModal";
 
 
 const Center = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [addNewAutomationTriggersState, setAddNewAutomationTriggersState] = useRecoilState(addNewAutomationTriggers);
+
     // console.log(addNewAutomationTriggersState)
 
     return (
@@ -19,6 +22,7 @@ const Center = () => {
             <div className="flex">
                 <TriggerSection />
             </div>
+
 
            <div className="flex">
                <AddMessages />

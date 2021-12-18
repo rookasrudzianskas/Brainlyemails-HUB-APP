@@ -1,19 +1,21 @@
 import React from 'react';
 import Header from "../../components/DashboardComponents/partials/Header";
 import Footer from "../../components/WelcomeScreen_Components/Footer/Footer";
-import {useRecoilState} from "recoil";
-import {handleCreateAutomationModal} from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
-import AutomationCreationModal from "../../components/Modals/AutomationCreationModal";
+
 import TopPart from "../../components/NewAutomationlScreen_Components/AutomationFeaturesContainer/TopPart";
+import {useRecoilState} from "recoil";
+import {handleAutomatedMessageSendingTimeModal} from "../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+
 
 const NewAutomationScreen = () => {
-    const [handleCreateAutomationModalState, setHandleCreateAutomationModalState] = useRecoilState(handleCreateAutomationModal);
+    const [handleAutomatedMessageSendingTimeModalState, setHandleAutomatedMessageSendingTimeModalState] = useRecoilState(handleAutomatedMessageSendingTimeModal);
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            <Header />
+            {!handleAutomatedMessageSendingTimeModalState && <Header />}
             <TopPart />
-            <Footer />
+
+            {!handleAutomatedMessageSendingTimeModalState && <Footer />}
         </div>
     );
 };
