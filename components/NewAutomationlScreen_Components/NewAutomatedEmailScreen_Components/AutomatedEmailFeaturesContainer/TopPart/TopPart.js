@@ -20,7 +20,7 @@ const TopPart = () => {
                                 <p className="text-gray-500">draft saved</p>
                             </div>
                             <div className="flex flex-row flex-1 mt-5">
-                                <h1 className="text-xl text-gray-800">New message</h1>
+                                <h1 className="text-xl text-gray-800">New automated message</h1>
                             </div>
                         </div>
                     </div>
