@@ -1,13 +1,14 @@
 import React from 'react';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import SearchIcon from '@mui/icons-material/Search';
+import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
 
 const ContactsComponent = () => {
     return (
         <div className="bg-white mt-5 py-6  border border-1 border-indigo-500 rounded-sm">
             <div className="flex flex-row items-center w-full">
                 <div className="flex bg-transparent flex-1 w-full">
-                    <div className="px-10 flex w-full">
+                    <div className="px-10 flex flex-col w-full">
                         <div className=" flex flex-1 items-center border border-indigo-500 rounded-sm justify-center px-2">
                             <SearchIcon
                                 className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
@@ -23,8 +24,16 @@ const ContactsComponent = () => {
                                 style={{fontSize: 30}}
                             />
                         </div>
+
+                        <div className="flex flex-row space-x-2">
+                            <SubscribedAndUnsubscribed title={'All'} defaultState={true}/>
+                            <SubscribedAndUnsubscribed title={'Subscribed'} />
+                            <SubscribedAndUnsubscribed title={'Unsubscribed'} />
+                        </div>
+
                     </div>
                 </div>
+
                 <div className="flex bg-blue-500 w-96">
                     Rokas
                 </div>
