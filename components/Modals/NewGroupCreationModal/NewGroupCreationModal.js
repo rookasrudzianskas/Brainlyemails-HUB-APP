@@ -3,9 +3,11 @@ import {useRecoilState} from "recoil";
 import {
     handleNewGroupCreationModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {groupCreationDataCloud} from "../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
 
 const NewGroupCreationModal = () => {
     const [handleNewGroupCreationModalState, setHandleNewGroupCreationModalState] = useRecoilState(handleNewGroupCreationModal);
+    const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
 
     return (
         <div>
@@ -22,7 +24,13 @@ const NewGroupCreationModal = () => {
                             <div className="mt-6">
                                 <p className="text-md text-gray-500 mb-2">Name</p>
 
-                                <input type="text" className="rounded-sm w-full text-gray-800" placeholder="Name"/>
+                                <input
+                                    type="text"
+                                    className="rounded-sm w-full text-gray-800"
+                                    placeholder="Name"
+                                    value={groupCreationDataCloudState}
+                                    onChange={(e) => setGroupCreationDataCloudState(e.target.value)}
+                                />
                             </div>
                         </div>
 
