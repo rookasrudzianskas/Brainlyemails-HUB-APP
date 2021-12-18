@@ -7,6 +7,7 @@ const Center = () => {
         <div className="flex flex-1 flex-col bg-transparent h-screen">
             <NewContact />
             <ContactsComponent />
+            <ContactsList />
         </div>
     );
 };
