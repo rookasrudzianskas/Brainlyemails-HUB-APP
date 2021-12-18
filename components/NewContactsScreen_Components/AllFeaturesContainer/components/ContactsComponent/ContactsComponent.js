@@ -3,8 +3,13 @@ import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import SearchIcon from '@mui/icons-material/Search';
 import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
 import ContactsList from "../ContactsList";
+import {handleNewGroupCreationModal} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {useRecoilState} from "recoil";
 
 const ContactsComponent = () => {
+
+    const [handleNewGroupCreationModalState, setHandleNewGroupCreationModalState] = useRecoilState(handleNewGroupCreationModal);
+
     return (
         <div className="bg-white mt-5 py-6 bg-white border border-1 border-indigo-500 rounded-sm">
             <div className="flex flex-row w-full">
@@ -77,7 +82,11 @@ const ContactsComponent = () => {
                         <p className="text-indigo-500 italic">Add your first group...</p>
                     </div>
 
-                    <div className="flex mt-10 border-y-4 border-indigo-500">
+                    <div
+                        onClick={() =>
+                            setHandleNewGroupCreationModalState(!handleNewGroupCreationModalState)
+                        }
+                        className="flex mt-10 border-y-4 border-indigo-500">
                         <p className="text-indigo-500 hover:text-indigo-400 hover:underline transition duration-150 ease-in-out cursor-pointer">+ New Group</p>
                     </div>
                 </div>

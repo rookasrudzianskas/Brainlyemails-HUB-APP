@@ -25,4 +25,9 @@ export const handleAutomatedMessageSendingTimeModal = atom({
     default: false, // default value (aka initial value)
 });
 
+export const handleNewGroupCreationModal = atom({
+    key: 'handleNewGroupCreationModal', // unique ID (with respect to other atoms/selectors)
+    default: false, // default value (aka initial value)
+});
+
 
