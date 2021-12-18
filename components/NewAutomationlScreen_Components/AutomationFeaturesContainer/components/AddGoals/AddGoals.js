@@ -1,6 +1,10 @@
 import React from 'react';
+import {newGoalName} from "../../../../../contentManagement/atoms/NewAutomations/NewAutomations";
+import {useRecoilState} from "recoil";
 
 const AddGoals = () => {
+    const [newGoalNameState, setNewGoalNameState] = useRecoilState(newGoalName);
+
     return (
         <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm ">
             <div className="px-10 pt-12">
