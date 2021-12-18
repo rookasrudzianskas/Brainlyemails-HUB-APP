@@ -11,7 +11,7 @@ const TopPart = () => {
 
     return (
         <div className="">
-            <div className=" bg-gray-100 h-[70rem]">
+            <div className=" bg-gray-100 h-[85rem]">
                 <div className="container mx-auto px-4 sm:px-8 max-w-7xl">
                     <div className="flex flex-row items-center">
                         <div className="flex flex-col mt-10 w-full">
