@@ -1,7 +1,12 @@
 import React from 'react';
 import Message from "../Message/Message";
+import {handleAutomatedMessageSendingTimeModal} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {useRecoilState} from "recoil";
 
 const AddMessages = () => {
+    const [handleAutomatedMessageSendingTimeModalState, setHandleAutomatedMessageSendingTimeModalState] = useRecoilState(handleAutomatedMessageSendingTimeModal);
+
+
     return (
         <div className="flex w-full flex flex-col bg-white border border-1 border-indigo-500 rounded-sm ">
             <div className="px-10 pt-12">
@@ -20,7 +25,9 @@ const AddMessages = () => {
 
             <div className="bg-indigo-100 py-10 mt-6 flex flex-col">
 
-                <div className="flex items-center justify-center my-5">
+                <div onClick={() =>
+                    setHandleAutomatedMessageSendingTimeModalState(!handleAutomatedMessageSendingTimeModalState)
+                } className="flex items-center justify-center my-5">
                     <p className="text-indigo-700 font-bold hover:underline cursor-pointer transition duration-150 ease-in-out">Send immediately</p>
                 </div>
                 <div className="flex">

@@ -20,3 +20,9 @@ export const handleCreateAutomationModal = atom({
     default: false, // default value (aka initial value)
 });
 
+export const handleAutomatedMessageSendingTimeModal = atom({
+    key: 'handleAutomatedMessageSendingTimeModal', // unique ID (with respect to other atoms/selectors)
+    default: false, // default value (aka initial value)
+});
+
+
