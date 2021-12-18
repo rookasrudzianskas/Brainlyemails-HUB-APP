@@ -1,11 +1,8 @@
 import React, {useState} from 'react';
-import {useRecoilState} from "recoil";
-import {addNewAutomationTriggers} from "../../../../../../contentManagement/atoms/AddNewAutomationTriggers/AddNewAutomationTriggers";
 
 const FiltersMatch = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
-    const [addNewAutomationTriggersState, setAddNewAutomationTriggersState] = useRecoilState(addNewAutomationTriggers);
 
     return (
         <div className="flex flex-row items-center space-x-3 mt-5">

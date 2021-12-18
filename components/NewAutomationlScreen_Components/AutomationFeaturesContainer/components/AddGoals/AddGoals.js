@@ -24,27 +24,27 @@ const AddGoals = () => {
 
             </div>
 
-            {newGoalNameState && <div className="mt-10"/> }
+            {newGoalNameState === 0 && <div className="mb-6"/> }
 
-            {newGoalNameState === 0 && (
-            <div>
-                <div className="flex flex-col space-y-5 w-full">
-                    <div className="flex">
-                        <FiltersMatch />
-                    </div>
-                    <div className="flex flex-col">
-                        {Array(newGoalNameState).fill().map((_, i) => (
-                            <div className="mt-5 w-full">
-                                <GoalComponent />
-                            </div>
-                        ))}
+            {newGoalNameState >= 1 && (
+                <div>
+                    <div className="flex flex-col space-y-5 w-full">
+                        <div className="flex">
+                            <FiltersMatch />
+                        </div>
+                        <div className="flex flex-col">
+                            {Array(newGoalNameState).fill().map((_, i) => (
+                                <div className="mt-5 w-full">
+                                    <GoalComponent />
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
                 )}
 
-                {newGoalNameState && (
-                    <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
+                {newGoalNameState >= 0 && (
+                    <div className={`${newGoalNameState >= 1 && 'mt-5'} hover:text-indigo-400 cursor-pointer mb-5`}
                          onClick={() =>
                              setNewGoalNameState(newGoalNameState + 1)
                          }>
@@ -53,13 +53,13 @@ const AddGoals = () => {
                 )}
 
 
-                {newGoalNameState === 0 && (
+                {newGoalNameState >= 1 && (
                     <div>
-                        <div className="mt-5 hover:text-indigo-400 cursor-pointer mb-5"
+                        <div className=" hover:text-indigo-400 cursor-pointer mb-5"
                          onClick={() =>
-                             setNewGoalNameState(newGoalNameState + 1)
+                             setNewGoalNameState(newGoalNameState - 1)
                          }>
-                        <p className="text-indigo-500">Remove goal</p>
+                        <p className=" text-sm text-red-500">Remove goal</p>
                     </div>
                 </div>
             )}
