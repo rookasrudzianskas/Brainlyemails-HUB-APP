@@ -1,10 +1,8 @@
 import React from 'react';
 import {useRecoilState} from "recoil";
 import {
-    handleAutomatedMessageSendingTimeModal,
-    handleShowEmailPreviewModal
+    handleAutomatedMessageSendingTimeModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
-import {emailInformationData} from "../../../contentManagement/atoms/EmailInformation/EmailInformation";
 
 const AutomatedEmailImediateSendingTimeSelection = () => {
     const [handleAutomatedMessageSendingTimeModalState, setHandleAutomatedMessageSendingTimeModalState] = useRecoilState(handleAutomatedMessageSendingTimeModal);
