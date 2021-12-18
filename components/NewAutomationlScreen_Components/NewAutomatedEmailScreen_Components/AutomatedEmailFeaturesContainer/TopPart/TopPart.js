@@ -3,8 +3,10 @@ import Center from "../Center";
 import Sidebar from "../Sidebar";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import {useRouter} from "next/router";
 
 const TopPart = () => {
+    const router = useRouter();
     return (
         <div className="">
             <div className=" bg-gray-100 h-[55rem]">
@@ -12,7 +14,11 @@ const TopPart = () => {
                     <div className="flex flex-row items-center">
                         <div className="flex flex-col mt-10">
                             <div className="flex flex-row items-center space-x-5 ">
-                                <div className="flex flex-row space-x-2 px-2 py-1 rounded-sm hover:cursor-pointer hover:text-indigo-500 hover:bg-indigo-200 transition duration-150 ease-in-out">
+                                <div
+                                    onClick={() => {
+                                        router.push('/projects/rokasrudzianskas/hub/new')
+                                    }}
+                                    className="flex flex-row space-x-2 px-2 py-1 rounded-sm hover:cursor-pointer hover:text-indigo-500 hover:bg-indigo-200 transition duration-150 ease-in-out">
                                     <ArrowBackIcon className="text-indigo-500 " />
                                     <p className="text-indigo-500">Go back</p>
                                 </div>
