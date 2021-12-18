@@ -2,6 +2,7 @@ import React from 'react';
 import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import SearchIcon from '@mui/icons-material/Search';
 import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
+import ContactsList from "../ContactsList";
 
 const ContactsComponent = () => {
     return (
@@ -16,7 +17,7 @@ const ContactsComponent = () => {
                             <input
                                 type="text"
                                 placeholder="Search"
-                                className="flex flex-1 h-[9px] rounded-sm text-gray-500"
+                                className="flex flex-1 h-[10px] rounded-sm text-gray-500"
                                 style={{border: 0, outline: 0}}
                             />
                             <SettingsApplicationsIcon
@@ -27,6 +28,10 @@ const ContactsComponent = () => {
 
                         <div className="flex flex-row space-x-2">
                             <SubscribedAndUnsubscribed/>
+                        </div>
+
+                        <div>
+                            <ContactsList />
                         </div>
 
                     </div>
