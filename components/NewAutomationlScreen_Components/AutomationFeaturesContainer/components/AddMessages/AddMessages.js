@@ -18,12 +18,12 @@ const AddMessages = () => {
 
 
 
-            <div className="bg-indigo-100 py-10 mt-6 flex flex-col ">
+            <div className="bg-indigo-100 py-10 mt-6 flex flex-col">
                 <div className="flex">
                     <Message />
                 </div>
 
-                <div className="flex">
+                <div className="flex items-center justify-center mt-7">
                     <p className="flex text-indigo-500 hover:underline cursor-pointer transition duration-150 ease-in-out">+ Add message</p>
                 </div>
             </div>
