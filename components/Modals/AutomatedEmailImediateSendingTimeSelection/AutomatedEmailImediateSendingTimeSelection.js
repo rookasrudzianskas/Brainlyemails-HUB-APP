@@ -14,15 +14,24 @@ const AutomatedEmailImediateSendingTimeSelection = () => {
             <div
                 className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
                 id="modal">
-                <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+                <div role="alert" className="container mx-auto w-[10rem] md:w-2/3 max-w-4xl">
                     <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
 
 
                         <div>
-                            <p className="text-xl text-gray-800">Discard draft?</p>
+                            <p className="text-xl text-gray-800">Select sending time</p>
 
                             <div className="mt-6">
-                                <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
+                                <p className="text-md text-gray-500">How long should we wait to send this email? Once the trigger conditions were met, we can send the email immediately or after defined delay.</p>
+                            </div>
+
+
+                            <div className="mt-5 flex flex-col">
+                                <p className="text-indigo-500 font-semibold hover:cursor-pointer">When to send</p>
+
+                                <div className="flex flex-row">
+
+                                </div>
                             </div>
                         </div>
 
