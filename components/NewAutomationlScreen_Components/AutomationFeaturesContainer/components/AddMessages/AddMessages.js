@@ -20,9 +20,6 @@ const AddMessages = () => {
                 </div>
 
             </div>
-
-
-
             <div className="bg-indigo-100 py-10 mt-6 flex flex-col">
 
                 <div onClick={() =>
