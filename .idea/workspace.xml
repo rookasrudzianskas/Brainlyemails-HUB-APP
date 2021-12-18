@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/AddMessages/AddMessages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/AddMessages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/components/TriggerSection/TriggerSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer/Center/Center.js" afterDir="false" />
     </list>
@@ -74,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="132618000" />
+      <workItem from="1639336533504" duration="132848000" />
     </task>
     <servers />
   </component>
