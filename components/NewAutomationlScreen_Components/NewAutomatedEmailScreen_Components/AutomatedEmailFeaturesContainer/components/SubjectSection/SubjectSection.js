@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
-import {emailInformationData} from "../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
+import {emailInformationData} from "../../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
 
 const SubjectSection = () => {
 

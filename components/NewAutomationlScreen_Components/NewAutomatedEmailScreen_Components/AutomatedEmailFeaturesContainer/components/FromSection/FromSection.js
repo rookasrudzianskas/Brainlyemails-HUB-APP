@@ -1,6 +1,6 @@
 import React from 'react';
-import {emailInformationData} from "../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
 import {useRecoilState} from "recoil";
+import {emailInformationData} from "../../../../../../contentManagement/atoms/EmailInformation/EmailInformation";
 
 const FromSection = () => {
     const [emailInformationDataState, setEmailInformationDataState] = useRecoilState(emailInformationData);

@@ -1,7 +1,7 @@
 import React from 'react';
 import CodeIcon from '@mui/icons-material/Code';
 
-const ChooseASpecificAutomationTemplate = () => {
+const ChooseASpecificEmailTemplate = () => {
     return (
         <div className="px-10 py-5 h-[10rem]">
             <div className="flex flex-row items-center">
@@ -26,5 +26,5 @@ const ChooseASpecificAutomationTemplate = () => {
     );
 };
 
-export default ChooseASpecificAutomationTemplate;
+export default ChooseASpecificEmailTemplate;
 
