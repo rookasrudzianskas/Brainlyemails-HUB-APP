@@ -68,9 +68,17 @@ const ContactsComponent = () => {
                     </div>
                 </div>
 
-                <div className="flex w-96">
+                <div className="flex w-96 flex-col px-10">
                     <div className="border-b-[4px] border-indigo-500">
                         <p className="text-xl text-gray-800 hover:cursor-pointer">Groups</p>
+                    </div>
+
+                    <div className="flex mt-10 border-y-4 border-indigo-500">
+                        <p className="text-indigo-500 italic">Add your first group...</p>
+                    </div>
+
+                    <div className="flex mt-10 border-y-4 border-indigo-500">
+                        <p className="text-indigo-500 hover:text-indigo-400 hover:underline transition duration-150 ease-in-out cursor-pointer">+ New Group</p>
                     </div>
                 </div>
             </div>
