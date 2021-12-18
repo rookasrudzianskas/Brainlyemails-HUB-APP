@@ -29,7 +29,13 @@ const TriggerComponent = () => {
                 setAddNewAutomationTriggersState(addNewAutomationTriggersState - 1)
             }
             } className="flex items-center px-1">
-                <CancelIcon className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer" />
+                {addNewAutomationTriggersState === 1 ? (
+                    <div>
+
+                    </div>
+                ) : (
+                    <CancelIcon className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer" />
+                )}
             </div>
         </div>
     );
