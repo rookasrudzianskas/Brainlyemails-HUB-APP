@@ -14,7 +14,7 @@ const Center = () => {
     // console.log(addNewAutomationTriggersState)
 
     return (
-       <div className="flex w-full flex-col">
+       <div className="flex w-full flex-col space-y-10">
             <div className="flex">
                 <TriggerSection />
             </div>
