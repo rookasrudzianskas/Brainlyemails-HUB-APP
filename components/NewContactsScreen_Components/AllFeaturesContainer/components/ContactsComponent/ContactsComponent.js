@@ -85,11 +85,11 @@ const ContactsComponent = () => {
                             <p className="text-indigo-500 italic  mb-6 mt-6">Add your first group...</p>
                         )}
 
-                        {handleNewGroupCreationModalState && (
-                            <div>
-                                <p>{handleNewGroupCreationModalState}</p>
-                            </div>
-                        )}
+                        {/*{handleNewGroupCreationModalState && (*/}
+                        {/*    <div>*/}
+                        {/*        <p>{handleNewGroupCreationModalState}</p>*/}
+                        {/*    </div>*/}
+                        {/*)}*/}
                     </div>
 
                     <div
