@@ -30,4 +30,8 @@ export const handleNewGroupCreationModal = atom({
     default: false, // default value (aka initial value)
 });
 
+export const handleNewContactCreationModal = atom({
+    key: 'handleNewContactCreationModal', // unique ID (with respect to other atoms/selectors)
+    default: false, // default value (aka initial value)
+})
 

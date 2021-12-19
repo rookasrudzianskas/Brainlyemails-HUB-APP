@@ -3,7 +3,10 @@ import SettingsApplicationsIcon from '@mui/icons-material/SettingsApplications';
 import SearchIcon from '@mui/icons-material/Search';
 import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
 import ContactsList from "../ContactsList";
-import {handleNewGroupCreationModal} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {
+    handleNewContactCreationModal,
+    handleNewGroupCreationModal
+} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {useRecoilState} from "recoil";
 import {groupCreationDataCloud} from "../../../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
 import FolderIcon from '@mui/icons-material/Folder';
