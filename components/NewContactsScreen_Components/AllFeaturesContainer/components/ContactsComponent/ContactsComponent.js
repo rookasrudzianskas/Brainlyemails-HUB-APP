@@ -6,6 +6,7 @@ import ContactsList from "../ContactsList";
 import {handleNewGroupCreationModal} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {useRecoilState} from "recoil";
 import {groupCreationDataCloud} from "../../../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
+import FolderIcon from '@mui/icons-material/Folder';
 
 const ContactsComponent = () => {
 
@@ -25,7 +26,7 @@ const ContactsComponent = () => {
                                <input
                                    type="text"
                                    placeholder="Search"
-                                   className="flex flex-1 h-0 rounded-sm text-gray-500"
+                                   className="flex flex-1 h-[1px] rounded-sm text-gray-500"
                                    style={{border: 0, outline: 0}}
                                />
                                <SettingsApplicationsIcon
@@ -88,8 +89,17 @@ const ContactsComponent = () => {
                         )}
 
                         {groupCreationDataCloudState && (
-                            <div>
-                                <p>{groupCreationDataCloudState[0].groupName}</p>
+                            <div className="mt-10 mb-10 flex w-full">
+                                <div className="bg-indigo-100 flex-row space-x-2 rounded-sm flex w-full py-2 px-2 hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                                    <div className="flex flex-1 space-x-2">
+                                        <FolderIcon className="text-indigo-500" />
+                                        <p className="text-gray-800 hover:text-gray-100">{groupCreationDataCloudState[0].groupName}</p>
+                                    </div>
+
+                                    <div className="flex ">
+                                        <p className="text-gray-800">0</p>
+                                    </div>
+                                </div>
                             </div>
                         )}
                     </div>

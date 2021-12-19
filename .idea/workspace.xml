@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Modals/NewGroupCreationModal/NewGroupCreationModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modals/NewGroupCreationModal/NewGroupCreationModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/components/ContactsComponent/ContactsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/NewContactsScreen_Components/AllFeaturesContainer/components/ContactsComponent/ContactsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
-      <workItem from="1639336533504" duration="153917000" />
+      <workItem from="1639336533504" duration="154621000" />
     </task>
     <servers />
   </component>
