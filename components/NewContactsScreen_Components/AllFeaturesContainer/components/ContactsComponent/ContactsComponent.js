@@ -37,7 +37,6 @@ const ContactsComponent = () => {
                            </div>
                        </div>
 
-
                         <div className="mt-10 border-b-[1px] border-indigo-500 mb-10">
                             <ContactsList />
                         </div>
