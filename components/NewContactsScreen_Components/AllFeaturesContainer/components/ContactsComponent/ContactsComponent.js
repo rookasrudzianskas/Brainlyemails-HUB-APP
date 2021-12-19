@@ -15,6 +15,7 @@ const ContactsComponent = () => {
 
     const [handleNewGroupCreationModalState, setHandleNewGroupCreationModalState] = useRecoilState(handleNewGroupCreationModal);
     const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
+    const [handleNewContactCreationModalState, setHandleNewContactCreationModalState] = useRecoilState(handleNewContactCreationModal);
 
     return (
         <div className="bg-white mt-5 py-6 bg-white border border-1 border-indigo-500 rounded-sm">
