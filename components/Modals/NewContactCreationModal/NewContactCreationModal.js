@@ -4,6 +4,8 @@ import {
     handleDiscardEmailModal,
     handleNewContactCreationModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import FilePresentIcon from '@mui/icons-material/FilePresent';
 
 const NewContactCreationModal = () => {
     const [handleNewContactCreationModalState, setHandleNewContactCreationModalState] = useRecoilState(handleNewContactCreationModal);
@@ -20,12 +22,20 @@ const NewContactCreationModal = () => {
                         <div>
                             <p className="text-xl text-gray-800">New contacts</p>
 
-                            <div className="mt-6 flex">
-                                <div className="flex">
+                            <div className="mt-6 flex w-full space-x-3">
+                                <div className="flex bg-red-500 flex-1">
+                                    <div>
+                                        <div className="flex flex-row">
+                                            <FilePresentIcon />
+                                            <p>CSV import</p>
+                                        </div>
+                                        <div>
 
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="flex">
-
+                                <div className="flex bg-blue-500 flex-1">
+                                    Rokas
                                 </div>
                             </div>
                         </div>
