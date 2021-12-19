@@ -6,6 +6,7 @@ import {
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import FilePresentIcon from '@mui/icons-material/FilePresent';
+import CloudCircleIcon from '@mui/icons-material/CloudCircle';
 
 const NewContactCreationModal = () => {
     const [handleNewContactCreationModalState, setHandleNewContactCreationModalState] = useRecoilState(handleNewContactCreationModal);
@@ -15,7 +16,7 @@ const NewContactCreationModal = () => {
             <div
                 className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
                 id="modal">
-                <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+                <div role="alert" className="container mx-auto w-[45rem]">
                     <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
 
 
@@ -23,19 +24,32 @@ const NewContactCreationModal = () => {
                             <p className="text-xl text-gray-800">New contacts</p>
 
                             <div className="mt-6 flex w-full space-x-3">
-                                <div className="flex bg-red-500 flex-1">
-                                    <div>
-                                        <div className="flex flex-row">
-                                            <FilePresentIcon />
-                                            <p>CSV import</p>
+                                <div className="flex flex-1 border border-indigo-500 rounded-sm hover:bg-indigo-100 cursor-pointer transition duration-150 ease-in-out">
+                                    <div className="p-7">
+                                        <div className="flex flex-row items-center text-indigo-200 space-x-2">
+                                            <FilePresentIcon className="text-4xl" />
+                                            <p className="text-gray-800 text-lg">CSV import</p>
                                         </div>
-                                        <div>
-
+                                        <div  className="max-w-sm mt-3 text-gray-800">
+                                            <p className="">
+                                                Import contacts from a CSV file. This is a common
+                                                step if you're migrating your mailing list from another service.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex bg-blue-500 flex-1">
-                                    Rokas
+                                <div className="flex flex-1 border border-indigo-500 rounded-sm hover:bg-indigo-100 cursor-pointer transition duration-150 ease-in-out">
+                                    <div className="p-7">
+                                        <div className="flex flex-row items-center text-indigo-200 space-x-2">
+                                            <CloudCircleIcon className="text-4xl" />
+                                            <p className="text-gray-800 text-lg">JSON API</p>
+                                        </div>
+                                        <div  className="max-w-sm mt-3 text-gray-800">
+                                            <p className="">
+                                                Manage contacts in Brainlyemails with simple HTTP JSON API. Click to learn more.
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
