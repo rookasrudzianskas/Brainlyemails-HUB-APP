@@ -17,7 +17,7 @@ const ContactsScreen = () => {
 
     return (
         <div className="overflow-y-scroll scrollbar-hide">
-            {!handleNewGroupCreationModalState || !handleNewContactCreationModalState && <Header/>}
+            {!handleNewGroupCreationModalState && !handleNewContactCreationModalState && <Header/>}
             <TopPart />
 
             {handleNewGroupCreationModalState && (
@@ -28,7 +28,7 @@ const ContactsScreen = () => {
                 <NewContactCreationModal />
             )}
 
-            {!handleNewGroupCreationModalState || !handleNewContactCreationModalState && <Footer />}
+            {!handleNewGroupCreationModalState && !handleNewContactCreationModalState  && <Footer />}
         </div>
     );
 };

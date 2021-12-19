@@ -79,7 +79,7 @@ const ContactsComponent = () => {
                     </div>
                 </div>
 
-                <div className="flex w-96 flex-col px-10">
+                <div className="flex w-96 flex-col px-10 border border">
                     <div className=" border-indigo-500">
                         <p className="text-xl text-gray-800 hover:cursor-pointer mb-3">Groups</p>
                         <p className="text-sm text-gray-800 hover:cursor-pointer">Groups on Brainlyemails are used to make your life easier.
