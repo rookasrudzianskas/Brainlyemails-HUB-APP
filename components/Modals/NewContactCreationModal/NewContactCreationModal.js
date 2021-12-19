@@ -18,7 +18,7 @@ const NewContactCreationModal = () => {
 
 
                         <div>
-                            <p className="text-xl text-gray-800">Discard draft?</p>
+                            <p className="text-xl text-gray-800">New contacts</p>
 
                             <div className="mt-6">
                                 <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
