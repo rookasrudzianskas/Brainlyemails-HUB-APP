@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import {useRecoilState} from "recoil";
 import {
     handleDiscardEmailModal,
@@ -10,6 +10,8 @@ import CloudCircleIcon from '@mui/icons-material/CloudCircle';
 
 const NewContactCreationModal = () => {
     const [handleNewContactCreationModalState, setHandleNewContactCreationModalState] = useRecoilState(handleNewContactCreationModal);
+    const inputFile = useRef(null)
+
 
     return (
         <div>
@@ -28,9 +30,12 @@ const NewContactCreationModal = () => {
                                     <div className="p-7">
                                         <div className="flex flex-row items-center text-indigo-200 space-x-2">
                                             <FilePresentIcon className="text-4xl" />
+                                            <input type='file' id='file' ref={inputFile} style={{display: 'none'}}/>
                                             <p className="text-gray-800 text-lg">CSV import</p>
                                         </div>
-                                        <div  className="max-w-sm mt-3 text-gray-800">
+                                        <div  className="max-w-sm mt-3 text-gray-800" onClick={() =>
+                                            inputFile.current.click()
+                                        }>
                                             <p className="">
                                                 Import contacts from a CSV file. This is a common
                                                 step if you're migrating your mailing list from another service.
