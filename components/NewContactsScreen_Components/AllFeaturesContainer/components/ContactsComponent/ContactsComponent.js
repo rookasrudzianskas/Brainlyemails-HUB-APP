@@ -5,10 +5,12 @@ import SubscribedAndUnsubscribed from "../SubscribedAndUnsubscribed";
 import ContactsList from "../ContactsList";
 import {handleNewGroupCreationModal} from "../../../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {useRecoilState} from "recoil";
+import {groupCreationDataCloud} from "../../../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
 
 const ContactsComponent = () => {
 
     const [handleNewGroupCreationModalState, setHandleNewGroupCreationModalState] = useRecoilState(handleNewGroupCreationModal);
+    const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
 
     return (
         <div className="bg-white mt-5 py-6 bg-white border border-1 border-indigo-500 rounded-sm">
@@ -81,15 +83,15 @@ const ContactsComponent = () => {
                     </div>
 
                     <div className="flex mt-10 border-y-[1px] border-indigo-500">
-                        {!handleNewGroupCreationModalState && (
+                        {!groupCreationDataCloudState && (
                             <p className="text-indigo-500 italic  mb-6 mt-6">Add your first group...</p>
                         )}
 
-                        {/*{handleNewGroupCreationModalState && (*/}
-                        {/*    <div>*/}
-                        {/*        <p>{handleNewGroupCreationModalState}</p>*/}
-                        {/*    </div>*/}
-                        {/*)}*/}
+                        {groupCreationDataCloudState && (
+                            <div>
+                                <p>{groupCreationDataCloudState[0].groupName}</p>
+                            </div>
+                        )}
                     </div>
 
                     <div

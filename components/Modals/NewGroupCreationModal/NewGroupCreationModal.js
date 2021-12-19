@@ -9,6 +9,8 @@ const NewGroupCreationModal = () => {
     const [handleNewGroupCreationModalState, setHandleNewGroupCreationModalState] = useRecoilState(handleNewGroupCreationModal);
     const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
 
+    console.log('This is the name', groupCreationDataCloudState[0].groupName)
+
     return (
         <div>
             <div
@@ -28,8 +30,17 @@ const NewGroupCreationModal = () => {
                                     type="text"
                                     className="rounded-sm w-full text-gray-800"
                                     placeholder="Name"
-                                    value={groupCreationDataCloudState}
-                                    onChange={(e) => setGroupCreationDataCloudState(e.target.value)}
+                                    value={groupCreationDataCloudState[0].groupName}
+                                    onChange={(e) => {
+                                        setGroupCreationDataCloudState(
+                                            [
+                                                {
+                                                    ...groupCreationDataCloudState[0],
+                                                    groupName: e.target.value
+                                                }
+                                            ]
+                                        )
+                                    }}
                                 />
                             </div>
                         </div>
