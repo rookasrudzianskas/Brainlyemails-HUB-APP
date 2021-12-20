@@ -4,7 +4,7 @@ import RightSide from "../../components/EditFormScreen_Components/RightSide";
 
 const EditFormScreen = () => {
     return (
-        <div className="h-screen w-screen flex flex-row">
+        <div className="h-screen w-screen flex flex-row bg-gray-100">
             <LeftSide />
             <RightSide />
         </div>
