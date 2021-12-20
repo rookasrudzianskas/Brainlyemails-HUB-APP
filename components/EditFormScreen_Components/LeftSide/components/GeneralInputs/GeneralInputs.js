@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
+import {useRecoilState} from "recoil";
+import {addNewFieldsToForm} from "../../../../../contentManagement/atoms/AddNewFieldsToForm/AddNewFieldsToForm";
 
 const GeneralInputs = () => {
     const [showTheFormattingOptions, setShowTheFormattingOptions] = useState(false);
+    const [addNewFieldsToFormState, setAdNewFieldsToFormState] = useRecoilState(addNewFieldsToForm);
 
     return (
         <div className="overflow-y-scroll">
@@ -115,7 +118,11 @@ const GeneralInputs = () => {
 
             <div className="border-b-[1px] border-indigo-200 mt-10 mb-6"/>
 
-            <div className="">
+            <div className=""
+                onClick={() =>
+                    setAdNewFieldsToFormState(addNewFieldsToFormState + 1)
+                }
+            >
                 <p className="text-indigo-500 hover:underline hover:text-indigo-400 cursor-pointer transition duration-150 ease-in-out">+ Add field</p>
             </div>
 

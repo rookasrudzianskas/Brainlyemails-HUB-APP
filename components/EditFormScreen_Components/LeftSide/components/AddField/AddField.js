@@ -1,6 +1,11 @@
 import React from 'react';
+import {useRecoilState} from "recoil";
+import {addNewFieldsToForm} from "../../../../../contentManagement/atoms/AddNewFieldsToForm/AddNewFieldsToForm";
 
 const AddField = () => {
+
+    const [addNewFieldsToFormState, setAdNewFieldsToFormState] = useRecoilState(addNewFieldsToForm);
+
     return (
         <div className="">
             <div className="mb-4 flex flex-col mt-3">
