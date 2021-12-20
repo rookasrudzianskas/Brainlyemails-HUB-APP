@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
 import {
     handleNewFormCreationModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {groupCreationDataCloud} from "../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
+import CheckIcon from "@mui/icons-material/Check";
 
 const CreateFormModalMain = () => {
     const [handleNewFormCreationModalState, setHandleNewFormCreationModalState] = useRecoilState(handleNewFormCreationModal);
     const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
-
+    const [show, setShow] = useState(false);
     return (
         <div>
             <div
@@ -33,20 +34,58 @@ const CreateFormModalMain = () => {
                                 <p className="text-md text-indigo-500 font-semibold mb-1">Add to groups</p>
                                 <p className="text-sm text-gray-500">When someone subscribes via this form, he'll be automatically added to the selected groups.</p>
                             </div>
+
+                            <div>
+                                {show ? (
+                                    <div className="flex h-[3rem] items-center hover:cursor-pointer" onClick={() =>
+                                        setShow(!show)
+                                    }>
+                                        <div className="flex flex-row items-center">
+                                            <div className="flex items-center justify-center w-6 h-6  bg-indigo-500  border border-1 border-indigo-400 rounded-sm">
+                                                <CheckIcon className="text-white text-sm" size={10} />
+                                            </div>
+                                            <div>
+                                                <p className="text-gray-700 text-md ml-2 truncate">{groupCreationDataCloudState[0].groupName}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) : (
+                                    <div className="flex h-[3rem] items-center hover:cursor-pointer" onClick={() =>
+                                        setShow(!show)
+                                    }>
+                                        <div className="flex flex-row items-center">
+                                            <div className="flex w-6 h-6 border border-1 border-gray-300"/>
+                                            <div className="overflow-hidden">
+                                                <p className="text-gray-700 text-md  ml-2 truncate text-ellipsis overflow-hidden">{groupCreationDataCloudState[0].groupName}</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                )}
+                            </div>
+
+
+                            <div className="border-y-[1px] border-indigo-200 mt-6">
+                                <div className="my-3">
+                                    <p className="text-md text-indigo-500 font-semibold mb-1">Set up auto-responder</p>
+                                    <p className="text-sm text-gray-500">If you want to automatically send an email to the new subscriber when he joins the selected groups, you can set up automation to do that for you.</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="flex items-center justify-start w-full mt-8">
                             <div className="flex flex-1">
                             </div>
 
-                            <div className="flex">
-                                <button
-                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Submit
-                                </button>
+                            <div className="flex space-x-3">
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
                                     onClick={() => setHandleNewFormCreationModalState(!handleNewFormCreationModalState)}>
-                                    Cancel
+                                    Discard
+                                </button>
+                                <button
+                                    className="focus:outline-none transition duration-150 ease-in-out hover:bg-indigo-400 bg-indigo-500 rounded text-white px-5 py-1 text-sm">Save changes
                                 </button>
                             </div>
                         </div>
