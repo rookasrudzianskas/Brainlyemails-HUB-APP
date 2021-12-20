@@ -1,23 +1,26 @@
 import React from 'react';
+import {useRecoilState} from "recoil";
+import {formDataCloudState} from "../../../contentManagement/atoms/FormDataCloud/FormDataCloud";
 
 const RightSide = () => {
+    const [formDataCloudStateLayer, setFormDataCloudStateLayer] = useRecoilState(formDataCloudState);
+
     return (
         <div className="flex flex-1 bg-gray-100 flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="mb-8">
-                    <p className="text-xl font-semibold">Something very cool here</p>
+                    <p className="text-xl font-semibold">Something very cool with 🍌</p>
                 </div>
 
 
                 <div className="max-w-[35rem] border border-indigo-200 bg-white px-10">
                     <div className="pt-10">
-                        <p className="text-xl font-bold text-indigo-500">Hello</p>
+                        <p className="text-xl font-bold text-indigo-500">{formDataCloudStateLayer?.formData?.title}</p>
                     </div>
 
                     <div className="max-w-md mt-5">
                         <p className="text-gray-800">
-                            Never miss a thing from _MAGICAL_. You can subscribe for free.
-                            We don't send spam, and if you get bored, you can unsubscribe with one click.
+                            {formDataCloudStateLayer?.formData?.description}
                         </p>
                     </div>
 

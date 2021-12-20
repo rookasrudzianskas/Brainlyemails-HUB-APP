@@ -7,7 +7,8 @@ import {formDataCloudState} from "../../../../../contentManagement/atoms/FormDat
 const GeneralInputs = () => {
     const [showTheFormattingOptions, setShowTheFormattingOptions] = useState(false);
     const [addNewFieldsToFormState, setAdNewFieldsToFormState] = useRecoilState(addNewFieldsToForm);
-    const [formDataCloudStateLayer, setFormDataCloudStateLayer] = useRecoilState(formDataCloudState)
+    const [formDataCloudStateLayer, setFormDataCloudStateLayer] = useRecoilState(formDataCloudState);
+    // console.log(formDataCloudStateLayer.formData.title);
 
     return (
         <div className=" overflow-y-auto">
@@ -23,7 +24,7 @@ const GeneralInputs = () => {
                         style={{border: 'none'}}
                         type="text"
                         value={formDataCloudStateLayer.title}
-                        onChange={() => {
+                        onChange={(e) => {
                             setFormDataCloudStateLayer({
                                 ...formDataCloudStateLayer,
                                 formData: {
@@ -88,7 +89,18 @@ const GeneralInputs = () => {
                             id="username"
                             style={{border: 'none', resize: 'none'}}
                             rows="4"
-                            placeholder="Tell something cool..." />
+                            placeholder="Tell something cool..."
+                            value={formDataCloudStateLayer.formData.description}
+                            onChange={(e) => {
+                                setFormDataCloudStateLayer({
+                                    ...formDataCloudStateLayer,
+                                    formData: {
+                                        ...formDataCloudStateLayer.formData,
+                                        description: e.target.value
+                                    }
+                                })
+                            }}
+                        />
                     </div>
                 </div>
 
