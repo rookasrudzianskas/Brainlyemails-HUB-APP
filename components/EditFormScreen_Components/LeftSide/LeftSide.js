@@ -9,7 +9,7 @@ const LeftSide = () => {
             </div>
             <div className="flex flex-row flex-1 bg-gray-100">
                 <NavigationComponent />
-
+                <FormContent />
             </div>
         </div>
     );
