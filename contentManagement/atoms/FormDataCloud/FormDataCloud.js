@@ -5,7 +5,11 @@ export const formDataCloudState = atom({
     default: {
         formData: {
             name: '',
-            email: '',
+            title: '',
+            description: '',
+            buttonLabel: '',
+            emailAddress: '',
+            CONTACT_PROP: '',
             message: '',
         },
         formErrors: {
