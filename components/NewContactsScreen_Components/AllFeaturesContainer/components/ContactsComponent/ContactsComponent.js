@@ -22,8 +22,8 @@ const ContactsComponent = () => {
             <div className="flex flex-row w-full">
                 <div className="flex  bg-white flex-1 w-full">
                     <div className=" flex flex-col w-full">
-                       <div className="flex w-full flex-col border-b-[1px] border-indigo-500 border-r-1 border-indigo-500 px-10">
-                           <div className=" flex flex-1 items-center bg-white border border-indigo-500 rounded-sm justify-center px-2">
+                       <div className="flex w-full flex-col border-b-[1px] border-indigo-200 border-r-1 border-indigo-200 px-10">
+                           <div className=" flex flex-1 items-center bg-white border border-indigo-200 rounded-sm justify-center px-2">
                                <SearchIcon
                                    className="text-indigo-500 hover:text-indigo-400 transition duration-150 ease-in-out cursor-pointer"
                                />
@@ -44,7 +44,7 @@ const ContactsComponent = () => {
                            </div>
                        </div>
 
-                        <div className="mt-10 border-b-[1px] border-indigo-500 mb-10">
+                        <div className="mt-10 border-b-[1px] border-indigo-200 mb-10">
                             <ContactsList />
                         </div>
 
@@ -79,15 +79,15 @@ const ContactsComponent = () => {
                     </div>
                 </div>
 
-                <div className="flex w-96 flex-col px-10 border border">
-                    <div className=" border-indigo-500">
+                <div className="flex w-96 flex-col px-10">
+                    <div className=" border-indigo-200">
                         <p className="text-xl text-gray-800 hover:cursor-pointer mb-3">Groups</p>
                         <p className="text-sm text-gray-800 hover:cursor-pointer">Groups on Brainlyemails are used to make your life easier.
                             It gives you flexibility to select the users you want to send the emails too.
                         </p>
                     </div>
 
-                    <div className="flex mt-10 border-y-[1px] border-indigo-500">
+                    <div className="flex mt-10 border-y-[1px] border-indigo-200">
                         {!groupCreationDataCloudState && (
                             <p className="text-indigo-500 italic  mb-6 mt-6">Add your first group...</p>
                         )}
