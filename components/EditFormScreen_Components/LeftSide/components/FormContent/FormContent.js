@@ -2,8 +2,10 @@ import React from 'react';
 
 const FormContent = () => {
     return (
-        <div className="">
-
+        <div className="bg-white">
+            <div>
+                Roaks
+            </div>
         </div>
     );
 };
