@@ -4,12 +4,12 @@ import {ArrowBack} from "@mui/icons-material";
 const NavigationComponent = () => {
     return (
         <div className="flex flex-row space-x-3 justify-center mt-8 ml-2">
-            <div className="flex flex-row justify-center bg-indigo-200 h-10 px-2 items-center justify-center">
+            <div className="flex flex-row justify-center h-10 px-2 rounded-sm items-center justify-center space-x-2 hover:bg-indigo-200 transition duration-150 ease-in-out cursor-pointer">
                 <ArrowBack className="text-indigo-500 text-md" />
-                <p>Go back</p>
+                <p className="text-gray-800">Go back</p>
             </div>
-            <div className="flex flex-col bg-indigo-500 h-10 px-2 items-center justify-center">
-                <p className="text-gray-100">Save changes</p>
+            <div className="flex flex-col bg-indigo-500 h-10 px-2 rounded-sm items-center justify-center hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
+                <p className="text-gray-100 font-semibold">Save changes</p>
             </div>
         </div>
     );
