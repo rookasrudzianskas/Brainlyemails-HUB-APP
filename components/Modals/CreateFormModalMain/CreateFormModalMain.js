@@ -5,10 +5,12 @@ import {
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 import {groupCreationDataCloud} from "../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
 import CheckIcon from "@mui/icons-material/Check";
+import {formDataCloudState} from "../../../contentManagement/atoms/FormDataCloud/FormDataCloud";
 
 const CreateFormModalMain = () => {
     const [handleNewFormCreationModalState, setHandleNewFormCreationModalState] = useRecoilState(handleNewFormCreationModal);
     const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
+    const [formDataCloudStateLayer, setFormDataCloudStateLayer] = useRecoilState(formDataCloudState);
     const [show, setShow] = useState(false);
     return (
         <div>
@@ -26,7 +28,15 @@ const CreateFormModalMain = () => {
                                 <p className="text-md text-indigo-500 font-semibold mb-1">Name</p>
                                 <input
                                     className="shadow appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                                    id="username" type="text" placeholder="Name" />
+                                    id="username"
+                                    type="text"
+                                    placeholder="Name"
+                                    value={formDataCloudStateLayer}
+                                    onChange={(e) => setFormDataCloudStateLayer({
+                                        ...formDataCloudStateLayer,
+                                        name: e.target.value
+                                    })}
+                                />
 
                             </div>
 
