@@ -110,7 +110,18 @@ const GeneralInputs = () => {
                         className="focus:outline-none outline-none appearance-none bg-gray-100 rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="username" type="text"
                         style={{border: 'none',     outline: 'none'}}
-                        placeholder="Button text" />
+                        placeholder="Button text"
+                        value={formDataCloudStateLayer.formData.buttonLabel}
+                        onChange={(e) => {
+                            setFormDataCloudStateLayer({
+                                ...formDataCloudStateLayer,
+                                formData: {
+                                    ...formDataCloudStateLayer.formData,
+                                    buttonLabel: e.target.value
+                                }
+                            })
+                        }}
+                    />
                 </div>
             </div>
 

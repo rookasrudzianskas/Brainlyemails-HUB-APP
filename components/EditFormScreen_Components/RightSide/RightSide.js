@@ -9,11 +9,11 @@ const RightSide = () => {
         <div className="flex flex-1 bg-gray-100 flex-col items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="mb-8">
-                    <p className="text-xl font-semibold">Something very cool with 🍌</p>
+                    <p className="text-xl font-semibold">{formDataCloudStateLayer?.formData?.formName}</p>
                 </div>
 
 
-                <div className="max-w-[35rem] border border-indigo-200 bg-white px-10">
+                <div className="max-w-[35rem]  w-[35rem] border border-indigo-200 bg-white px-10">
                     <div className="pt-10">
                         <p className="text-xl font-bold text-indigo-500">{formDataCloudStateLayer?.formData?.title}</p>
                     </div>
@@ -37,7 +37,7 @@ const RightSide = () => {
 
                     <div className=" flex flex-row items-center justify-center mt-10 mb-16">
                         <div className="flex flex-col bg-indigo-500 h-10 px-10 rounded-sm items-center justify-center hover:bg-indigo-400 cursor-pointer transition duration-150 ease-in-out">
-                            <p className="text-gray-100 font-semibold">COOL</p>
+                            <p className="text-gray-100 font-semibold uppercase">{formDataCloudStateLayer?.formData?.buttonLabel}</p>
                         </div>
                     </div>
                 </div>
