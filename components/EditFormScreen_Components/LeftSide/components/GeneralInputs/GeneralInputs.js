@@ -2,10 +2,12 @@ import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
 import {addNewFieldsToForm} from "../../../../../contentManagement/atoms/AddNewFieldsToForm/AddNewFieldsToForm";
 import AddField from "../AddField";
+import {formDataCloudState} from "../../../../../contentManagement/atoms/FormDataCloud/FormDataCloud";
 
 const GeneralInputs = () => {
     const [showTheFormattingOptions, setShowTheFormattingOptions] = useState(false);
     const [addNewFieldsToFormState, setAdNewFieldsToFormState] = useRecoilState(addNewFieldsToForm);
+    const [formDataCloudStateLayer, setFormDataCloudStateLayer] = useRecoilState(formDataCloudState)
 
     return (
         <div className=" overflow-y-auto">
@@ -19,7 +21,18 @@ const GeneralInputs = () => {
                         className="appearance-none bg-gray-100 rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="username"
                         style={{border: 'none'}}
-                        type="text" placeholder="Title" />
+                        type="text"
+                        value={formDataCloudStateLayer.title}
+                        onChange={() => {
+                            setFormDataCloudStateLayer({
+                                ...formDataCloudStateLayer,
+                                formData: {
+                                    ...formDataCloudStateLayer.formData,
+                                    title: e.target.value
+                                }
+                            })
+                        }}
+                        placeholder="Title" />
                 </div>
 
                 <div className="mb-4 flex flex-col mt-3">
