@@ -112,6 +112,13 @@ const GeneralInputs = () => {
                 </div>
 
             </div>
+
+            <div className="border-b-[1px] border-indigo-200 mt-10 mb-6"/>
+
+            <div className="">
+                <p className="text-indigo-500 hover:underline hover:text-indigo-400 cursor-pointer transition duration-150 ease-in-out">+ Add field</p>
+            </div>
+
         </div>
     );
 };

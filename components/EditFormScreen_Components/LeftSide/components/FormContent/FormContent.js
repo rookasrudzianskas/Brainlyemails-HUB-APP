@@ -3,7 +3,7 @@ import GeneralInputs from "../GeneralInputs";
 
 const FormContent = () => {
     return (
-        <div className="bg-white border border-indigo-200">
+        <div className="bg-white border border-indigo-200 rounded-sm">
             <div className="py-6 px-4 border-b border-indigo-200">
                 <p className="text-xl text-gray-800">Form content</p>
             </div>
