@@ -3,16 +3,18 @@ import {useRecoilState} from "recoil";
 import {
     handleNewFormCreationModal
 } from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {groupCreationDataCloud} from "../../../contentManagement/atoms/GroupCreationDataCloud/GroupCreationDataCloud";
 
 const CreateFormModalMain = () => {
     const [handleNewFormCreationModalState, setHandleNewFormCreationModalState] = useRecoilState(handleNewFormCreationModal);
+    const [groupCreationDataCloudState, setGroupCreationDataCloudState] = useRecoilState(groupCreationDataCloud);
 
     return (
         <div>
             <div
                 className="py-12 bg-indigo-500 opacity-90 transition duration-150 ease-in-out z-10 absolute top-0 right-0 bottom-0 left-0"
                 id="modal">
-                <div role="alert" className="container mx-auto w-11/12 md:w-2/3 max-w-lg">
+                <div role="alert" className="container mx-auto w-[40rem]">
                     <div className="relative mt-[10rem] py-8 px-5 md:px-10 bg-white opacity-100 shadow-md rounded border border-gray-400">
 
 
@@ -25,6 +27,11 @@ const CreateFormModalMain = () => {
                                     className="shadow appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                                     id="username" type="text" placeholder="Name" />
 
+                            </div>
+
+                            <div className="mt-5">
+                                <p className="text-md text-indigo-500 font-semibold mb-1">Add to groups</p>
+                                <p className="text-sm text-gray-500">When someone subscribes via this form, he'll be automatically added to the selected groups.</p>
                             </div>
                         </div>
 
