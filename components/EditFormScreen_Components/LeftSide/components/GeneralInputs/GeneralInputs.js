@@ -27,9 +27,42 @@ const GeneralInputs = () => {
                     </div>
 
                     {showTheFormattingOptions && (
-                        <div>
-                            Rokas
-                        </div>
+                       <>
+                           <div className="border-b-[1px] border-indigo-200 mt-5" />
+
+                           <div className="mb-6 mt-6">
+                               <div className="flex flex-col  space-y-1">
+                                   <div className="flex flex-row">
+                                       <p className="text-xs text-indigo-300">Links:</p>
+                                       <div className="bg-gray-100 px-2 rounded-sm mx-2">
+                                           <p className="text-xs text-blue-800">[Example link](http://example.com)</p>
+                                       </div>
+                                   </div>
+
+                                   <div className="flex flex-row">
+                                       <p className="text-xs text-indigo-300">Bold:</p>
+                                       <div className="bg-gray-100 px-2 rounded-sm mx-2">
+                                           <p className="text-xs text-blue-800">**Carefully** crack the eggs</p>
+                                       </div>
+                                   </div>
+
+                                   <div className="flex flex-row">
+                                       <p className="text-xs text-indigo-300">Italics:</p>
+                                       <div className="bg-gray-100 px-2 rounded-sm mx-2">
+                                           <p className="text-xs text-blue-800">hisk the eggs *vigorously*</p>
+                                       </div>
+                                   </div>
+
+                                   <div className="flex flex-row">
+                                       <p className="text-xs text-indigo-300">Strikethrough:</p>
+                                       <div className="bg-gray-100 px-2 rounded-sm mx-2">
+                                           <p className="text-xs text-blue-800">~~Scratch this~~</p>
+                                       </div>
+                                   </div>
+
+                               </div>
+                           </div>
+                       </>
                     )}
 
                     <div>
