@@ -117,17 +117,17 @@ const GeneralInputs = () => {
 
             </div>
 
-            <div className="border-b-[1px] border-indigo-200 mt-10 mb-6"/>
+            <div className="border-b-[1px] border-indigo-200 mt-10 mb-3"/>
 
             <div className="flex flex-col">
                 {Array(addNewFieldsToFormState).fill().map((_, i) => (
-                    <div>
+                    <div className="mt-5">
                         <AddField />
                     </div>
                 ))}
             </div>
 
-            <div className=""
+            <div className="mt-4"
                 onClick={() =>
                     setAdNewFieldsToFormState(addNewFieldsToFormState + 1)
                 }

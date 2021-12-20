@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/LeftSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/LeftSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/AddField/AddField.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/AddField/AddField.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/FormContent/FormContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/FormContent/FormContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/GeneralInputs/GeneralInputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/GeneralInputs/GeneralInputs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="11415000" />
+      <workItem from="1640011683657" duration="11956000" />
     </task>
     <servers />
   </component>
