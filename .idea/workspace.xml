@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/GeneralInputs/GeneralInputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/GeneralInputs/GeneralInputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/RightSide/RightSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/RightSide/RightSide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contentManagement/atoms/FormDataCloud/FormDataCloud.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentManagement/atoms/FormDataCloud/FormDataCloud.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="14752000" />
+      <workItem from="1640011683657" duration="14947000" />
     </task>
     <servers />
   </component>
