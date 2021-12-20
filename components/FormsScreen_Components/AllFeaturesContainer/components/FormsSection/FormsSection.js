@@ -1,13 +1,13 @@
 import React from 'react';
-import {FAKE_EMAILS} from "../../../../../data/FakeEmails/FakeEmails";
-import Email from "../Email";
+import Form from "../Form";
+import {FAKE_FORMS} from "../../../../../data/FakeForms/FakeEmails";
 
-const EmailsSection = () => {
+const FormsSection = () => {
     return (
         <div className="">
-            {FAKE_EMAILS.map((email, index) => {
+            {FAKE_FORMS.map((form, index) => {
                 return (
-                    <Email email={email} key={index} />
+                    <Form form={form} key={index} />
                 )
             })}
 
@@ -16,7 +16,7 @@ const EmailsSection = () => {
     );
 };
 
-export default EmailsSection;
+export default FormsSection;
 
 export const PaginationSection = () => {
     return (
