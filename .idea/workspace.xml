@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/FakeForms/FakeEmails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Email/Email.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/Form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Email/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/EmailsSection/EmailsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/FormsSection/FormsSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/EmailsSection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/FormsSection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/Center/Center.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/Center/Center.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/Form.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="1221000" />
+      <workItem from="1640011683657" duration="1511000" />
     </task>
     <servers />
   </component>
