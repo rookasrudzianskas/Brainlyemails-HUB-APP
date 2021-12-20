@@ -17,10 +17,14 @@ const CreateFormModalMain = () => {
 
 
                         <div>
-                            <p className="text-xl text-gray-800">Discard draft?</p>
+                            <p className="text-xl text-gray-800">Create form</p>
 
                             <div className="mt-6">
-                                <p className="text-md text-gray-500">Draft will be permanently deleted.</p>
+                                <p className="text-md text-indigo-500 font-semibold mb-1">Name</p>
+                                <input
+                                    className="shadow appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                    id="username" type="text" placeholder="Name" />
+
                             </div>
                         </div>
 
