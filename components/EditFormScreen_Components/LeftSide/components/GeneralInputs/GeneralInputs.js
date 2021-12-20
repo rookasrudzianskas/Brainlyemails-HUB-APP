@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
 import {addNewFieldsToForm} from "../../../../../contentManagement/atoms/AddNewFieldsToForm/AddNewFieldsToForm";
+import AddField from "../AddField";
 
 const GeneralInputs = () => {
     const [showTheFormattingOptions, setShowTheFormattingOptions] = useState(false);
     const [addNewFieldsToFormState, setAdNewFieldsToFormState] = useRecoilState(addNewFieldsToForm);
 
     return (
-        <div className="overflow-y-scroll">
+        <div className=" overflow-y-auto">
             <p className="text-gray-800 text-lg">General</p>
 
 
@@ -117,6 +118,14 @@ const GeneralInputs = () => {
             </div>
 
             <div className="border-b-[1px] border-indigo-200 mt-10 mb-6"/>
+
+            <div className="flex flex-col">
+                {Array(addNewFieldsToFormState).fill().map((_, i) => (
+                    <div>
+                        <AddField />
+                    </div>
+                ))}
+            </div>
 
             <div className=""
                 onClick={() =>
