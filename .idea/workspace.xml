@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Modals/CreateFormModalMain/CreateFormModalMain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Modals/CreateFormModalMain/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/FormsScreen_Components/AllFeaturesContainer/components/Form/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contentManagement/atoms/HandleModalStates/HandleModalStates.js" beforeDir="false" afterPath="$PROJECT_DIR$/contentManagement/atoms/HandleModalStates/HandleModalStates.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +43,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.0.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.0.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Modals" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
@@ -50,9 +52,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/Modals" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/components/Modals" />
       <recent name="$PROJECT_DIR$/components/NewAutomationlScreen_Components" />
       <recent name="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer" />
     </key>
@@ -73,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="1511000" />
+      <workItem from="1640011683657" duration="1629000" />
     </task>
     <servers />
   </component>
