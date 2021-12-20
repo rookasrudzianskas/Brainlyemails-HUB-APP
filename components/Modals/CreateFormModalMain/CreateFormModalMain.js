@@ -1,9 +1,12 @@
 import React from 'react';
 import {useRecoilState} from "recoil";
-import {handleDiscardEmailModal} from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
+import {
+    handleDiscardEmailModal,
+    handleNewFormCreationModal
+} from "../../../contentManagement/atoms/HandleModalStates/HandleModalStates";
 
 const CreateFormModalMain = () => {
-    const [handleDiscardEmailModalState, setHandleDiscardEmailModalState] = useRecoilState(handleDiscardEmailModal);
+    const [handleNewFormCreationModalState, setHandleNewFormCreationModalState] = useRecoilState(handleNewFormCreationModal);
 
     return (
         <div>
@@ -32,14 +35,14 @@ const CreateFormModalMain = () => {
                                 </button>
                                 <button
                                     className="focus:outline-none ml-3 bg-gray-100 transition duration-150 text-gray-600 ease-in-out hover:border-gray-400 hover:bg-gray-300 px-5 py-1 border rounded text-sm"
-                                    onClick={() => setHandleDiscardEmailModalState(!handleDiscardEmailModalState)}>
+                                    onClick={() => setHandleNewFormCreationModalState(!handleNewFormCreationModalState)}>
                                     Cancel
                                 </button>
                             </div>
                         </div>
                         <div
                             className="cursor-pointer absolute top-0 right-0 mt-4 mr-5 text-gray-400 hover:text-gray-600 transition duration-150 ease-in-out"
-                            onClick={() => setHandleDiscardEmailModalState(!handleDiscardEmailModalState)}>
+                            onClick={() => setHandleNewFormCreationModalState(!handleNewFormCreationModalState)}>
                             <svg xmlns="http://www.w3.org/2000/svg" aria-label="Close"
                                  className="icon icon-tabler icon-tabler-x" width={20} height={20} viewBox="0 0 24 24"
                                  strokeWidth="2.5" stroke="currentColor" fill="none" strokeLinecap="round"
