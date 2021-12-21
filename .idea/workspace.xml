@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components/StyleSection/StyleSection.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/ComponentsComponent/ComponentsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/ComponentsComponent/ComponentsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components/TextContentEditing/TextContentEditing.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components/TextContentEditing/TextContentEditing.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +57,11 @@
       <recent name="$PROJECT_DIR$/components/NewAutomationlScreen_Components/AutomationFeaturesContainer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components" />
       <recent name="$PROJECT_DIR$/contentManagement/atoms" />
       <recent name="$PROJECT_DIR$/components/NewEmailScreen_Components/EmailFeaturesContainer" />
       <recent name="$PROJECT_DIR$/pages/projects/[user]/hub/messenger" />
       <recent name="$PROJECT_DIR$/components/MessengerScreen_Components/AllFeaturesContainer" />
-      <recent name="$PROJECT_DIR$/pages/projects/[user]" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -74,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="23946000" />
+      <workItem from="1640011683657" duration="25767000" />
     </task>
     <servers />
   </component>
