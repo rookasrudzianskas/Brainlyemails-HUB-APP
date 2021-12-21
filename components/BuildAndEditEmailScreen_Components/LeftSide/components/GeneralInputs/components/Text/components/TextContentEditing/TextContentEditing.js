@@ -4,9 +4,8 @@ import {useRecoilState} from "recoil";
 import {manageInputThings} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
 
 const TextContentEditing = () => {
+    // const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
-    console.log("🔥 This is something amazing", manageInputThingsState.Text);
-
     return (
         <div className="p-6">
             <div className="flex flex-col">
