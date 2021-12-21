@@ -1,11 +1,13 @@
 import React from 'react';
 import StyleSection from "../StyleSection/StyleSection";
-import {useRecoilState} from "recoil";
-import {manageInputThings} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+import {atom, useRecoilState} from "recoil";
+import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+// import {manageInputThings} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
 
 const TextContentEditing = () => {
     // const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
-    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
+
+    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);
     console.log(manageInputThingsState);
     return (
         <div className="p-6">
@@ -21,18 +23,18 @@ const TextContentEditing = () => {
                         className="appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="username"
                         placeholder="Type something for the content"
-                        value={manageInputThingsState.Text.content}
+                        // value={manageInputThingsState.Text.content}
                         rows='5'
                         style={{resize: 'none' }}
-                        onChange={(e) => {
-                            setManageInputThingsState({
-                                ...manageInputThingsState,
-                                Text: {
-                                    ...manageInputThingsState.Text,
-                                    content: e.target.value
-                                }
-                            })
-                        }}
+                        // onChange={(e) => {
+                        //     setManageInputThingsState({
+                        //         ...manageInputThingsState,
+                        //         Text: {
+                        //             ...manageInputThingsState.Text,
+                        //             content: e.target.value
+                        //         }
+                        //     })
+                        // }}
                     />
                 </div>
 
@@ -91,3 +93,5 @@ const TextContentEditing = () => {
 };
 
 export default TextContentEditing;
+
+
