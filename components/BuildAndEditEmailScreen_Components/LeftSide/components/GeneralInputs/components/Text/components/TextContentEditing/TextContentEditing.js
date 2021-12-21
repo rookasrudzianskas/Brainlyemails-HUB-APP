@@ -55,7 +55,7 @@ const TextContentEditing = () => {
                 <div className="flex flex-col mt-9">
                     <p className="text-md text-indigo-500 font-semibold mb-1 flex flex-1">Iteration group</p>
                     <div className="-mt-1">
-                        <p className="text-indigo-300 text-sm mb-2">
+                        <p className="text-gray-500 text-sm mb-2">
                             Set up a reference that will Brainlyemails expect inside of `templateProps` to render a dynamic list. Learn more.
                         </p>
                     </div>
