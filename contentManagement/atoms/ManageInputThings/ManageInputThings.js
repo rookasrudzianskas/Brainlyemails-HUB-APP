@@ -9,7 +9,7 @@ export const manageInputThings = new atom({
             style: 'Standard',
             alignment: 'Left',
             spacing: 'Default',
-            iterationGroup: 'list'
+            iterationGroup: 'list',
         },
         Table: {
             isSelected: false,
