@@ -1,4 +1,5 @@
 import React from 'react';
+import StyleSection from "../StyleSection/StyleSection";
 
 const TextContentEditing = () => {
     return (
@@ -19,6 +20,10 @@ const TextContentEditing = () => {
                         rows='5'
                         style={{resize: 'none' }}
                     />
+                </div>
+
+                <div>
+                    <StyleSection />
                 </div>
 
             </div>
