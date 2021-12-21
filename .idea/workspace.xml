@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components/TextContentEditing/TextContentEditing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/components/TextContentEditing/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/ComponentsComponent/ComponentsComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/ComponentsComponent/ComponentsComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/Text.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BuildAndEditEmailScreen_Components/LeftSide/components/GeneralInputs/components/Text/Text.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="23225000" />
+      <workItem from="1640011683657" duration="23287000" />
     </task>
     <servers />
   </component>
