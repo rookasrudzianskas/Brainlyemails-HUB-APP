@@ -5,9 +5,12 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import {useRecoilState} from "recoil";
 import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
 import {ctdffctrtp} from "../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
+import {manageInputThingsData} from "../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const ComponentsComponent = () => {
     const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
+    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
+    console.log(manageInputThingsDataState.Text);
 
     return (
         <>

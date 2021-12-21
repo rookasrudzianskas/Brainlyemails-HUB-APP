@@ -4,7 +4,7 @@ export const manageInputThingsData = new atom({
     key: 'manageInputThingsData',
     default: {
         Text: {
-            isSelected: false,
+            // isSelected: false,
             content: 'Something very awesome!',
             style: 'Standard',
             alignment: 'Left',
@@ -34,3 +34,5 @@ export const manageInputThingsData = new atom({
         // },
     }
 })
+
+//@TODO somewhere there is a bug with the atom.

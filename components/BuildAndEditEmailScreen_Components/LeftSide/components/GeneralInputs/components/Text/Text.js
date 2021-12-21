@@ -4,17 +4,17 @@ import {
     manageInputThingsData
 } from "../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 import {useRecoilState} from "recoil";
+import {ctdffctrtp} from "../../../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
 
 const Text = () => {
-    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);
-    console.log("This is epic", manageInputThingsState.Text.isSelected);
+    const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
 
     return (
         <div onClick={(e) => {
-            setManageInputThingsState({
-                ...manageInputThingsState,
+            setCtdffctrtpState({
+                ...ctdffctrtpState,
                 Text: {
-                    isSelected: !manageInputThingsState.Text.isSelected,
+                    isSelected: !ctdffctrtpState.Text.isSelected,
                 }
             })
         }
