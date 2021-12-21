@@ -1,10 +1,10 @@
 import React from 'react';
-import NewAutomatedEmailScreen from "../../../../../screens/NewAutomatedEmailScreen";
+import NewAddEmailTemplate from "../../../../../components/TemplatesScreen_Components/NewAddEmailTemplate";
 
 const NewEmailSequence = () => {
     return (
         <div>
-            <NewAutomatedEmailScreen />
+            <NewAddEmailTemplate />
         </div>
     );
 };

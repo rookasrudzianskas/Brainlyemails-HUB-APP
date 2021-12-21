@@ -8,7 +8,9 @@ const NavigationComponent = () => {
     return (
         <div className="flex flex-row space-x-3 justify-center mt-8 ml-2">
             <div className="flex space-x-3">
-                <div className="flex flex-row justify-center h-10 px-2 rounded-sm items-center justify-center space-x-2 hover:bg-indigo-200 transition duration-150 ease-in-out cursor-pointer">
+                <div
+                    onClick={() => router.back()}
+                    className="flex flex-row justify-center h-10 px-2 rounded-sm items-center justify-center space-x-2 hover:bg-indigo-200 transition duration-150 ease-in-out cursor-pointer">
                     <ArrowBack className="text-indigo-500 text-md" />
                     <p className="text-gray-800">Go back</p>
                 </div>
