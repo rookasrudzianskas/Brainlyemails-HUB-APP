@@ -1,14 +1,12 @@
 import React from 'react';
 import StyleSection from "../StyleSection/StyleSection";
 import {atom, useRecoilState} from "recoil";
-import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
-// import {manageInputThings} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const TextContentEditing = () => {
-    // const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
 
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);
-    console.log(manageInputThingsState);
+    console.log(manageInputThingsState)
     return (
         <div className="p-6">
             <div className="flex flex-col">
@@ -23,18 +21,18 @@ const TextContentEditing = () => {
                         className="appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="username"
                         placeholder="Type something for the content"
-                        // value={manageInputThingsState.Text.content}
+                        value={manageInputThingsState.Text.content}
                         rows='5'
                         style={{resize: 'none' }}
-                        // onChange={(e) => {
-                        //     setManageInputThingsState({
-                        //         ...manageInputThingsState,
-                        //         Text: {
-                        //             ...manageInputThingsState.Text,
-                        //             content: e.target.value
-                        //         }
-                        //     })
-                        // }}
+                        onChange={(e) => {
+                            setManageInputThingsState({
+                                ...manageInputThingsState,
+                                Text: {
+                                    ...manageInputThingsState.Text,
+                                    content: e.target.value
+                                }
+                            })
+                        }}
                     />
                 </div>
 

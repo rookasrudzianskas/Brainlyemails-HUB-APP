@@ -1,10 +1,12 @@
 import React from 'react';
 import {Notes} from "@mui/icons-material";
-import {manageInputThings} from "../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+import {
+    manageInputThingsData
+} from "../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 import {useRecoilState} from "recoil";
 
 const Text = () => {
-    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
+    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);
     console.log("This is epic", manageInputThingsState.Text.isSelected);
 
     return (

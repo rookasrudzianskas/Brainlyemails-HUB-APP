@@ -6,7 +6,7 @@ import {useRecoilState} from "recoil";
 import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
 import {
     manageInputThingsData
-} from "../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+} from "../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const ComponentsComponent = () => {
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);

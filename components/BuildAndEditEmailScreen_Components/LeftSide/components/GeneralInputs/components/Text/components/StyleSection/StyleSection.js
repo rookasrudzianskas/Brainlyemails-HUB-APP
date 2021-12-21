@@ -1,12 +1,14 @@
 import React, {useState} from 'react';
-import {manageInputThings} from "../../../../../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+import {
+    manageInputThingsData
+} from "../../../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 import {useRecoilState} from "recoil";
 
 const StyleSection = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
-    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
+    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThingsData);
 
     return (
         <div className="flex">
