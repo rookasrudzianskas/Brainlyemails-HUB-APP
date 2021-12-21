@@ -1,9 +1,10 @@
 import React from 'react';
+import AddNewEmailTemplateScreen from "../../../../../screens/AddNewEmailTemplateScreen";
 
 const addNewEmailTemplate = () => {
     return (
         <div className="">
-            addNewEmailTemplate
+            <AddNewEmailTemplateScreen />
         </div>
     );
 };
