@@ -1,6 +1,6 @@
 import React from 'react';
 import NavigationComponent from "./components/NavigationComponent";
-import FormContent from "./components/FormContent";
+import ComponentsComponent from "./components/ComponentsComponent";
 
 const LeftSide = () => {
     return (
@@ -9,7 +9,7 @@ const LeftSide = () => {
             <div className="flex flex-col flex-1 bg-gray-100">
                 <NavigationComponent />
                 <div className="flex flex-col mt-6  mr-10 overflow-y-scroll scrollbar-hide mb-10">
-                    <FormContent />
+                    <ComponentsComponent />
                 </div>
             </div>
         </div>
