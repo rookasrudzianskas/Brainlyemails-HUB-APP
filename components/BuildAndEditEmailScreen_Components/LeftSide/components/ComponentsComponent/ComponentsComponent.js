@@ -2,8 +2,12 @@ import React from 'react';
 import GeneralInputs from "../GeneralInputs";
 import {Search} from "@mui/icons-material";
 import SettingsIcon from '@mui/icons-material/Settings';
+import {useRecoilState} from "recoil";
+import {manageInputThings} from "../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
 
 const ComponentsComponent = () => {
+    const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
+
     return (
         <>
             <div className="bg-white border border-indigo-200 rounded-sm mb-10 shadow-sm overflow-hidden">
@@ -34,7 +38,15 @@ const ComponentsComponent = () => {
                 </div>
 
                 <div className="overflow-y-hidden scrollbar-hide">
-                    <GeneralInputs />
+                    {manageInputThingsState.Text.isSelected && (
+                        <div className="h-[35rem]">
+                            Something pretty epic goes in here!
+                        </div>
+                        )}
+                    {!manageInputThingsState.Text.isSelected && (
+                        <GeneralInputs />
+                    )}
+                    {/*<GeneralInputs />*/}
                 </div>
 
             </div>
