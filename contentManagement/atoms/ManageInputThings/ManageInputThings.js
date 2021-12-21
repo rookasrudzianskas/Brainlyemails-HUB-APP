@@ -5,6 +5,11 @@ export const manageInputThings = new atom({
     default: {
         Text: {
             isSelected: false,
+            content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium fugit placeat quos dicta, ullam deserunt tenetur nobis dolore ratione voluptate commodi veniam odio cum reiciendis reprehenderit fuga distinctio, quasi alias?',
+            style: 'Standard',
+            alignment: 'Left',
+            spacing: 'Default',
+            iterationGroup: 'list'
         },
         Table: {
             isSelected: false,
