@@ -4,7 +4,7 @@ import RightSide from "../../components/BuildAndEditEmailScreen_Components/Right
 
 const AddNewEmailTemplateScreen = () => {
     return (
-        <div className="flex flex-row bg-gray-100 overflow-hidden">
+        <div className="h-screen w-screen flex flex-row bg-gray-100 overflow-hidden">
             <LeftSide />
             <RightSide />
         </div>

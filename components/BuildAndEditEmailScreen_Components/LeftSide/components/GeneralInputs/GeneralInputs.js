@@ -12,7 +12,7 @@ import Code from "./components/Code";
 const GeneralInputs = () => {
 
     return (
-        <div className="">
+        <div className="h-[35rem]">
                 <Text />
                 <Button />
                 <ListComponent />
