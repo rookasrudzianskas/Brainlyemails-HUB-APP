@@ -2,10 +2,12 @@ import React from 'react';
 import Header from "../../DashboardComponents/partials/Header";
 import {newEmailTemplateDataCloud} from "../../../contentManagement/atoms/NewEmailTemplateDataCloud/NewEmailTemplateDataCloud";
 import {useRecoilState} from "recoil";
+import {useRouter} from "next/router";
 
 const NewAddEmailTemplate = () => {
 
     const [newEmailTemplateDataCloudState, setNewEmailTemplateDataCloudState] = useRecoilState(newEmailTemplateDataCloud);
+    const router = useRouter();
 
 
     return (
@@ -62,7 +64,11 @@ const NewAddEmailTemplate = () => {
                         <div className="flex flex-row flex-1">
                             <p className="text-indigo-300 hover:underline transition duration-150 ease-in-out cursor-pointer">Discard</p>
                         </div>
-                        <div className="flex flex-row bg-indigo-500 px-2 py-2 rounded-sm hover:bg-indigo-400 transition duration-150 ease-in-out cursor-pointer">
+                        <div
+                            onClick={() => {
+                                router.push('/projects/rokasrudzianskas/hub/new/addNewEmailTemplate');
+                            }}
+                            className="flex flex-row bg-indigo-500 px-2 py-2 rounded-sm hover:bg-indigo-400 transition duration-150 ease-in-out cursor-pointer">
                             <p className="text-gray-100">Create template</p>
                         </div>
                     </div>
