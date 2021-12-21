@@ -52,5 +52,4 @@ const RightSide = () => {
         </div>
     );
 };
-
 export default RightSide;
