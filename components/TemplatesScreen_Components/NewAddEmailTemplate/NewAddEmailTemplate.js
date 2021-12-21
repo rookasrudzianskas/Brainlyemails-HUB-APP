@@ -1,7 +1,13 @@
 import React from 'react';
 import Header from "../../DashboardComponents/partials/Header";
+import {newEmailTemplateDataCloud} from "../../../contentManagement/atoms/NewEmailTemplateDataCloud/NewEmailTemplateDataCloud";
+import {useRecoilState} from "recoil";
 
 const NewAddEmailTemplate = () => {
+
+    const [newEmailTemplateDataCloudState, setNewEmailTemplateDataCloudState] = useRecoilState(newEmailTemplateDataCloud);
+
+
     return (
         <div className="flex w-screen h-screen bg-gray-100 flex-col">
             <Header />
@@ -24,11 +30,13 @@ const NewAddEmailTemplate = () => {
                             id="username"
                             type="text"
                             placeholder="Password reset template #1"
-                            // value={formDataCloudStateLayer}
-                            // onChange={(e) => setFormDataCloudStateLayer({
-                            //     ...formDataCloudStateLayer,
-                            //     name: e.target.value
-                            // })}
+                            value={newEmailTemplateDataCloudState.templateName}
+                            onChange={(e) => {
+                                setNewEmailTemplateDataCloudState({
+                                    ...newEmailTemplateDataCloudState,
+                                    templateName: e.target.value
+                                })
+                            }}
                         />
                     </div>
 
@@ -39,11 +47,13 @@ const NewAddEmailTemplate = () => {
                             id="username"
                             type="text"
                             placeholder="Password reset"
-                            // value={formDataCloudStateLayer}
-                            // onChange={(e) => setFormDataCloudStateLayer({
-                            //     ...formDataCloudStateLayer,
-                            //     name: e.target.value
-                            // })}
+                            value={newEmailTemplateDataCloudState.templateSubject}
+                            onChange={(e) => {
+                                setNewEmailTemplateDataCloudState({
+                                    ...newEmailTemplateDataCloudState,
+                                    templateSubject: e.target.value
+                                })
+                            }}
                         />
                     </div>
 
