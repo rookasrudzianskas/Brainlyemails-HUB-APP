@@ -3,8 +3,8 @@ import GeneralInputs from "../GeneralInputs";
 import {Search} from "@mui/icons-material";
 import SettingsIcon from '@mui/icons-material/Settings';
 import {useRecoilState} from "recoil";
-import {manageInputThings} from "../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
 import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
+import {manageInputThings} from "../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
 
 const ComponentsComponent = () => {
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);

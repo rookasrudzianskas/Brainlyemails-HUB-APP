@@ -5,7 +5,7 @@ import {manageInputThings} from "../../../../../../../../../contentManagement/at
 
 const TextContentEditing = () => {
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
-    console.log(manageInputThingsState);
+    console.log("🔥 This is something amazing", manageInputThingsState.Text);
 
     return (
         <div className="p-6">
