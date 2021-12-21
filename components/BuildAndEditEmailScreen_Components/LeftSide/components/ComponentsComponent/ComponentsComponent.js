@@ -11,7 +11,7 @@ const ComponentsComponent = () => {
 
     return (
         <>
-            <div className="bg-white border border-indigo-200 rounded-sm mb-10 shadow-sm overflow-hidden">
+            <div className="bg-white border border-indigo-200 rounded-sm mb-10 shadow-sm overflow-y-scroll scrollbar-hide">
                 <div className="py-6 px-4 border-b border-indigo-200 overflow-hidden flex flex-col justify-center">
                     <div className=" flex flex-row items-center">
                         <div className="flex flex-row items-center flex-1">
