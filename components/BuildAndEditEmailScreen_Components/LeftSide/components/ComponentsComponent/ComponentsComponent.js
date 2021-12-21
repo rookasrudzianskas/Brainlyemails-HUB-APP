@@ -4,6 +4,7 @@ import {Search} from "@mui/icons-material";
 import SettingsIcon from '@mui/icons-material/Settings';
 import {useRecoilState} from "recoil";
 import {manageInputThings} from "../../../../../contentManagement/atoms/ManageInputThings/ManageInputThings";
+import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
 
 const ComponentsComponent = () => {
     const [manageInputThingsState, setManageInputThingsState] = useRecoilState(manageInputThings);
@@ -39,9 +40,7 @@ const ComponentsComponent = () => {
 
                 <div className="overflow-y-hidden scrollbar-hide">
                     {manageInputThingsState.Text.isSelected && (
-                        <div className="h-[35rem]">
-                            Something pretty epic goes in here!
-                        </div>
+                        <TextContentEditing />
                         )}
                     {!manageInputThingsState.Text.isSelected && (
                         <GeneralInputs />
