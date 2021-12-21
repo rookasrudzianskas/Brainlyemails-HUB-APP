@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="914d76b1-2196-4ecf-9042-426c354f35e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/AllFeaturesContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/Email/Email.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/Email/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/EmailsSection/EmailsSection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/EmailsSection/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/NewMessage/NewMessage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/NewMessage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/TemplatesTopSide/TemplatesTopSide.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/TemplatesTopSide/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/TopInformationBanner/TopInformationBanner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/components/TopInformationBanner/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/AllFeaturesContainer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/Center/Center.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/Center/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/NewAddEmailTemplate/NewAddEmailTemplate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/NewAddEmailTemplate/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/Sidebar/Sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/Sidebar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/TopPart/TopPart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/TopPart/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/templates.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/TemplatesScreen/TemplatesScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screens/TemplatesScreen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contentManagement/atoms/NewEmailTemplateDataCloud/NewEmailTemplateDataCloud.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/NavigationComponent/NavigationComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EditFormScreen_Components/LeftSide/components/NavigationComponent/NavigationComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/[sequence]/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects/[user]/[serviceName]/[sequence]/new.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TemplatesScreen_Components/NewAddEmailTemplate/NewAddEmailTemplate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TemplatesScreen_Components/NewAddEmailTemplate/NewAddEmailTemplate.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639336530846</updated>
       <workItem from="1639336533504" duration="158473000" />
-      <workItem from="1640011683657" duration="17198000" />
+      <workItem from="1640011683657" duration="17810000" />
     </task>
     <servers />
   </component>
