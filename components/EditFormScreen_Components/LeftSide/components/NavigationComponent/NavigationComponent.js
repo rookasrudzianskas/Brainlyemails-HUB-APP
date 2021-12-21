@@ -1,7 +1,10 @@
 import React from 'react';
 import {ArrowBack} from "@mui/icons-material";
+import {useRouter} from "next/router";
 
 const NavigationComponent = () => {
+    const router = useRouter();
+
     return (
         <div className="flex flex-row space-x-3 justify-center mt-8 ml-2">
             <div className="flex space-x-3">
