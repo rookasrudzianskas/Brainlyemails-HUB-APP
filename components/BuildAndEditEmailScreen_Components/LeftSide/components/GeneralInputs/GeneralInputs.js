@@ -4,12 +4,8 @@ import React, {useState} from 'react';
 const GeneralInputs = () => {
 
     return (
-        <div className=" overflow-y-auto h-screen">
-            <p className="text-gray-800 text-lg">General</p>
+        <div className="h-[35rem]">
 
-
-            <div>
-            </div>
         </div>
     );
 };
