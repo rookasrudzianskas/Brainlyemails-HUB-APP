@@ -7,8 +7,8 @@ const StyleSection = () => {
 
     return (
         <div className="flex">
-            <div className="flex flex-col items-center space-x-3 mt-5">
-                <p className="text-gray-800 hover:cursor-pointer">Filters match:</p>
+            <div className="flex flex-col space-y-3 mt-5">
+                <p className="text-md text-indigo-500 font-semibold mb-1 ">Style</p>
                 <div onClick={() => setShow(!show)} className="flex space-x-2 flex-row items-center  hover:text-gray-700 cursor-pointer transition duration-150 ease-in-out">
                     <div className={`w-5 h-5 ${show ? 'bg-indigo-500' : 'bg-gray-100'} rounded-full border-[1px] ${show ? 'border-indigo-300' : 'border-gray-300'} flex items-center justify-center`}>
                         {show && (
