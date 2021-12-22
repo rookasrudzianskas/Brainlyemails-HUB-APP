@@ -8,6 +8,7 @@ const TextContentEditing = () => {
 
     const [manageEmailCreationToolsDataCloudState, setManageEmailCreationToolsDataCloudState] = useRecoilState(manageEmailCreationToolsDataCloud);
     console.log("This is epic 🔥", manageEmailCreationToolsDataCloudState);
+
     return (
         <div className="p-6">
             <div className="flex flex-col">
