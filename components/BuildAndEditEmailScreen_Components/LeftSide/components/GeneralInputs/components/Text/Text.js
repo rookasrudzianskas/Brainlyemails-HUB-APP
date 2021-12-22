@@ -1,19 +1,17 @@
 import React from 'react';
 import {Notes} from "@mui/icons-material";
-import {
-    manageInputThingsData
-} from "../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 import {useRecoilState} from "recoil";
+import {manageEmailCreationToolsDataCloud} from "../../../../../../../contentManagement/atoms/ManageEmailCreationToolsDataCloud/ManageEmailCreationToolsDataCloud";
 
 const Text = () => {
-    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
+    const [manageEmailCreationToolsDataCloudState, setManageEmailCreationToolsDataCloudState] = useRecoilState(manageEmailCreationToolsDataCloud);
 
     return (
         <div onClick={(e) => {
-            setManageInputThingsDataState({
-                ...manageInputThingsDataState,
+            setManageEmailCreationToolsDataCloudState({
+                ...manageEmailCreationToolsDataCloudState,
                 Text: {
-                    isSelected: !manageInputThingsDataState.Text.isSelected,
+                    isSelected: !manageEmailCreationToolsDataCloudState.Text.isSelected,
                 }
             })
         }

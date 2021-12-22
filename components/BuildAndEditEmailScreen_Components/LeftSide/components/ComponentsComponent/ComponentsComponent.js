@@ -4,10 +4,10 @@ import {Search} from "@mui/icons-material";
 import SettingsIcon from '@mui/icons-material/Settings';
 import {useRecoilState} from "recoil";
 import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
-import {manageInputThingsData} from "../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
+import {manageEmailCreationToolsDataCloud} from "../../../../../contentManagement/atoms/ManageEmailCreationToolsDataCloud/ManageEmailCreationToolsDataCloud";
 
 const ComponentsComponent = () => {
-    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
+    const [manageEmailCreationToolsDataCloudState, setManageEmailCreationToolsDataCloudState] = useRecoilState(manageEmailCreationToolsDataCloud);
 
     return (
         <>
@@ -39,10 +39,10 @@ const ComponentsComponent = () => {
                 </div>
 
                 <div className="overflow-y-hidden scrollbar-hide">
-                    {manageInputThingsDataState.Text.isSelected && (
+                    {manageEmailCreationToolsDataCloudState.Text.isSelected && (
                         <TextContentEditing />
                         )}
-                    {!manageInputThingsDataState.Text.isSelected && (
+                    {!manageEmailCreationToolsDataCloudState.Text.isSelected && (
                         <GeneralInputs />
                     )}
                     {/*<GeneralInputs />*/}

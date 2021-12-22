@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
-import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
+import {manageEmailCreationToolsDataCloud} from "../../../../../../../../../contentManagement/atoms/ManageEmailCreationToolsDataCloud/ManageEmailCreationToolsDataCloud";
 
 const StyleSection = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
-    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
+    const [manageEmailCreationToolsDataCloudState, setManageEmailCreationToolsDataCloudState] = useRecoilState(manageEmailCreationToolsDataCloud);
 
     return (
         <div className="flex">
