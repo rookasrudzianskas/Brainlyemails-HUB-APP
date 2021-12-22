@@ -6,6 +6,7 @@ import {manageInputThingsData} from "../../../../../../../../../contentManagemen
 const TextContentEditing = () => {
 
     const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
+    console.log("This is epic 🔥", manageInputThingsDataState);
     return (
         <div className="p-6">
             <div className="flex flex-col">
