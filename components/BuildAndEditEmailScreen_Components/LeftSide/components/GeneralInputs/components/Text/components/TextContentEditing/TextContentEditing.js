@@ -1,12 +1,11 @@
 import React from 'react';
 import StyleSection from "../StyleSection/StyleSection";
 import {atom, useRecoilState} from "recoil";
-import {ctdffctrtp} from "../../../../../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
+import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const TextContentEditing = () => {
 
-    const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
-    console.log(ctdffctrtpState)
+    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
     return (
         <div className="p-6">
             <div className="flex flex-col">
@@ -21,14 +20,14 @@ const TextContentEditing = () => {
                         className="appearance-none border rounded-sm w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="username"
                         placeholder="Type something for the content"
-                        value={ctdffctrtpState.Text.content}
+                        value={manageInputThingsDataState.Text.content}
                         rows='5'
                         style={{resize: 'none' }}
                         onChange={(e) => {
-                            setCtdffctrtpState({
-                                ...ctdffctrtpState,
+                            setManageInputThingsDataState({
+                                ...manageInputThingsDataState,
                                 Text: {
-                                    ...ctdffctrtpState.Text,
+                                    ...manageInputThingsDataState.Text,
                                     content: e.target.value
                                 }
                             })

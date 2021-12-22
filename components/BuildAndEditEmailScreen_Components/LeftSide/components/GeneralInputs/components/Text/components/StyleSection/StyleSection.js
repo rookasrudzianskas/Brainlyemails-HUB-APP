@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import {useRecoilState} from "recoil";
-import {ctdffctrtp} from "../../../../../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
+import {manageInputThingsData} from "../../../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const StyleSection = () => {
     const [show, setShow] = useState(false);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
-    const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
+    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
 
     return (
         <div className="flex">

@@ -4,13 +4,10 @@ import {Search} from "@mui/icons-material";
 import SettingsIcon from '@mui/icons-material/Settings';
 import {useRecoilState} from "recoil";
 import TextContentEditing from "../GeneralInputs/components/Text/components/TextContentEditing";
-import {ctdffctrtp} from "../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
 import {manageInputThingsData} from "../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 
 const ComponentsComponent = () => {
-    const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
     const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
-    console.log(manageInputThingsDataState.Text);
 
     return (
         <>
@@ -42,10 +39,10 @@ const ComponentsComponent = () => {
                 </div>
 
                 <div className="overflow-y-hidden scrollbar-hide">
-                    {ctdffctrtpState.Text.isSelected && (
+                    {manageInputThingsDataState.Text.isSelected && (
                         <TextContentEditing />
                         )}
-                    {!ctdffctrtpState.Text.isSelected && (
+                    {!manageInputThingsDataState.Text.isSelected && (
                         <GeneralInputs />
                     )}
                     {/*<GeneralInputs />*/}

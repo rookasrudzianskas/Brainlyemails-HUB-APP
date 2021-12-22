@@ -4,17 +4,16 @@ import {
     manageInputThingsData
 } from "../../../../../../../contentManagement/atoms/ManageInputThingsData/ManageInputThingsData";
 import {useRecoilState} from "recoil";
-import {ctdffctrtp} from "../../../../../../../contentManagement/atoms/ControlTheDataFlowFromComponentsToRealTimePreview/ControlTheDataFlowFromComponentsToRealTimePreview";
 
 const Text = () => {
-    const [ctdffctrtpState, setCtdffctrtpState] = useRecoilState(ctdffctrtp);
+    const [manageInputThingsDataState, setManageInputThingsDataState] = useRecoilState(manageInputThingsData);
 
     return (
         <div onClick={(e) => {
-            setCtdffctrtpState({
-                ...ctdffctrtpState,
+            setManageInputThingsDataState({
+                ...manageInputThingsDataState,
                 Text: {
-                    isSelected: !ctdffctrtpState.Text.isSelected,
+                    isSelected: !manageInputThingsDataState.Text.isSelected,
                 }
             })
         }
