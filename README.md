@@ -6,7 +6,7 @@ This is private example of Brainlyemails.
 
 Preview the example live on [brainlyemails.com](https://brainlyemails.com)
 
-[THIS IS THE LINK TO BRAI](https://brainlyemails.com/preview.png)
+[THIS IS THE LINK TO BRAIN](https://brainlyemails.com/preview.png)
 
 ## Deploy your own
 
